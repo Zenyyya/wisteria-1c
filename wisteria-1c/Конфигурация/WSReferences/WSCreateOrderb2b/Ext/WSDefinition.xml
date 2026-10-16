@@ -1,0 +1,1175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://service.profashionsolutions.ru/orders_r002"
+		xmlns:xsd2="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002"
+		xmlns:xsd3="http://service.profashionsolutions.ru/types_r002"
+		name="_Orders_r002"
+		targetNamespace="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002">
+	<types>
+		<xs:schema xmlns:tns="http://service.profashionsolutions.ru/types_r002"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="http://service.profashionsolutions.ru/types_r002"
+				xmlns:xsd2="http://service.profashionsolutions.ru/orders_r002"
+				xmlns:xsd3="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002"
+				targetNamespace="http://service.profashionsolutions.ru/types_r002"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:complexType name="ctAddress">
+				<xs:sequence>
+					<xs:element name="country"
+							type="xsd1:stString2Character"/>
+					<xs:element name="zip"
+							type="xs:string"/>
+					<xs:element name="region"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="area"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="city"
+							type="xs:string"/>
+					<xs:element name="street"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="building"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="frame"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="construction"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="flat"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctCustomer">
+				<xs:sequence>
+					<xs:element name="customerFingerprint"
+							type="xsd1:ctCustomerFingerprint"/>
+					<xs:element name="phone"
+							type="xs:string"/>
+					<xs:element name="firstName"
+							type="xs:string"/>
+					<xs:element name="secondName"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="lastName"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="sex"
+							type="xsd1:stSex"
+							minOccurs="0"/>
+					<xs:element name="birthDay"
+							type="xs:duration"
+							minOccurs="0"/>
+					<xs:element name="address"
+							type="xsd1:ctAddress"
+							minOccurs="0"/>
+					<xs:element name="passwordHash"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctCustomerFingerprint">
+				<xs:sequence>
+					<xs:element name="email"
+							type="xs:string"/>
+					<xs:element name="id"
+							type="xs:string"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctFaultHandler">
+				<xs:sequence>
+					<xs:element name="errorCode"
+							type="xs:int"/>
+					<xs:element name="errorMessage"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctItemFingerprint">
+				<xs:sequence>
+					<xs:element name="uuid"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="size"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="ean"
+							type="xs:string"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctOrderFingerprint">
+				<xs:sequence>
+					<xs:element name="orderNumber"
+							type="xs:string"/>
+					<xs:element name="tmpId"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="orderId"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctService">
+				<xs:sequence>
+					<xs:element name="shop"
+							type="xs:nonNegativeInteger"/>
+					<xs:element name="token"
+							type="xs:string"/>
+					<xs:element name="messageDate"
+							type="xs:duration"/>
+					<xs:element name="messageId"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctStandardResponse">
+				<xs:sequence>
+					<xs:element name="successful"
+							type="xs:boolean"/>
+					<xs:element name="faultHandler"
+							type="xsd1:ctFaultHandler"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="stCurrency">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="EUR"/>
+					<xs:enumeration value="RUB"/>
+					<xs:enumeration value="USD"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stOrderStatus">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="New"/>
+					<xs:enumeration value="Canceled"/>
+					<xs:enumeration value="Confirmed"/>
+					<xs:enumeration value="OnAssembly"/>
+					<xs:enumeration value="Sent"/>
+					<xs:enumeration value="Completed"/>
+					<xs:enumeration value="PartiallyCompleted"/>
+					<xs:enumeration value="NotCompleted"/>
+					<xs:enumeration value="Returned"/>
+					<xs:enumeration value="ReturnedFromClient"/>
+					<xs:enumeration value="ReturnedbyPost"/>
+					<xs:enumeration value="PartiallyDelivered"/>
+					<xs:enumeration value="MixedUpOrder"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stParcelReturnType">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Rejection"/>
+					<xs:enumeration value="Return"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stPaymentMode">
+				<xs:restriction base="xs:nonNegativeInteger">
+					<xs:enumeration value="1"/>
+					<xs:enumeration value="2"/>
+					<xs:enumeration value="3"/>
+					<xs:enumeration value="4"/>
+					<xs:enumeration value="5"/>
+					<xs:enumeration value="6"/>
+					<xs:enumeration value="7"/>
+					<xs:enumeration value="8"/>
+					<xs:enumeration value="9"/>
+					<xs:enumeration value="10"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stSex">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Male"/>
+					<xs:enumeration value="Female"/>
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stStatusOrderDelivery">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="PreparingForDelivery"/>
+					<xs:enumeration value="OnTheWay"/>
+					<xs:enumeration value="Delivered"/>
+					<xs:enumeration value="PartiallyDelivered"/>
+					<xs:enumeration value="Returned"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stStatusOrderPayment">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="PaidUp"/>
+					<xs:enumeration value="NotPaid"/>
+					<xs:enumeration value="NoPayment"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stStatusReturnItem">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="New"/>
+					<xs:enumeration value="Expertized"/>
+					<xs:enumeration value="Refunded"/>
+					<xs:enumeration value="NonRefundable"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stString2Character">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="2"/>
+					<xs:maxLength value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stTypeCarriers">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="direct"/>
+					<xs:enumeration value="pvz"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stVatCode">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="vc_18"/>
+					<xs:enumeration value="vc_18_118"/>
+					<xs:enumeration value="vc_10"/>
+					<xs:enumeration value="vc_10_110"/>
+					<xs:enumeration value="vc_20"/>
+					<xs:enumeration value="vc_20_120"/>
+					<xs:enumeration value="vc_0"/>
+					<xs:enumeration value="vc_NoVAT"/>
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stVersion">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="01"/>
+					<xs:enumeration value="02"/>
+					<xs:enumeration value="03"/>
+					<xs:enumeration value="04"/>
+					<xs:enumeration value="05"/>
+					<xs:enumeration value="06"/>
+					<xs:enumeration value="07"/>
+					<xs:enumeration value="08"/>
+					<xs:enumeration value="09"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stDecimal18_2">
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="18"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:schema>
+		<xs:schema xmlns:ns1="http://service.profashionsolutions.ru/types_r002"
+				xmlns:tns="http://service.profashionsolutions.ru/orders_r002"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="http://service.profashionsolutions.ru/types_r002"
+				xmlns:xsd2="http://service.profashionsolutions.ru/orders_r002"
+				xmlns:xsd3="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002"
+				targetNamespace="http://service.profashionsolutions.ru/orders_r002"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:import namespace="http://service.profashionsolutions.ru/types_r002"/>
+			<xs:complexType name="createOrder">
+				<xs:sequence>
+					<xs:element name="service"
+							type="xsd1:ctService"/>
+					<xs:element name="param"
+							type="xsd2:ctParamCreateOrder"/>
+					<xs:element name="version"
+							type="xsd1:stVersion"/>
+					<xs:element name="order"
+							type="xsd2:ctOrder"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="updateOrder">
+				<xs:sequence>
+					<xs:element name="service"
+							type="xsd1:ctService"/>
+					<xs:element name="param"
+							type="xsd2:ctParamUpdateOrder"/>
+					<xs:element name="version"
+							type="xsd1:stVersion"/>
+					<xs:element name="order"
+							type="xsd2:ctOrder"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctAddField">
+				<xs:sequence>
+					<xs:element name="name"
+							type="xs:string"/>
+					<xs:element name="value"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctAddFields">
+				<xs:sequence>
+					<xs:element name="field"
+							type="xsd2:ctAddField"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctBonuses">
+				<xs:sequence>
+					<xs:element name="text"
+							minOccurs="0">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="256"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctChangeInfo">
+				<xs:sequence>
+					<xs:element name="orderFingerprint"
+							type="xsd1:ctOrderFingerprint"/>
+					<xs:element name="statuses"
+							type="xsd2:ctStatuses"/>
+					<xs:element name="shopUnit"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctClient">
+				<xs:sequence>
+					<xs:element name="customerFingerprint"
+							type="xsd1:ctCustomerFingerprint"/>
+					<xs:element name="phone"
+							type="xs:string"/>
+					<xs:element name="firstName"
+							type="xs:string"/>
+					<xs:element name="secondName"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="lastName"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="createFullData"
+							type="xsd1:ctCustomer"
+							minOccurs="0"/>
+					<xs:element name="customerId"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctClientOrderDataUpdate">
+				<xs:sequence>
+					<xs:element name="phone"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="firstName"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="secondName"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="lastName"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctCreateOrderResponse">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctStandardResponse">
+						<xs:sequence>
+							<xs:element name="itemsAvailability"
+									type="xsd2:ctItemsAvailability"
+									minOccurs="0"/>
+							<xs:element name="itemsIdetification"
+									type="xsd2:ctItemsIdentification"
+									minOccurs="0"/>
+							<xs:element name="itemsPriceControl"
+									type="xsd2:ctItemsPriceControl"
+									minOccurs="0"/>
+							<xs:element name="orderFingerprint"
+									type="xsd1:ctOrderFingerprint"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctUpdateOrderResponse">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctStandardResponse">
+						<xs:sequence>
+							<xs:element name="itemsAvailability"
+									type="xsd2:ctItemsAvailability"
+									minOccurs="0"/>
+							<xs:element name="itemsIdetification"
+									type="xsd2:ctItemsIdentification"
+									minOccurs="0"/>
+							<xs:element name="itemsPriceControl"
+									type="xsd2:ctItemsPriceControl"
+									minOccurs="0"/>
+							<xs:element name="orderFingerprint"
+									type="xsd1:ctOrderFingerprint"
+									minOccurs="0"/>
+							<xs:element name="validateErrors"
+									type="xsd2:ctValidateErrors"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctDeliveryOrderDataUpdate">
+				<xs:sequence>
+					<xs:element name="deliveryAddress"
+							type="xsd1:ctAddress"
+							minOccurs="0"/>
+					<xs:element name="carrierId"
+							type="xs:integer"
+							minOccurs="0"/>
+					<xs:element name="shippingFee"
+							type="xs:decimal"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctInterval">
+				<xs:sequence>
+					<xs:element name="dateDelivery"
+							type="xs:date"
+							minOccurs="0"/>
+					<xs:element name="timeDelivery"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctItem">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctItemFingerprint">
+						<xs:sequence>
+							<xs:element name="customerCompany"
+									type="xs:nonNegativeInteger"/>
+							<xs:element name="quantity"
+									type="xs:decimal"/>
+							<xs:element name="price"
+									type="xs:decimal"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctItemAvailability">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctItemFingerprint">
+						<xs:sequence>
+							<xs:element name="customerCompany"
+									type="xs:nonNegativeInteger"/>
+							<xs:element name="uuidName"
+									type="xs:string"
+									nillable="true"/>
+							<xs:element name="sizeName"
+									type="xs:string"
+									nillable="true"/>
+							<xs:element name="quantityOutOfStock"
+									type="xs:decimal"/>
+						</xs:sequence>
+						<xs:attribute name="successful"
+								type="xs:boolean"
+								use="required"/>
+						<xs:attribute name="indexNumber"
+								type="xs:int"
+								use="required"/>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctItemIdentification">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctItemFingerprint">
+						<xs:sequence>
+							<xs:element name="customerCompany"
+									type="xs:nonNegativeInteger"/>
+							<xs:element name="uuidName"
+									type="xs:string"
+									nillable="true"/>
+							<xs:element name="sizeName"
+									type="xs:string"
+									nillable="true"/>
+							<xs:element name="faultHandler"
+									type="xsd1:ctFaultHandler"
+									minOccurs="0"/>
+						</xs:sequence>
+						<xs:attribute name="successful"
+								type="xs:boolean"
+								use="required"/>
+						<xs:attribute name="indexNumber"
+								type="xs:int"
+								use="required"/>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctItemOrderDataUpdate">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctItemFingerprint">
+						<xs:sequence>
+							<xs:element name="customerCompany"
+									type="xs:nonNegativeInteger"/>
+							<xs:element name="quantity"
+									type="xs:decimal"/>
+							<xs:element name="price"
+									type="xs:decimal"/>
+							<xs:element name="parcelId"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="returnOrderId"
+									type="xs:string"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctItemPriceControl">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctItemFingerprint">
+						<xs:sequence>
+							<xs:element name="customerCompany"
+									type="xs:nonNegativeInteger"/>
+							<xs:element name="uuidName"
+									type="xs:string"
+									nillable="true"/>
+							<xs:element name="sizeName"
+									type="xs:string"
+									nillable="true"/>
+							<xs:element name="priceOrder"
+									type="xs:decimal"/>
+							<xs:element name="priceSystem"
+									type="xs:decimal"/>
+							<xs:element name="sumOrder"
+									type="xs:decimal"/>
+							<xs:element name="sumSystem"
+									type="xs:decimal"/>
+						</xs:sequence>
+						<xs:attribute name="successful"
+								type="xs:boolean"
+								use="required"/>
+						<xs:attribute name="indexNumber"
+								type="xs:int"
+								use="required"/>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctItemReturnOrder">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctItemFingerprint">
+						<xs:sequence>
+							<xs:element name="customerCompany"
+									type="xs:nonNegativeInteger"/>
+							<xs:element name="quantity"
+									type="xs:decimal"/>
+							<xs:element name="price"
+									type="xs:decimal"/>
+							<xs:element name="parcelId"
+									type="xs:string"/>
+							<xs:element name="reasonReturn"
+									type="xs:nonNegativeInteger"
+									nillable="true"/>
+							<xs:element name="expertOpinion"
+									type="xs:string"
+									nillable="true"/>
+							<xs:element name="status"
+									type="xsd1:stStatusReturnItem"
+									nillable="true"/>
+							<xs:element name="moneyReturned"
+									type="xs:boolean"/>
+							<xs:element name="moneyNeedReturn"
+									type="xs:boolean"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctItems">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd2:ctItem"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctItemsAvailability">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd2:ctItemAvailability"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctValidateErrors">
+				<xs:sequence>
+					<xs:element name="errors"
+							type="xsd2:ctValidateError"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctValidateError">
+				<xs:sequence>
+					<xs:element name="message"
+							type="xs:string"
+							maxOccurs="unbounded"/>
+					<xs:element name="code"
+							type="xs:int"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctItemsIdentification">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd2:ctItemIdentification"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctItemsOrderDataUpdate">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd2:ctItemOrderDataUpdate"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctItemsPriceControl">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd2:ctItemPriceControl"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctItemsReturnOrder">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd2:ctItemReturnOrder"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctOrder">
+				<xs:sequence>
+					<xs:element name="paymentMode"
+							type="xsd1:stPaymentMode"
+							minOccurs="0"/>
+					<xs:element name="carrierId"
+							type="xs:integer"
+							minOccurs="0"/>
+					<xs:element name="shippingFee"
+							type="xs:decimal"
+							minOccurs="0"/>
+					<xs:element name="promocode"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="client"
+							type="xsd2:ctClient"/>
+					<xs:element name="deliveryAddress"
+							type="xsd1:ctAddress"
+							minOccurs="0"/>
+					<xs:element name="deliveryInterval"
+							type="xsd2:ctInterval"
+							minOccurs="0"/>
+					<xs:element name="items"
+							type="xsd2:ctItems"/>
+					<xs:element name="tmpId"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="orderFingerprint"
+							type="xsd1:ctOrderFingerprint"
+							minOccurs="0"/>
+					<xs:element name="discountCardNumber"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="comment"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="print"
+							type="xsd2:ctPrintInfo"
+							minOccurs="0"/>
+					<xs:element name="shopUnit"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="addFields"
+							type="xsd2:ctAddFields"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctOrderDataUpdate">
+				<xs:sequence>
+					<xs:element name="orderFingerprint"
+							type="xsd1:ctOrderFingerprint"/>
+					<xs:element name="statuses"
+							type="xsd2:ctStatuses"
+							minOccurs="0"/>
+					<xs:element name="paymentMode"
+							type="xsd1:stPaymentMode"
+							minOccurs="0"/>
+					<xs:element name="client"
+							type="xsd2:ctClientOrderDataUpdate"
+							minOccurs="0"/>
+					<xs:element name="delivery"
+							type="xsd2:ctDeliveryOrderDataUpdate"
+							minOccurs="0"/>
+					<xs:element name="items"
+							type="xsd2:ctItemsOrderDataUpdate"
+							minOccurs="0"/>
+					<xs:element name="parcels"
+							type="xsd2:ctParcels"
+							minOccurs="0"/>
+					<xs:element name="returnOrders"
+							type="xsd2:ctReturnOrders"
+							minOccurs="0"/>
+					<xs:element name="print"
+							type="xsd2:ctPrintInfo"
+							minOccurs="0"/>
+					<xs:element name="shopUnit"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctParamCreateOrder">
+				<xs:sequence>
+					<xs:element name="orderType"
+							type="xsd2:stType"
+							minOccurs="0"/>
+					<xs:element name="orderSource"
+							type="xsd2:stSource"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctParamUpdateOrder">
+				<xs:sequence>
+					<xs:element name="orderType"
+							type="xsd2:stType"
+							minOccurs="0"/>
+					<xs:element name="orderSource"
+							type="xsd2:stSource"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="orderStatus"
+							type="xs:string"/>
+					<xs:element name="orderStatusReasonId"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="orderStatusComment"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctPaymentUpdateOrder">
+				<xs:sequence>
+					<xs:element name="total"
+							type="xs:float"/>
+					<xs:element name="status"
+							type="xs:string"/>
+					<xs:element name="date"
+							type="xs:string"/>
+					<xs:element name="method"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctParamUpdateOrderInfo"/>
+			<xs:complexType name="ctParamUpdateOrderStatus"/>
+			<xs:complexType name="ctParcel">
+				<xs:sequence>
+					<xs:element name="id"
+							type="xs:string"/>
+					<xs:element name="sendDate"
+							type="xs:duration"
+							minOccurs="0"/>
+					<xs:element name="status"
+							type="xsd1:stOrderStatus"
+							minOccurs="0"/>
+					<xs:element name="typeReturn"
+							type="xsd1:stParcelReturnType"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctParcels">
+				<xs:sequence>
+					<xs:element name="parcel"
+							type="xsd2:ctParcel"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctPrintInfo">
+				<xs:sequence>
+					<xs:element name="bonuses"
+							type="xsd2:ctBonuses"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctReturnOrder">
+				<xs:sequence>
+					<xs:element name="id"
+							type="xs:string"/>
+					<xs:element name="items"
+							type="xsd2:ctItemsReturnOrder"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctReturnOrders">
+				<xs:sequence>
+					<xs:element name="returnOrder"
+							type="xsd2:ctReturnOrder"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctStatuses">
+				<xs:sequence>
+					<xs:element name="orderStatus"
+							type="xsd1:stOrderStatus"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="statusOrderDelivery"
+							type="xsd1:stStatusOrderDelivery"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="statusOrderPayment"
+							type="xsd1:stStatusOrderPayment"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ctUpdateOrderInfoResponse">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctStandardResponse">
+						<xs:sequence>
+							<xs:element name="itemsAvailability"
+									type="xsd2:ctItemsAvailability"
+									minOccurs="0"/>
+							<xs:element name="itemsIdetification"
+									type="xsd2:ctItemsIdentification"
+									minOccurs="0"/>
+							<xs:element name="itemsPriceControl"
+									type="xsd2:ctItemsPriceControl"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ctUpdateOrderStatusResponse">
+				<xs:complexContent>
+					<xs:extension base="xsd1:ctStandardResponse"/>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:simpleType name="stSource">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="mobileApp"/>
+					<xs:enumeration value="webSite"/>
+					<xs:enumeration value="mobileSite"/>
+					<xs:enumeration value="callCentre"/>
+					<xs:enumeration value="offlineStore"/>
+					<xs:enumeration value="offlineStoreSamovyvoz"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="stType">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="oneClick"/>
+					<xs:enumeration value="typical"/>
+					<xs:enumeration value="offline"/>
+					<xs:enumeration value="online"/>
+					<xs:enumeration value="clickAndCollect"/>
+					<xs:enumeration value="shipFromStore"/>
+					<xs:enumeration value="sorting"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="updateOrderInfo">
+				<xs:sequence>
+					<xs:element name="service"
+							type="xsd1:ctService"/>
+					<xs:element name="param"
+							type="xsd2:ctParamUpdateOrderInfo"/>
+					<xs:element name="version"
+							type="xsd1:stVersion"/>
+					<xs:element name="orderDataUpdate"
+							type="xsd2:ctOrderDataUpdate"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="updateOrderStatus">
+				<xs:sequence>
+					<xs:element name="service"
+							type="xsd1:ctService"/>
+					<xs:element name="param"
+							type="xsd2:ctParamUpdateOrderInfo"/>
+					<xs:element name="version"
+							type="xsd1:stVersion"/>
+					<xs:element name="changeInfo"
+							type="xsd2:ctChangeInfo"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xs1="http://service.profashionsolutions.ru/types_r002"
+				xmlns:xs2="http://service.profashionsolutions.ru/orders_r002"
+				xmlns:xs3="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002"
+				xmlns:xsd1="http://service.profashionsolutions.ru/types_r002"
+				xmlns:xsd2="http://service.profashionsolutions.ru/orders_r002"
+				xmlns:xsd3="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002"
+				targetNamespace="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002"
+				elementFormDefault="qualified">
+			<xs:import namespace="http://service.profashionsolutions.ru/types_r002"/>
+			<xs:import namespace="http://service.profashionsolutions.ru/orders_r002"/>
+			<xs:element name="createOrder">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="service"
+								type="xsd1:ctService"/>
+						<xs:element name="param"
+								type="xsd2:ctParamCreateOrder"
+								nillable="true"/>
+						<xs:element name="version"
+								type="xsd1:stVersion"/>
+						<xs:element name="order"
+								type="xsd2:ctOrder"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="updateOrder">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="service"
+								type="xsd1:ctService"/>
+						<xs:element name="param"
+								type="xsd2:ctParamUpdateOrder"
+								nillable="true"/>
+						<xs:element name="payment"
+								type="xsd2:ctPaymentUpdateOrder"
+								nillable="true"/>
+						<xs:element name="version"
+								type="xsd1:stVersion"/>
+						<xs:element name="order"
+								type="xsd2:ctOrder"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="createOrderResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ctCreateOrderResponse"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="updateOrderResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ctUpdateOrderResponse"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="updateOrderInfo">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="service"
+								type="xsd1:ctService"/>
+						<xs:element name="param"
+								type="xsd2:ctParamUpdateOrderInfo"
+								nillable="true"/>
+						<xs:element name="version"
+								type="xsd1:stVersion"/>
+						<xs:element name="orderDataUpdate"
+								type="xsd2:ctOrderDataUpdate"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="updateOrderInfoResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ctUpdateOrderInfoResponse"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="updateOrderStatus">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="service"
+								type="xsd1:ctService"/>
+						<xs:element name="param"
+								type="xsd2:ctParamUpdateOrderStatus"
+								nillable="true"/>
+						<xs:element name="version"
+								type="xsd1:stVersion"/>
+						<xs:element name="changeInfo"
+								type="xsd2:ctChangeInfo"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="updateOrderStatusResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ctUpdateOrderStatusResponse"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</types>
+	<message name="createOrderRequestMessage">
+		<part name="parameters"
+				element="tns:createOrder"/>
+	</message>
+	<message name="createOrderResponseMessage">
+		<part name="parameters"
+				element="tns:createOrderResponse"/>
+	</message>
+	<message name="updateOrderRequestMessage">
+		<part name="parameters"
+				element="tns:updateOrder"/>
+	</message>
+	<message name="updateOrderResponseMessage">
+		<part name="parameters"
+				element="tns:updateOrderResponse"/>
+	</message>
+	<message name="updateOrderInfoRequestMessage">
+		<part name="parameters"
+				element="tns:updateOrderInfo"/>
+	</message>
+	<message name="updateOrderInfoResponseMessage">
+		<part name="parameters"
+				element="tns:updateOrderInfoResponse"/>
+	</message>
+	<message name="updateOrderStatusRequestMessage">
+		<part name="parameters"
+				element="tns:updateOrderStatus"/>
+	</message>
+	<message name="updateOrderStatusResponseMessage">
+		<part name="parameters"
+				element="tns:updateOrderStatusResponse"/>
+	</message>
+	<portType name="_Orders_r002PortType">
+		<operation name="createOrder">
+			<input name="createOrderRequest"
+					message="tns:createOrderRequestMessage"/>
+			<output name="createOrderResponse"
+					message="tns:createOrderResponseMessage"/>
+		</operation>
+		<operation name="updateOrder">
+			<input name="updateOrderRequest"
+					message="tns:updateOrderRequestMessage"/>
+			<output name="updateOrderResponse"
+					message="tns:updateOrderResponseMessage"/>
+		</operation>
+		<operation name="updateOrderInfo">
+			<input name="updateOrderInfoRequest"
+					message="tns:updateOrderInfoRequestMessage"/>
+			<output name="updateOrderInfoResponse"
+					message="tns:updateOrderInfoResponseMessage"/>
+		</operation>
+		<operation name="updateOrderStatus">
+			<input name="updateOrderStatusRequest"
+					message="tns:updateOrderStatusRequestMessage"/>
+			<output name="updateOrderStatusResponse"
+					message="tns:updateOrderStatusResponseMessage"/>
+		</operation>
+	</portType>
+	<binding name="_Orders_r002SoapBinding"
+			type="tns:_Orders_r002PortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="createOrder">
+			<soapbind:operation style="document"
+					soapAction="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002#_Orders_r002:createOrder"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateOrder">
+			<soapbind:operation style="document"
+					soapAction="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002#_Orders_r002:updateOrder"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateOrderInfo">
+			<soapbind:operation style="document"
+					soapAction="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002#_Orders_r002:updateOrderInfo"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateOrderStatus">
+			<soapbind:operation style="document"
+					soapAction="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002#_Orders_r002:updateOrderStatus"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="_Orders_r002Soap12Binding"
+			type="tns:_Orders_r002PortType">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="createOrder">
+			<soap12bind:operation style="document"
+					soapAction="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002#_Orders_r002:createOrder"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateOrder">
+			<soap12bind:operation style="document"
+					soapAction="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002#_Orders_r002:updateOrder"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateOrderInfo">
+			<soap12bind:operation style="document"
+					soapAction="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002#_Orders_r002:updateOrderInfo"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateOrderStatus">
+			<soap12bind:operation style="document"
+					soapAction="http://service.profashionsolutions.ru/profashion/ws/_Orders_r002#_Orders_r002:updateOrderStatus"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="_Orders_r002">
+		<port name="_Orders_r002Soap"
+				binding="tns:_Orders_r002SoapBinding">
+			<documentation> 
+				<wsi:Claim xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"
+						conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soapbind:address location="http://mw.dev.profashionsolutions.ru/profashion/ws/_Orders_r002"/>
+		</port>
+		<port name="_Orders_r002Soap12"
+				binding="tns:_Orders_r002Soap12Binding">
+			<soap12bind:address location="http://mw.dev.profashionsolutions.ru/profashion/ws/_Orders_r002"/>
+		</port>
+	</service>
+</definitions>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="09892341-fa12-4d85-89d8-a8c724489986">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СтавкиНДС" category="Object">
+				<xr:TypeId>392a6b07-d0ae-4b6c-8f11-e4310e8c0537</xr:TypeId>
+				<xr:ValueId>0069ae8b-269a-4e60-924c-d3fb86241889</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СтавкиНДС" category="Ref">
+				<xr:TypeId>74590fca-95b9-4599-a868-a248355049c3</xr:TypeId>
+				<xr:ValueId>f0cdc931-c15e-46ae-b5b4-fc92ac2b729e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СтавкиНДС" category="Selection">
+				<xr:TypeId>7bf79a75-e900-4c77-bdad-a3dbbf474b37</xr:TypeId>
+				<xr:ValueId>960cb5f7-a3bb-465b-ab7b-5dad15e485f1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СтавкиНДС" category="List">
+				<xr:TypeId>cc068967-b64a-486d-b35f-e7dd240bba2d</xr:TypeId>
+				<xr:ValueId>b26230cf-04be-45c8-bd34-6555eb54a2cd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СтавкиНДС" category="Manager">
+				<xr:TypeId>54e74f7a-7cf5-4ebd-8028-fe1f5e143ef2</xr:TypeId>
+				<xr:ValueId>83f87575-58ea-46f9-a58e-f8329dccb81a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтавкиНДС</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4b47973a-4201-41f6-9d38-8db8f8fbd5ff</ExtendedConfigurationObject>
+			<DescriptionLength>10</DescriptionLength>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="494a9fb4-a3dd-417e-b242-7e6695b20c99">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПеречислениеСтавкаНДС</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>55df6802-1b31-4456-9dee-12a3f95e242f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтавкиНДС</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0a770a92-8bea-468c-87ab-463749b6dbae">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ставка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d55e4703-b136-46a6-b401-0ae82ca1b41c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a4ab87ad-6be3-4cec-a9f6-05b4e3c3be5c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Расчетная</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>33ad92db-e36f-49ab-ab05-1b9873a38475</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="dc26fdc7-6d5b-4f9a-91c8-140fe5037a58">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НеОблагается</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6a5c2f06-624d-4de8-9377-2a3784e415a2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8a3596ae-0e41-4906-bc89-4d40425630a2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидСтавкиНДС</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ff2eda85-cbc1-42df-b95e-1aa01ca47b5b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыСтавокНДС</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandsVisibility>
+		<Command name="Report.спАнализПродажПоСезону.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.спОтчетХитАутНедельный.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.спПродажиПоОтветственным.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.спАРМРаботникаЗала.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.спАРМВозвратТовараИзЗала.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.спИнвентаризацияТСД.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.спПроверкаЦенника.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Report.спАнализПродажПоСезону.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Аналитика</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.спОтчетХитАутНедельный.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Аналитика</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.спПродажиПоОтветственным.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Аналитика</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.спАРМРаботникаЗала.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.спАРМВозвратТовараИзЗала.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.спИнвентаризацияТСД.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.спПроверкаЦенника.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Report.спАнализПродажПоСезону.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Аналитика</CommandGroup>
+		</Command>
+		<Command name="Report.спОтчетХитАутНедельный.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Аналитика</CommandGroup>
+		</Command>
+		<Command name="Report.спПродажиПоОтветственным.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Аналитика</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.спАРМРаботникаЗала.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.спАРМВозвратТовараИзЗала.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.спИнвентаризацияТСД.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.спПроверкаЦенника.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Аналитика</Group>
+		<Group>CommandGroup.Сервис</Group>
+	</GroupsOrder>
+</CommandInterface>

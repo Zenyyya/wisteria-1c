@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПечать" id="4">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать (0)</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="5"/>
+			</Button>
+			<Button name="ПоискПоШтрихкодуПанель" id="6">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<Width>3</Width>
+				<CommandName>0</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.НовыйПоШтрихкоду</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПоискПоШтрихкодуПанельРасширеннаяПодсказка" id="7"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing" callType="Override">сп_ОбработкаОповещения</Event>
+		<Event name="OnOpen" callType="After">сп_ПриОткрытииПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">сп_ПриСозданииНаСервереПосле</Event>
+		<Event name="OnClose" callType="After">сп_ПриЗакрытииПосле</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ШаблонЭтикетки" id="1">
+			<ChoiceParameters>
+				<app:item name="Отбор.ТипШаблона">
+					<app:value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ТипыШаблонов.EnumValue.ЭтикеткаКодМаркировкиИСМП</Value>
+					</app:value>
+				</app:item>
+			</ChoiceParameters>
+			<ContextMenu name="ШаблонЭтикеткиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ШаблонЭтикеткиРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Table name="ШтрихкодыУпаковок" id="8">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ШтрихкодыУпаковокКонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="ШтрихкодыУпаковокКоманднаяПанель" id="10"/>
+			<ExtendedTooltip name="ШтрихкодыУпаковокРасширеннаяПодсказка" id="11"/>
+			<SearchStringAddition name="ШтрихкодыУпаковокСтрокаПоиска" id="12">
+				<AdditionSource>
+					<Item>ШтрихкодыУпаковок</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтрихкодыУпаковокСтрокаПоискаКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ШтрихкодыУпаковокСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ШтрихкодыУпаковокСостояниеПросмотра" id="15">
+				<AdditionSource>
+					<Item>ШтрихкодыУпаковок</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтрихкодыУпаковокСостояниеПросмотраКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ШтрихкодыУпаковокСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ШтрихкодыУпаковокУправлениеПоиском" id="18">
+				<AdditionSource>
+					<Item>ШтрихкодыУпаковок</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтрихкодыУпаковокУправлениеПоискомКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ШтрихкодыУпаковокУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ШтрихкодыУпаковокПометка" id="30">
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ШтрихкодыУпаковокПометкаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ШтрихкодыУпаковокПометкаРасширеннаяПодсказка" id="32"/>
+				</CheckBoxField>
+				<InputField name="ШтрихкодыУпаковокНоменклатура" id="21">
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ШтрихкодыУпаковокНоменклатураКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ШтрихкодыУпаковокНоменклатураРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ШтрихкодыУпаковокЗначениеШтрихкода" id="27">
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ШтрихкодыУпаковокЗначениеШтрихкодаКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ШтрихкодыУпаковокЗначениеШтрихкодаРасширеннаяПодсказка" id="29"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.21">
+		<WindowOpeningMode>DontBlock</WindowOpeningMode>
+		<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+		<Group>Vertical</Group>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<Button name="ФормаПечать" id="4">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать (0)</v8:content>
+						</v8:item>
+					</Title>
+					<ButtonImportance>Main</ButtonImportance>
+					<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="5"/>
+				</Button>
+				<Button name="ПоискПоШтрихкодуПанель" id="6">
+					<Type>CommandBarButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<CommandName>0</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.НовыйПоШтрихкоду</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПоискПоШтрихкодуПанельРасширеннаяПодсказка" id="7"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<InputField name="ШаблонЭтикетки" id="1">
+				<ChoiceParameters>
+					<app:item name="Отбор.ТипШаблона">
+						<app:value xsi:type="FormChoiceListDesTimeValue">
+							<Presentation/>
+							<Value xsi:type="xr:DesignTimeRef">Enum.ТипыШаблонов.EnumValue.ЭтикеткаКодМаркировкиИСМП</Value>
+						</app:value>
+					</app:item>
+				</ChoiceParameters>
+				<ContextMenu name="ШаблонЭтикеткиКонтекстноеМеню" id="2"/>
+				<ExtendedTooltip name="ШаблонЭтикеткиРасширеннаяПодсказка" id="3"/>
+			</InputField>
+			<Table name="ШтрихкодыУпаковок" id="8">
+				<Representation>List</Representation>
+				<ChangeRowSet>false</ChangeRowSet>
+				<ChangeRowOrder>false</ChangeRowOrder>
+				<RowSelectionMode>Cell</RowSelectionMode>
+				<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+				<AutoInsertNewRow>true</AutoInsertNewRow>
+				<EnableStartDrag>true</EnableStartDrag>
+				<EnableDrag>true</EnableDrag>
+				<SearchStringLocation>None</SearchStringLocation>
+				<ViewStatusLocation>None</ViewStatusLocation>
+				<SearchControlLocation>None</SearchControlLocation>
+				<RowFilter xsi:nil="true"/>
+				<ContextMenu name="ШтрихкодыУпаковокКонтекстноеМеню" id="9"/>
+				<AutoCommandBar name="ШтрихкодыУпаковокКоманднаяПанель" id="10"/>
+				<ExtendedTooltip name="ШтрихкодыУпаковокРасширеннаяПодсказка" id="11"/>
+				<SearchStringAddition name="ШтрихкодыУпаковокСтрокаПоиска" id="12">
+					<AdditionSource>
+						<Item>ШтрихкодыУпаковок</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="ШтрихкодыУпаковокСтрокаПоискаКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ШтрихкодыУпаковокСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+				</SearchStringAddition>
+				<ViewStatusAddition name="ШтрихкодыУпаковокСостояниеПросмотра" id="15">
+					<AdditionSource>
+						<Item>ШтрихкодыУпаковок</Item>
+						<Type>ViewStatusRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="ШтрихкодыУпаковокСостояниеПросмотраКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ШтрихкодыУпаковокСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+				</ViewStatusAddition>
+				<SearchControlAddition name="ШтрихкодыУпаковокУправлениеПоиском" id="18">
+					<AdditionSource>
+						<Item>ШтрихкодыУпаковок</Item>
+						<Type>SearchControl</Type>
+					</AdditionSource>
+					<ContextMenu name="ШтрихкодыУпаковокУправлениеПоискомКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ШтрихкодыУпаковокУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+				</SearchControlAddition>
+				<ChildItems>
+					<CheckBoxField name="ШтрихкодыУпаковокПометка" id="30">
+						<EditMode>EnterOnInput</EditMode>
+						<AutoEditMode>true</AutoEditMode>
+						<ContextMenu name="ШтрихкодыУпаковокПометкаКонтекстноеМеню" id="31"/>
+						<ExtendedTooltip name="ШтрихкодыУпаковокПометкаРасширеннаяПодсказка" id="32"/>
+					</CheckBoxField>
+					<InputField name="ШтрихкодыУпаковокНоменклатура" id="21">
+						<ReadOnly>true</ReadOnly>
+						<EditMode>EnterOnInput</EditMode>
+						<AutoEditMode>true</AutoEditMode>
+						<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+						<ContextMenu name="ШтрихкодыУпаковокНоменклатураКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ШтрихкодыУпаковокНоменклатураРасширеннаяПодсказка" id="23"/>
+					</InputField>
+					<InputField name="ШтрихкодыУпаковокЗначениеШтрихкода" id="27">
+						<ReadOnly>true</ReadOnly>
+						<EditMode>EnterOnInput</EditMode>
+						<AutoEditMode>true</AutoEditMode>
+						<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+						<ContextMenu name="ШтрихкодыУпаковокЗначениеШтрихкодаКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="ШтрихкодыУпаковокЗначениеШтрихкодаРасширеннаяПодсказка" id="29"/>
+					</InputField>
+				</ChildItems>
+			</Table>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

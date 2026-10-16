@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="996b1ed7-dfa3-4d9b-b7a1-d7b0579e99a3">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.спБренды" category="Object">
+				<xr:TypeId>e0e25445-546a-4f70-85ca-29a6b7db5f27</xr:TypeId>
+				<xr:ValueId>62182724-7376-4b85-af1d-4db5d25a3282</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.спБренды" category="Ref">
+				<xr:TypeId>61bef402-a8e2-4c9a-9716-b8d4ab809978</xr:TypeId>
+				<xr:ValueId>7eaf9721-aed3-40b8-8083-9090a1ed18ad</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.спБренды" category="Selection">
+				<xr:TypeId>8d54282f-6b15-447b-a083-9612a3818044</xr:TypeId>
+				<xr:ValueId>7338f8dd-77fc-4e02-af21-5f6ea88887af</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.спБренды" category="List">
+				<xr:TypeId>2d081190-e7c5-4141-a40f-e6ed68f263ae</xr:TypeId>
+				<xr:ValueId>506340a9-16a0-41a4-ac2e-0689241ddb70</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.спБренды" category="Manager">
+				<xr:TypeId>77130e09-09cb-4785-a285-0b0f7d6b3271</xr:TypeId>
+				<xr:ValueId>de198e39-be5c-4f4d-b2c9-921603f43a3f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>спБренды</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>81f00e9e-ae2b-4546-adad-287d5680bb7f</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

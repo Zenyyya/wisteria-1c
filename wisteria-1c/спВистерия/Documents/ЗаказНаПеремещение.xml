@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="837fb2c0-3c63-4beb-bdab-f59efd0eea97">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЗаказНаПеремещение" category="Object">
+				<xr:TypeId>5b90ffea-eeba-42ef-a093-cf7b7fa65b7b</xr:TypeId>
+				<xr:ValueId>a8f00d82-a8b1-429d-bc07-378c73d9f35c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЗаказНаПеремещение" category="Ref">
+				<xr:TypeId>729c42e8-35b8-4994-9bed-3c82bd56b997</xr:TypeId>
+				<xr:ValueId>e8d3178d-3c57-4189-94bf-1e728d614793</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЗаказНаПеремещение" category="Selection">
+				<xr:TypeId>7e92f3af-b334-4276-bd47-a82806ca3387</xr:TypeId>
+				<xr:ValueId>ca5cf7cd-88b8-4fdc-a66b-afa7ff20d677</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЗаказНаПеремещение" category="List">
+				<xr:TypeId>7377d0dd-ea42-414a-9baf-81ed3127f42e</xr:TypeId>
+				<xr:ValueId>257d83c2-0bc8-45a8-ac58-28b142dc9b15</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЗаказНаПеремещение" category="Manager">
+				<xr:TypeId>1c66889e-059f-4df8-95c6-9f3837ca9363</xr:TypeId>
+				<xr:ValueId>2dce3b42-76fa-4410-8d23-3479dd10efe2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаказНаПеремещение</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3796c5ec-3508-4ddc-925a-9b47137f26bc</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

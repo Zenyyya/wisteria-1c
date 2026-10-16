@@ -1,0 +1,1983 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаОбработкаСообщений" id="103">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обработка сообщений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаОбработкаСообщенийРасширеннаяПодсказка" id="104"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаОбработкаСообщенийПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="ГруппаОтправкаСобщений" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка собщений</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отправка собщений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаОтправкаСобщенийРасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<CommandBar name="ГруппаОтправка" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отправка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отправка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаОтправкаРасширеннаяПодсказка" id="108"/>
+							<ChildItems>
+								<Button name="ФормаОбновитьСтатусы" id="32">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ОбновитьСтатусы</CommandName>
+									<ExtendedTooltip name="ФормаОбновитьСтатусыРасширеннаяПодсказка" id="33"/>
+								</Button>
+								<Button name="ФормаОтправитьСообщенияНоменклатура" id="34">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ОтправитьСообщенияНоменклатура</CommandName>
+									<ExtendedTooltip name="ФормаОтправитьСообщенияНоменклатураРасширеннаяПодсказка" id="35"/>
+								</Button>
+								<Button name="ФормаОтправитьСообщенияДокумент" id="36">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ОтправитьСообщенияДокумент</CommandName>
+									<ExtendedTooltip name="ФормаОтправитьСообщенияДокументРасширеннаяПодсказка" id="37"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="ГруппаДополнительныеРеквизиты" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дополнительные реквизиты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дополнительные реквизиты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<InputField name="СтатусСообщенияДокумент" id="320">
+									<DataPath>СтатусСообщенияДокумент</DataPath>
+									<ClearButton>true</ClearButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ожидает отправки номенклатуры</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ОжидаетОтправкиНоменклатуры</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ожидает подтверждения номенклатуры</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ОжидаетПодтвержденияНоменклатуры</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Номенклатура подтверждена</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">НоменклатураПодтверждена</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ошибка данных сообшения номенклатуры</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ОшибкаДанныхСообшенияНоменклатуры</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ошибка отправки номенклатуры</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ОшибкаОтправкиНоменклатуры</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ожидает отправки</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ОжидаетОтправки</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Отправлен</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Отправлена</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Подтверждена</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Подтверждена</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ошибка данных сообщения</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ОшибкаДанныхСообшения</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ошибка отправки</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ОшибкаОтправки</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СтатусСообщенияДокументКонтекстноеМеню" id="321"/>
+									<ExtendedTooltip name="СтатусСообщенияДокументРасширеннаяПодсказка" id="322"/>
+									<Events>
+										<Event name="OnChange">СтатусСообщенияДокументПриИзменении</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="ТребуютОтправки" id="38">
+									<DataPath>ТребуютОтправки</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ContextMenu name="ТребуютОтправкиКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ТребуютОтправкиРасширеннаяПодсказка" id="40"/>
+									<Events>
+										<Event name="OnChange">ТребуютОтправкиПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="ТипОбъекта" id="43">
+									<DataPath>ТипОбъекта</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="45"/>
+									<Events>
+										<Event name="StartChoice">ТипОбъектаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаОбновления" id="89">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа обновления</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа обновления</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОбновленияРасширеннаяПодсказка" id="90"/>
+									<ChildItems>
+										<CheckBoxField name="АвтоматическоеОбновление" id="91">
+											<DataPath>АвтоматическоеОбновление</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ContextMenu name="АвтоматическоеОбновлениеКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="АвтоматическоеОбновлениеРасширеннаяПодсказка" id="93"/>
+										</CheckBoxField>
+										<InputField name="ИнтервалОбновленияСтатусов" id="80">
+											<DataPath>ИнтервалОбновленияСтатусов</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Интервал обновления статусов (мин.)</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИнтервалОбновленияСтатусовКонтекстноеМеню" id="81"/>
+											<ExtendedTooltip name="ИнтервалОбновленияСтатусовРасширеннаяПодсказка" id="82"/>
+											<Events>
+												<Event name="OnChange">ИнтервалОбновленияСтатусовПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="Документы" id="46">
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Документы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДокументыКонтекстноеМеню" id="47"/>
+							<AutoCommandBar name="ДокументыКоманднаяПанель" id="48">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДокументыУстановитьВсеФлажки" id="99">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьВсеФлажки</CommandName>
+										<ExtendedTooltip name="ДокументыУстановитьВсеФлажкиРасширеннаяПодсказка" id="100"/>
+									</Button>
+									<Button name="ДокументыСнятьВсеФлажки" id="101">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьВсеФлажки</CommandName>
+										<ExtendedTooltip name="ДокументыСнятьВсеФлажкиРасширеннаяПодсказка" id="102"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДокументыРасширеннаяПодсказка" id="49"/>
+							<SearchStringAddition name="ДокументыСтрокаПоиска" id="50">
+								<AdditionSource>
+									<Item>Документы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыСтрокаПоискаКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="ДокументыСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДокументыСостояниеПросмотра" id="53">
+								<AdditionSource>
+									<Item>Документы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыСостояниеПросмотраКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="ДокументыСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДокументыУправлениеПоиском" id="56">
+								<AdditionSource>
+									<Item>Документы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыУправлениеПоискомКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ДокументыУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДокументыВыбор</Event>
+								<Event name="BeforeAddRow">ДокументыПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ДокументыПередУдалением</Event>
+								<Event name="BeforeRowChange">ДокументыПередНачаломИзменения</Event>
+								<Event name="OnActivateCell">ДокументыПриАктивизацииЯчейки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ДокументыНомерСтроки" id="59">
+									<DataPath>Объект.Документы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>3</Width>
+									<ContextMenu name="ДокументыНомерСтрокиКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ДокументыНомерСтрокиРасширеннаяПодсказка" id="61"/>
+								</LabelField>
+								<CheckBoxField name="ДокументыФлажек" id="62">
+									<DataPath>Объект.Документы.Флажек</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыФлажекКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ДокументыФлажекРасширеннаяПодсказка" id="64"/>
+								</CheckBoxField>
+								<InputField name="ДокументыДатаИзменения" id="65">
+									<DataPath>Объект.Документы.ДатаИзменения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДокументыДатаИзмененияКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ДокументыДатаИзмененияРасширеннаяПодсказка" id="67"/>
+								</InputField>
+								<InputField name="ДокументыСсылкаНаОбъектДокумент" id="68">
+									<DataPath>Объект.Документы.СсылкаНаОбъектДокумент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДокументыСсылкаНаОбъектДокументКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ДокументыСсылкаНаОбъектДокументРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ДокументыСтатус" id="83">
+									<DataPath>Объект.Документы.Статус</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>15</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДокументыСтатусКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ДокументыСтатусРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ДокументыТекстоваяИнформацияОшибки" id="96">
+									<DataPath>Объект.Документы.ТекстоваяИнформацияОшибки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>40</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДокументыТекстоваяИнформацияОшибкиКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ДокументыТекстоваяИнформацияОшибкиРасширеннаяПодсказка" id="98"/>
+								</InputField>
+								<LabelField name="ДокументыСообщенийНоменклатуры" id="77">
+									<DataPath>Объект.Документы.СообщенийНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыСообщенийНоменклатурыКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ДокументыСообщенийНоменклатурыРасширеннаяПодсказка" id="79"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтатусы" id="109">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статусы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа статусы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаСтатусыРасширеннаяПодсказка" id="110"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройки" id="315">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="316"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСправа" id="307">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа справа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа справа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСправаРасширеннаяПодсказка" id="308"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаПолучитьСтатус" id="186">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получить статус</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа получить статус</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаПолучитьСтатусРасширеннаяПодсказка" id="187"/>
+											<ChildItems>
+												<Button name="ПолучитьСтатус" id="142">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ПолучитьСтатус</CommandName>
+													<ExtendedTooltip name="ПолучитьСтатусРасширеннаяПодсказка" id="143"/>
+												</Button>
+												<InputField name="СсылкаНаОбъект" id="139">
+													<DataPath>СсылкаНаОбъект</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="СсылкаНаОбъектКонтекстноеМеню" id="140"/>
+													<ExtendedTooltip name="СсылкаНаОбъектРасширеннаяПодсказка" id="141"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОбработатьСообщения" id="188">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обработать сообщения</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа обработать сообщения</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаОбработатьСообщенияРасширеннаяПодсказка" id="189"/>
+											<ChildItems>
+												<InputField name="СтатусОтправкиСообщения" id="181">
+													<DataPath>СтатусОтправкиСообщения</DataPath>
+													<ClearButton>true</ClearButton>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="СтатусОтправкиСообщенияКонтекстноеМеню" id="182"/>
+													<ExtendedTooltip name="СтатусОтправкиСообщенияРасширеннаяПодсказка" id="183"/>
+												</InputField>
+												<CheckBoxField name="ОчиститьРегистрОтправленныеСообщения" id="190">
+													<DataPath>ОчиститьРегистрОтправленныеСообщения</DataPath>
+													<ContextMenu name="ОчиститьРегистрОтправленныеСообщенияКонтекстноеМеню" id="191"/>
+													<ExtendedTooltip name="ОчиститьРегистрОтправленныеСообщенияРасширеннаяПодсказка" id="192"/>
+												</CheckBoxField>
+												<Button name="ОбработатьСообщения" id="184">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ОбработатьСообщения</CommandName>
+													<ExtendedTooltip name="ОбработатьСообщенияРасширеннаяПодсказка" id="185"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСлева" id="309">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа слева</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа слева</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСлеваРасширеннаяПодсказка" id="310"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаУдаление" id="311">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удаление сообщений из регистров</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа удаление</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаУдалениеРасширеннаяПодсказка" id="312"/>
+											<ChildItems>
+												<CheckBoxField name="ОчиститьРегистрОтправленныеСообщенияПриУдалении" id="317">
+													<DataPath>ОчиститьРегистрОтправленныеСообщенияПриУдалении</DataPath>
+													<ContextMenu name="ОчиститьРегистрОтправленныеСообщенияПриУдаленииКонтекстноеМеню" id="318"/>
+													<ExtendedTooltip name="ОчиститьРегистрОтправленныеСообщенияПриУдаленииРасширеннаяПодсказка" id="319"/>
+												</CheckBoxField>
+												<Button name="УдалениеСообщений" id="313">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.УдалениеСообщений</CommandName>
+													<ExtendedTooltip name="УдалениеСообщенийРасширеннаяПодсказка" id="314"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаСтатусовСообщений" id="144">
+							<Representation>List</Representation>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаСтатусовСообщений</DataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаСтатусовСообщенийКонтекстноеМеню" id="145"/>
+							<AutoCommandBar name="ТаблицаСтатусовСообщенийКоманднаяПанель" id="146">
+								<ChildItems>
+									<Button name="ТаблицаСтатусовСообщенийВыбратьВсе" id="193">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьВсеТаблицаСтатусовСообщений</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выбрать флажки</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ТаблицаСтатусовСообщенийВыбратьВсеРасширеннаяПодсказка" id="194"/>
+									</Button>
+									<Button name="ТаблицаСтатусовСообщенийСнятьВсе" id="195">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьВсеТаблицаСтатусовСообщений</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Снять флажки</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ТаблицаСтатусовСообщенийСнятьВсеРасширеннаяПодсказка" id="196"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаСтатусовСообщенийРасширеннаяПодсказка" id="147"/>
+							<SearchStringAddition name="ТаблицаСтатусовСообщенийСтрокаПоиска" id="148">
+								<AdditionSource>
+									<Item>ТаблицаСтатусовСообщений</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСтатусовСообщенийСтрокаПоискаКонтекстноеМеню" id="149"/>
+								<ExtendedTooltip name="ТаблицаСтатусовСообщенийСтрокаПоискаРасширеннаяПодсказка" id="150"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаСтатусовСообщенийСостояниеПросмотра" id="151">
+								<AdditionSource>
+									<Item>ТаблицаСтатусовСообщений</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСтатусовСообщенийСостояниеПросмотраКонтекстноеМеню" id="152"/>
+								<ExtendedTooltip name="ТаблицаСтатусовСообщенийСостояниеПросмотраРасширеннаяПодсказка" id="153"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаСтатусовСообщенийУправлениеПоиском" id="154">
+								<AdditionSource>
+									<Item>ТаблицаСтатусовСообщений</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСтатусовСообщенийУправлениеПоискомКонтекстноеМеню" id="155"/>
+								<ExtendedTooltip name="ТаблицаСтатусовСообщенийУправлениеПоискомРасширеннаяПодсказка" id="156"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ТаблицаСтатусовСообщенийПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="ТаблицаСтатусовСообщенийФлажок" id="175">
+									<DataPath>ТаблицаСтатусовСообщений.Флажок</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТаблицаСтатусовСообщенийФлажокКонтекстноеМеню" id="176"/>
+									<ExtendedTooltip name="ТаблицаСтатусовСообщенийФлажокРасширеннаяПодсказка" id="177"/>
+								</CheckBoxField>
+								<InputField name="ТаблицаСтатусовСообщенийДатаРегистрации" id="157">
+									<DataPath>ТаблицаСтатусовСообщений.ДатаРегистрации</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаСтатусовСообщенийДатаРегистрацииКонтекстноеМеню" id="158"/>
+									<ExtendedTooltip name="ТаблицаСтатусовСообщенийДатаРегистрацииРасширеннаяПодсказка" id="159"/>
+								</InputField>
+								<LabelField name="ТаблицаСтатусовСообщенийИдентификаторСобытия" id="160">
+									<DataPath>ТаблицаСтатусовСообщений.ИдентификаторСобытия</DataPath>
+									<Visible>false</Visible>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТаблицаСтатусовСообщенийИдентификаторСобытияКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="ТаблицаСтатусовСообщенийИдентификаторСобытияРасширеннаяПодсказка" id="162"/>
+								</LabelField>
+								<InputField name="ТаблицаСтатусовСообщенийСсылкаНаОбъект" id="163">
+									<DataPath>ТаблицаСтатусовСообщений.СсылкаНаОбъект</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаСтатусовСообщенийСсылкаНаОбъектКонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="ТаблицаСтатусовСообщенийСсылкаНаОбъектРасширеннаяПодсказка" id="165"/>
+								</InputField>
+								<InputField name="ТаблицаСтатусовСообщенийСпособПередачи" id="166">
+									<DataPath>ТаблицаСтатусовСообщений.СпособПередачи</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаСтатусовСообщенийСпособПередачиКонтекстноеМеню" id="167"/>
+									<ExtendedTooltip name="ТаблицаСтатусовСообщенийСпособПередачиРасширеннаяПодсказка" id="168"/>
+								</InputField>
+								<InputField name="ТаблицаСтатусовСообщенийСтатусСообщения" id="169">
+									<DataPath>ТаблицаСтатусовСообщений.СтатусСообщения</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаСтатусовСообщенийСтатусСообщенияКонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="ТаблицаСтатусовСообщенийСтатусСообщенияРасширеннаяПодсказка" id="171"/>
+								</InputField>
+								<InputField name="ТаблицаСтатусовСообщенийИдентификаторСобытияСтрока" id="172">
+									<DataPath>ТаблицаСтатусовСообщений.ИдентификаторСобытияСтрока</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаСтатусовСообщенийИдентификаторСобытияСтрокаКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="ТаблицаСтатусовСообщенийИдентификаторСобытияСтрокаРасширеннаяПодсказка" id="174"/>
+								</InputField>
+								<InputField name="ТаблицаСтатусовСообщенийИнициаторОтправкиСсылкаНаОбъект" id="197">
+									<DataPath>ТаблицаСтатусовСообщений.ИнициаторОтправкиСсылкаНаОбъект</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаСтатусовСообщенийИнициаторОтправкиСсылкаНаОбъектКонтекстноеМеню" id="198"/>
+									<ExtendedTooltip name="ТаблицаСтатусовСообщенийИнициаторОтправкиСсылкаНаОбъектРасширеннаяПодсказка" id="199"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПереОтправкиСообщений" id="200">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переотправка сообщений</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пере отправки сообщений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаПереОтправкиСообщенийРасширеннаяПодсказка" id="201"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаИнициаторыОтправки" id="202">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инициаторы отправки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа инициаторы отправки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаИнициаторыОтправкиРасширеннаяПодсказка" id="203"/>
+							<ChildItems>
+								<Table name="ТаблицаИнициаторыОтправки" id="204">
+									<Representation>List</Representation>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ТаблицаИнициаторыОтправки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Инициаторы отправки</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSet>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+										<ExcludedCommand>SearchHistory</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТаблицаИнициаторыОтправкиКонтекстноеМеню" id="205">
+										<ChildItems>
+											<Button name="ТаблицаИнициаторыОтправкиКонтекстноеМенюКонтекстноеПодменюЗаполнитьТаблицуПодчиненныеНаОсновании" id="280">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.КонтекстноеПодменюЗаполнитьТаблицуПодчиненныеНаОсновании</CommandName>
+												<ExtendedTooltip name="ТаблицаИнициаторыОтправкиКонтекстноеМенюКонтекстноеПодменюЗаполнитьТаблицуПодчиненныеНаОснованииРасширеннаяПодсказка" id="281"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ТаблицаИнициаторыОтправкиКоманднаяПанель" id="206">
+										<ChildItems>
+											<Button name="ТаблицаИнициаторыОтправкиУстановитьВсеТаблицаИнициаторыОтправки" id="282">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьВсеТаблицаИнициаторыОтправки</CommandName>
+												<ExtendedTooltip name="ТаблицаИнициаторыОтправкиУстановитьВсеТаблицаИнициаторыОтправкиРасширеннаяПодсказка" id="283"/>
+											</Button>
+											<Button name="ТаблицаИнициаторыОтправкиСнятьВсеТаблицаИнициаторыОтправки" id="284">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СнятьВсеТаблицаИнициаторыОтправки</CommandName>
+												<ExtendedTooltip name="ТаблицаИнициаторыОтправкиСнятьВсеТаблицаИнициаторыОтправкиРасширеннаяПодсказка" id="285"/>
+											</Button>
+											<Button name="ТаблицаИнициаторыОтправкиОбновитьТаблицаИнициаторыОтправки" id="303">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбновитьТаблицаИнициаторыОтправки</CommandName>
+												<ExtendedTooltip name="ТаблицаИнициаторыОтправкиОбновитьТаблицаИнициаторыОтправкиРасширеннаяПодсказка" id="304"/>
+											</Button>
+											<Button name="ТаблицаИнициаторыОтправкиПолучитьДанныеТаблицаИнициаторыОтправки" id="294">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПолучитьДанныеТаблицаИнициаторыОтправки</CommandName>
+												<ExtendedTooltip name="ТаблицаИнициаторыОтправкиПолучитьДанныеТаблицаИнициаторыОтправкиРасширеннаяПодсказка" id="295"/>
+											</Button>
+											<Button name="ТаблицаИнициаторыОтправкиПроверитьВозможностьОтправкиТаблицаИнициаторыОтправки" id="296">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПроверитьВозможностьОтправкиТаблицаИнициаторыОтправки</CommandName>
+												<ExtendedTooltip name="ТаблицаИнициаторыОтправкиПроверитьВозможностьОтправкиТаблицаИнициаторыОтправкиРасширеннаяПодсказка" id="297"/>
+											</Button>
+											<Button name="ТаблицаИнициаторыОтправкиОтправитьСообщенияТаблицаИнициаторыОтправки" id="298">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОтправитьСообщенияТаблицаИнициаторыОтправки</CommandName>
+												<ExtendedTooltip name="ТаблицаИнициаторыОтправкиОтправитьСообщенияТаблицаИнициаторыОтправкиРасширеннаяПодсказка" id="299"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТаблицаИнициаторыОтправкиРасширеннаяПодсказка" id="207"/>
+									<SearchStringAddition name="ТаблицаИнициаторыОтправкиСтрокаПоиска" id="208">
+										<AdditionSource>
+											<Item>ТаблицаИнициаторыОтправки</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаИнициаторыОтправкиСтрокаПоискаКонтекстноеМеню" id="209"/>
+										<ExtendedTooltip name="ТаблицаИнициаторыОтправкиСтрокаПоискаРасширеннаяПодсказка" id="210"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаИнициаторыОтправкиСостояниеПросмотра" id="211">
+										<AdditionSource>
+											<Item>ТаблицаИнициаторыОтправки</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаИнициаторыОтправкиСостояниеПросмотраКонтекстноеМеню" id="212"/>
+										<ExtendedTooltip name="ТаблицаИнициаторыОтправкиСостояниеПросмотраРасширеннаяПодсказка" id="213"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаИнициаторыОтправкиУправлениеПоиском" id="214">
+										<AdditionSource>
+											<Item>ТаблицаИнициаторыОтправки</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаИнициаторыОтправкиУправлениеПоискомКонтекстноеМеню" id="215"/>
+										<ExtendedTooltip name="ТаблицаИнициаторыОтправкиУправлениеПоискомРасширеннаяПодсказка" id="216"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnChange">ТаблицаИнициаторыОтправкиПриИзменении</Event>
+									</Events>
+									<ChildItems>
+										<CheckBoxField name="ТаблицаИнициаторыОтправкиФлажок" id="235">
+											<DataPath>ТаблицаИнициаторыОтправки.Флажок</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ТаблицаИнициаторыОтправкиФлажокКонтекстноеМеню" id="236"/>
+											<ExtendedTooltip name="ТаблицаИнициаторыОтправкиФлажокРасширеннаяПодсказка" id="237"/>
+										</CheckBoxField>
+										<InputField name="ТаблицаИнициаторыОтправкиДатаРегистрации" id="217">
+											<DataPath>ТаблицаИнициаторыОтправки.ДатаРегистрации</DataPath>
+											<Enabled>false</Enabled>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаИнициаторыОтправкиДатаРегистрацииКонтекстноеМеню" id="218"/>
+											<ExtendedTooltip name="ТаблицаИнициаторыОтправкиДатаРегистрацииРасширеннаяПодсказка" id="219"/>
+										</InputField>
+										<InputField name="ТаблицаИнициаторыОтправкиСсылкаНаОбъект" id="223">
+											<DataPath>ТаблицаИнициаторыОтправки.СсылкаНаОбъект</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаИнициаторыОтправкиСсылкаНаОбъектКонтекстноеМеню" id="224"/>
+											<ExtendedTooltip name="ТаблицаИнициаторыОтправкиСсылкаНаОбъектРасширеннаяПодсказка" id="225"/>
+										</InputField>
+										<LabelField name="ТаблицаИнициаторыОтправкиИдентификаторСобытия" id="220">
+											<DataPath>ТаблицаИнициаторыОтправки.ИдентификаторСобытия</DataPath>
+											<Visible>false</Visible>
+											<Enabled>false</Enabled>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ТаблицаИнициаторыОтправкиИдентификаторСобытияКонтекстноеМеню" id="221"/>
+											<ExtendedTooltip name="ТаблицаИнициаторыОтправкиИдентификаторСобытияРасширеннаяПодсказка" id="222"/>
+										</LabelField>
+										<InputField name="ТаблицаИнициаторыОтправкиСпособПередачи" id="226">
+											<DataPath>ТаблицаИнициаторыОтправки.СпособПередачи</DataPath>
+											<Enabled>false</Enabled>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаИнициаторыОтправкиСпособПередачиКонтекстноеМеню" id="227"/>
+											<ExtendedTooltip name="ТаблицаИнициаторыОтправкиСпособПередачиРасширеннаяПодсказка" id="228"/>
+										</InputField>
+										<InputField name="ТаблицаИнициаторыОтправкиСтатусСообщения" id="229">
+											<DataPath>ТаблицаИнициаторыОтправки.СтатусСообщения</DataPath>
+											<Enabled>false</Enabled>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаИнициаторыОтправкиСтатусСообщенияКонтекстноеМеню" id="230"/>
+											<ExtendedTooltip name="ТаблицаИнициаторыОтправкиСтатусСообщенияРасширеннаяПодсказка" id="231"/>
+										</InputField>
+										<CheckBoxField name="ТаблицаИнициаторыОтправкиОтправкаНоменклатурыПодтверждена" id="300">
+											<DataPath>ТаблицаИнициаторыОтправки.ОтправкаНоменклатурыПодтверждена</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ТаблицаИнициаторыОтправкиОтправкаНоменклатурыПодтвержденаКонтекстноеМеню" id="301"/>
+											<ExtendedTooltip name="ТаблицаИнициаторыОтправкиОтправкаНоменклатурыПодтвержденаРасширеннаяПодсказка" id="302"/>
+										</CheckBoxField>
+										<InputField name="ТаблицаИнициаторыОтправкиИдентификаторСобытияСтрока" id="232">
+											<DataPath>ТаблицаИнициаторыОтправки.ИдентификаторСобытияСтрока</DataPath>
+											<Enabled>false</Enabled>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаИнициаторыОтправкиИдентификаторСобытияСтрокаКонтекстноеМеню" id="233"/>
+											<ExtendedTooltip name="ТаблицаИнициаторыОтправкиИдентификаторСобытияСтрокаРасширеннаяПодсказка" id="234"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПодчиненныеСообщения" id="238">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подчиненные сообщения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подчиненные сообщения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаПодчиненныеСообщенияРасширеннаяПодсказка" id="239"/>
+							<ChildItems>
+								<Table name="ТаблицаПодчиненныеСообщения" id="240">
+									<Representation>List</Representation>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ТаблицаПодчиненныеСообщения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подчиненные сообщения</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSet>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+										<ExcludedCommand>SearchHistory</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТаблицаПодчиненныеСообщенияКонтекстноеМеню" id="241"/>
+									<AutoCommandBar name="ТаблицаПодчиненныеСообщенияКоманднаяПанель" id="242">
+										<ChildItems>
+											<Button name="ТаблицаПодчиненныеСообщенияУстановитьВсеТаблицаПодчиненныеСообщения" id="286">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьВсеТаблицаПодчиненныеСообщения</CommandName>
+												<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияУстановитьВсеТаблицаПодчиненныеСообщенияРасширеннаяПодсказка" id="287"/>
+											</Button>
+											<Button name="ТаблицаПодчиненныеСообщенияСнятьВсеТаблицаПодчиненныеСообщения" id="288">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СнятьВсеТаблицаПодчиненныеСообщения</CommandName>
+												<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияСнятьВсеТаблицаПодчиненныеСообщенияРасширеннаяПодсказка" id="289"/>
+											</Button>
+											<Button name="ТаблицаПодчиненныеСообщенияОбновитьТаблицаПодчиненныеСообщения" id="305">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбновитьТаблицаПодчиненныеСообщения</CommandName>
+												<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияОбновитьТаблицаПодчиненныеСообщенияРасширеннаяПодсказка" id="306"/>
+											</Button>
+											<Button name="ТаблицаПодчиненныеСообщенияПолучитьДанныеТаблицаПодчиненныеСообщения" id="292">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПолучитьДанныеТаблицаПодчиненныеСообщения</CommandName>
+												<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияПолучитьДанныеТаблицаПодчиненныеСообщенияРасширеннаяПодсказка" id="293"/>
+											</Button>
+											<Button name="ТаблицаПодчиненныеСообщенияОтправитьСообщениеТаблицаПодчиненныеСообщения" id="290">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОтправитьСообщениеТаблицаПодчиненныеСообщения</CommandName>
+												<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияОтправитьСообщениеТаблицаПодчиненныеСообщенияРасширеннаяПодсказка" id="291"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияРасширеннаяПодсказка" id="243"/>
+									<SearchStringAddition name="ТаблицаПодчиненныеСообщенияСтрокаПоиска" id="244">
+										<AdditionSource>
+											<Item>ТаблицаПодчиненныеСообщения</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаПодчиненныеСообщенияСтрокаПоискаКонтекстноеМеню" id="245"/>
+										<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияСтрокаПоискаРасширеннаяПодсказка" id="246"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаПодчиненныеСообщенияСостояниеПросмотра" id="247">
+										<AdditionSource>
+											<Item>ТаблицаПодчиненныеСообщения</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаПодчиненныеСообщенияСостояниеПросмотраКонтекстноеМеню" id="248"/>
+										<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияСостояниеПросмотраРасширеннаяПодсказка" id="249"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаПодчиненныеСообщенияУправлениеПоиском" id="250">
+										<AdditionSource>
+											<Item>ТаблицаПодчиненныеСообщения</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаПодчиненныеСообщенияУправлениеПоискомКонтекстноеМеню" id="251"/>
+										<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияУправлениеПоискомРасширеннаяПодсказка" id="252"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnChange">ТаблицаПодчиненныеСообщенияПриИзменении</Event>
+									</Events>
+									<ChildItems>
+										<CheckBoxField name="ТаблицаПодчиненныеСообщенияФлажок" id="271">
+											<DataPath>ТаблицаПодчиненныеСообщения.Флажок</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ТаблицаПодчиненныеСообщенияФлажокКонтекстноеМеню" id="272"/>
+											<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияФлажокРасширеннаяПодсказка" id="273"/>
+										</CheckBoxField>
+										<InputField name="ТаблицаПодчиненныеСообщенияДатаРегистрации" id="253">
+											<DataPath>ТаблицаПодчиненныеСообщения.ДатаРегистрации</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаПодчиненныеСообщенияДатаРегистрацииКонтекстноеМеню" id="254"/>
+											<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияДатаРегистрацииРасширеннаяПодсказка" id="255"/>
+										</InputField>
+										<LabelField name="ТаблицаПодчиненныеСообщенияИдентификаторСобытия" id="256">
+											<DataPath>ТаблицаПодчиненныеСообщения.ИдентификаторСобытия</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ТаблицаПодчиненныеСообщенияИдентификаторСобытияКонтекстноеМеню" id="257"/>
+											<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияИдентификаторСобытияРасширеннаяПодсказка" id="258"/>
+										</LabelField>
+										<InputField name="ТаблицаПодчиненныеСообщенияСсылкаНаОбъект" id="259">
+											<DataPath>ТаблицаПодчиненныеСообщения.СсылкаНаОбъект</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаПодчиненныеСообщенияСсылкаНаОбъектКонтекстноеМеню" id="260"/>
+											<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияСсылкаНаОбъектРасширеннаяПодсказка" id="261"/>
+										</InputField>
+										<InputField name="ТаблицаПодчиненныеСообщенияСпособПередачи" id="262">
+											<DataPath>ТаблицаПодчиненныеСообщения.СпособПередачи</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаПодчиненныеСообщенияСпособПередачиКонтекстноеМеню" id="263"/>
+											<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияСпособПередачиРасширеннаяПодсказка" id="264"/>
+										</InputField>
+										<InputField name="ТаблицаПодчиненныеСообщенияСтатусСообщения" id="265">
+											<DataPath>ТаблицаПодчиненныеСообщения.СтатусСообщения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаПодчиненныеСообщенияСтатусСообщенияКонтекстноеМеню" id="266"/>
+											<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияСтатусСообщенияРасширеннаяПодсказка" id="267"/>
+										</InputField>
+										<InputField name="ТаблицаПодчиненныеСообщенияИдентификаторСобытияСтрока" id="268">
+											<DataPath>ТаблицаПодчиненныеСообщения.ИдентификаторСобытияСтрока</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаПодчиненныеСообщенияИдентификаторСобытияСтрокаКонтекстноеМеню" id="269"/>
+											<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияИдентификаторСобытияСтрокаРасширеннаяПодсказка" id="270"/>
+										</InputField>
+										<InputField name="ТаблицаПодчиненныеСообщенияИнициаторОтправкиСсылкаНаОбъект" id="274">
+											<DataPath>ТаблицаПодчиненныеСообщения.ИнициаторОтправкиСсылкаНаОбъект</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаПодчиненныеСообщенияИнициаторОтправкиСсылкаНаОбъектКонтекстноеМеню" id="275"/>
+											<ExtendedTooltip name="ТаблицаПодчиненныеСообщенияИнициаторОтправкиСсылкаНаОбъектРасширеннаяПодсказка" id="276"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.спОтправкаСообщений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТребуютОтправки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Требуют отправки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипОбъекта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип объекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнтервалОбновленияСтатусов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервал обновления статусов (мин.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоматическоеОбновление" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическое обновление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СообщеняОтправки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщеня отправки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТаблицаСтатусовСообщений" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица статусов сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаРегистрации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторСобытия" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор события</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СсылкаНаОбъект" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПеремещениеЗапасов</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПриходнаяНакладная</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПеремещение</v8:Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СпособПередачи" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ передачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.спСпособПередачи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусСообщения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.спСтатусыСообщений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторСобытияСтрока" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Флажок" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флажок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИнициаторОтправкиСсылкаНаОбъект" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инициатор отправки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СсылкаНаОбъект" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ПеремещениеЗапасов</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПриходнаяНакладная</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗаказНаПеремещение</v8:Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусИзменения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусОтправкиСообщения" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус отправки сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.спСтатусыСообщений</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОчиститьРегистрОтправленныеСообщения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить регистр отправленные сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаПодчиненныеСообщения" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подчиненные сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаРегистрации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторСобытия" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор события</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СсылкаНаОбъект" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СпособПередачи" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ передачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.спСпособПередачи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусСообщения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.спСтатусыСообщений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторСобытияСтрока" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Флажок" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флажок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИнициаторОтправкиСсылкаНаОбъект" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инициатор отправки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаИнициаторыОтправки" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инициаторы отправки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаРегистрации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторСобытия" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор события</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СсылкаНаОбъект" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПеремещениеЗапасов</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПриходнаяНакладная</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПеремещение</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СпособПередачи" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ передачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.спСпособПередачи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусСообщения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.спСтатусыСообщений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторСобытияСтрока" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Флажок" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флажок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОтправкаНоменклатурыПодтверждена" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатуры подтверждена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОчиститьРегистрОтправленныеСообщенияПриУдалении" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить регистр отправленные сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусСообщенияДокумент" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус сообщения документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСтатусы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить статусы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить статусы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСтатусы</Action>
+		</Command>
+		<Command name="ОтправитьСообщенияНоменклатура" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщения номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщения номенклатура</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьСообщенияНоменклатура</Action>
+		</Command>
+		<Command name="ОтправитьСообщенияДокумент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщения документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщения документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьСообщенияДокумент</Action>
+		</Command>
+		<Command name="УстановитьВсеФлажки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьВсеФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СнятьВсеФлажки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьВсеФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПолучитьСтатус" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить статус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить статус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСтатус</Action>
+		</Command>
+		<Command name="ОбработатьСообщения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработатьСообщения</Action>
+		</Command>
+		<Command name="УстановитьВсеТаблицаСтатусовСообщений" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все таблица статусов сообщений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьВсеТаблицаСтатусовСообщений</Action>
+		</Command>
+		<Command name="СнятьВсеТаблицаСтатусовСообщений" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все таблица статусов сообщений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьВсеТаблицаСтатусовСообщений</Action>
+		</Command>
+		<Command name="КонтекстноеПодменюЗаполнитьТаблицуПодчиненныеНаОсновании" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу подчиненные на основании</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контекстное подменю заполнить таблицу подчиненные на основании</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КонтекстноеПодменюЗаполнитьТаблицуПодчиненныеНаОсновании</Action>
+		</Command>
+		<Command name="СнятьВсеТаблицаИнициаторыОтправки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все таблица инициаторы отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьВсеТаблицаИнициаторыОтправки</Action>
+		</Command>
+		<Command name="УстановитьВсеТаблицаИнициаторыОтправки" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все таблица инициаторы отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьВсеТаблицаИнициаторыОтправки</Action>
+		</Command>
+		<Command name="СнятьВсеТаблицаПодчиненныеСообщения" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все таблица подчиненные сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьВсеТаблицаПодчиненныеСообщения</Action>
+		</Command>
+		<Command name="УстановитьВсеТаблицаПодчиненныеСообщения" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все таблица подчиненные сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьВсеТаблицаПодчиненныеСообщения</Action>
+		</Command>
+		<Command name="ОтправитьСообщениеТаблицаПодчиненныеСообщения" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщение таблица подчиненные сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьСообщениеТаблицаПодчиненныеСообщения</Action>
+		</Command>
+		<Command name="ПолучитьДанныеТаблицаПодчиненныеСообщения" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные таблица подчиненные сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанныеТаблицаПодчиненныеСообщения</Action>
+		</Command>
+		<Command name="ПолучитьДанныеТаблицаИнициаторыОтправки" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные таблица инициаторы отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанныеТаблицаИнициаторыОтправки</Action>
+		</Command>
+		<Command name="ПроверитьВозможностьОтправкиТаблицаИнициаторыОтправки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить возможность отправки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить возможность отправки таблица инициаторы отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьВозможностьОтправкиТаблицаИнициаторыОтправки</Action>
+		</Command>
+		<Command name="ОтправитьСообщенияТаблицаИнициаторыОтправки" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщения таблица инициаторы отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьСообщенияТаблицаИнициаторыОтправки</Action>
+		</Command>
+		<Command name="ОбновитьТаблицаИнициаторыОтправки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить таблица инициаторы отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьТаблицаИнициаторыОтправки</Action>
+		</Command>
+		<Command name="ОбновитьТаблицаПодчиненныеСообщения" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить таблица</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить таблица подчиненные сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьТаблицаПодчиненныеСообщения</Action>
+		</Command>
+		<Command name="УдалениеСообщений" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление сообщений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалениеСообщений</Action>
+		</Command>
+	</Commands>
+</Form>

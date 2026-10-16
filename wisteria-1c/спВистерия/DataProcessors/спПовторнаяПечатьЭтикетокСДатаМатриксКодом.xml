@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<DataProcessor uuid="247a709c-8aa2-4e90-8f58-ed8425c74af0">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.спПовторнаяПечатьЭтикетокСДатаМатриксКодом" category="Object">
+				<xr:TypeId>c0bb9c73-15d0-48da-9473-22c4d5df591d</xr:TypeId>
+				<xr:ValueId>5c4a39d5-1f1f-4151-a44e-5c4b1dc385dc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.спПовторнаяПечатьЭтикетокСДатаМатриксКодом" category="Manager">
+				<xr:TypeId>f2006927-f28c-4c7a-b7a0-d6af4ead5cb1</xr:TypeId>
+				<xr:ValueId>81d032b6-2785-45dc-907b-ccd4d30375c3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>спПовторнаяПечатьЭтикетокСДатаМатриксКодом</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a473f1ca-e75e-4538-924f-94e7fb5633ab</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="3c767e3e-af1a-4c6b-90e5-c24e20ec1ac5">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СтруктурныеЕдиницы" category="Object">
+				<xr:TypeId>ca1eebf0-d5ae-4b8f-9153-9e963a6fc0c6</xr:TypeId>
+				<xr:ValueId>153a2739-948d-4b30-a78a-7a34477077e4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СтруктурныеЕдиницы" category="Ref">
+				<xr:TypeId>75669aba-b023-467e-88bc-49ca3825a013</xr:TypeId>
+				<xr:ValueId>ddd2af2a-6ccf-4cc8-ada3-a7cc3d562dd1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СтруктурныеЕдиницы" category="Selection">
+				<xr:TypeId>916bdcd2-2cab-4a31-9d75-643602833feb</xr:TypeId>
+				<xr:ValueId>bf8a3537-7bc5-481e-9fc1-fc919905c1eb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СтруктурныеЕдиницы" category="List">
+				<xr:TypeId>0a8fa347-5fbf-486a-95ea-35bbdfbd6151</xr:TypeId>
+				<xr:ValueId>4107c9a8-95bf-49e8-be2b-5056c6915767</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СтруктурныеЕдиницы" category="Manager">
+				<xr:TypeId>c4fa66b4-b326-455f-b2d5-711c71d0bc23</xr:TypeId>
+				<xr:ValueId>ceb42ced-f221-4cef-a01e-58bde29aa420</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтруктурныеЕдиницы</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>ed14c926-38a5-4a0b-b570-c106d8d9419d</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

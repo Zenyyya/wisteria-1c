@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<Page name="ГруппаОбщиеНастройкиОтправкиПолученияСообщений" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа общие настройки отправки получения сообщений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаОбщиеНастройкиОтправкиПолученияСообщенийРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<CheckBoxField name="спОтключитьПотокиОбработкиДанных" id="7">
+							<DataPath>НаборКонстант.спОтключитьПотокиОбработкиДанных</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="спОтключитьПотокиОбработкиДанныхКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="спОтключитьПотокиОбработкиДанныхРасширеннаяПодсказка" id="9"/>
+						</CheckBoxField>
+						<InputField name="спДлительностьОжидания" id="10">
+							<DataPath>НаборКонстант.спДлительностьОжидания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спДлительностьОжиданияКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="спДлительностьОжиданияРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="спДлительностьХраненияСообщений" id="13">
+							<DataPath>НаборКонстант.спДлительностьХраненияСообщений</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спДлительностьХраненияСообщенийКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="спДлительностьХраненияСообщенийРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<CheckBoxField name="спУдалитьСообщенияСтатусСообщенийОтправкаПодтверждена" id="16">
+							<DataPath>НаборКонстант.спУдалитьСообщенияСтатусСообщенийОтправкаПодтверждена</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="спУдалитьСообщенияСтатусСообщенийОтправкаПодтвержденаКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="спУдалитьСообщенияСтатусСообщенийОтправкаПодтвержденаРасширеннаяПодсказка" id="18"/>
+						</CheckBoxField>
+						<CheckBoxField name="спАвтоматическийСтартОбработчиков" id="1">
+							<DataPath>НаборКонстант.спАвтоматическийСтартОбработчиков</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="спАвтоматическийСтартОбработчиковКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="спАвтоматическийСтартОбработчиковРасширеннаяПодсказка" id="3"/>
+						</CheckBoxField>
+						<InputField name="спМаксимальноеКоличествоПотоковОбработкиИсходящих" id="4">
+							<DataPath>НаборКонстант.спМаксимальноеКоличествоПотоковОбработкиИсходящих</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спМаксимальноеКоличествоПотоковОбработкиИсходящихКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="спМаксимальноеКоличествоПотоковОбработкиИсходящихРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<UsualGroup name="ГруппаОтправкаСообщений" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка сообщений</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отправка сообщений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>WeakSeparation</Representation>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ГруппаОтправкаСообщенийРасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<InputField name="спОтправкаСообщенийИнтервалОбновленияСтатусов" id="106">
+									<DataPath>НаборКонстант.спОтправкаСообщенийИнтервалОбновленияСтатусов</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спОтправкаСообщенийИнтервалОбновленияСтатусовКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="спОтправкаСообщенийИнтервалОбновленияСтатусовРасширеннаяПодсказка" id="108"/>
+								</InputField>
+								<CheckBoxField name="спОтправкаСообщенийАвтоматическоеОбновление" id="116">
+									<DataPath>НаборКонстант.спОтправкаСообщенийАвтоматическоеОбновление</DataPath>
+									<ContextMenu name="спОтправкаСообщенийАвтоматическоеОбновлениеКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="спОтправкаСообщенийАвтоматическоеОбновлениеРасширеннаяПодсказка" id="118"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОтправлятьСообщение" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправлять сообщение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отправлять сообщение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаОтправлятьСообщениеРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<InputField name="спОтправлятьСообщениеПеремещениеЗапасов" id="71">
+							<DataPath>НаборКонстант.спОтправлятьСообщениеПеремещениеЗапасов</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спОтправлятьСообщениеПеремещениеЗапасовКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="спОтправлятьСообщениеПеремещениеЗапасовРасширеннаяПодсказка" id="73"/>
+						</InputField>
+						<InputField name="спОтправлятьСообщениеспПриходнаяНакладная" id="74">
+							<DataPath>НаборКонстант.спОтправлятьСообщениеспПриходнаяНакладная</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спОтправлятьСообщениеспПриходнаяНакладнаяКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="спОтправлятьСообщениеспПриходнаяНакладнаяРасширеннаяПодсказка" id="76"/>
+						</InputField>
+						<InputField name="спОтправлятьСообщениеДляПодсортировкиМагазина" id="97">
+							<DataPath>НаборКонстант.спОтправлятьСообщениеДляПодсортировкиМагазина</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спОтправлятьСообщениеДляПодсортировкиМагазинаКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="спОтправлятьСообщениеДляПодсортировкиМагазинаРасширеннаяПодсказка" id="99"/>
+						</InputField>
+						<InputField name="спВидЦеныПоступления" id="100">
+							<DataPath>НаборКонстант.спВидЦеныПоступления</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спВидЦеныПоступленияКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="спВидЦеныПоступленияРасширеннаяПодсказка" id="102"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаsFTP" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>FTP</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группаs FTP</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаsFTPРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДоступы" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доступы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа доступы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаДоступыРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<InputField name="спsFTPЛогин" id="22">
+									<DataPath>НаборКонстант.спsFTPЛогин</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спsFTPЛогинКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="спsFTPЛогинРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="спsFTPПароль" id="25">
+									<DataPath>НаборКонстант.спsFTPПароль</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спsFTPПарольКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="спsFTPПарольРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="спsFTPПорт" id="28">
+									<DataPath>НаборКонстант.спsFTPПорт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спsFTPПортКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="спsFTPПортРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="спsFTPСервер" id="19">
+									<DataPath>НаборКонстант.спsFTPСервер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спsFTPСерверКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="спsFTPСерверРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="спsFTP_SHHКлюч" id="31">
+									<DataPath>НаборКонстант.спsFTPSHHКлюч</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спsFTP_SHHКлючКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="спsFTP_SHHКлючРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="спsFTPПутьНаFTPPending" id="68">
+									<DataPath>НаборКонстант.спsFTPПутьНаFTPPending</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спsFTPПутьНаFTPPendingКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="спsFTPПутьНаFTPPendingРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="спsFTPПутьНаFTPProcessed" id="62">
+									<DataPath>НаборКонстант.спsFTPПутьНаFTPProcessed</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спsFTPПутьНаFTPProcessedКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="спsFTPПутьНаFTPProcessedРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<InputField name="спsFTPПутьНаFTPErrors" id="65">
+									<DataPath>НаборКонстант.спsFTPПутьНаFTPErrors</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спsFTPПутьНаFTPErrorsКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="спsFTPПутьНаFTPErrorsРасширеннаяПодсказка" id="67"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРеквизиты" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа реквизиты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаРеквизитыРасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<InputField name="спshop" id="52">
+									<DataPath>НаборКонстант.спshop</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спshopКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="спshopРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="спtoken" id="49">
+									<DataPath>НаборКонстант.спtoken</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="спtokenКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="спtokenРасширеннаяПодсказка" id="51"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаSOAP" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>SOAP</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа SOAP</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаSOAPРасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<InputField name="спSOAPПространстваИменСервиса" id="79">
+							<DataPath>НаборКонстант.спSOAPПространстваИменСервиса</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спSOAPПространстваИменСервисаКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="спSOAPПространстваИменСервисаРасширеннаяПодсказка" id="81"/>
+						</InputField>
+						<InputField name="спSOAPМестоположение" id="88">
+							<DataPath>НаборКонстант.спSOAPМестоположение</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спSOAPМестоположениеКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="спSOAPМестоположениеРасширеннаяПодсказка" id="90"/>
+						</InputField>
+						<InputField name="спSOAPИмяТочкиПодключения" id="94">
+							<DataPath>НаборКонстант.спSOAPИмяТочкиПодключения</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спSOAPИмяТочкиПодключенияКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="спSOAPИмяТочкиПодключенияРасширеннаяПодсказка" id="96"/>
+						</InputField>
+						<InputField name="спSOAPИмяСервиса" id="91">
+							<DataPath>НаборКонстант.спSOAPИмяСервиса</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спSOAPИмяСервисаКонтекстноеМеню" id="92"/>
+							<ExtendedTooltip name="спSOAPИмяСервисаРасширеннаяПодсказка" id="93"/>
+						</InputField>
+						<InputField name="спSOAPИмяПользователя" id="82">
+							<DataPath>НаборКонстант.спSOAPИмяПользователя</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спSOAPИмяПользователяКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="спSOAPИмяПользователяРасширеннаяПодсказка" id="84"/>
+						</InputField>
+						<InputField name="спSOAPПароль" id="85">
+							<DataPath>НаборКонстант.спSOAPПароль</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спSOAPПарольКонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="спSOAPПарольРасширеннаяПодсказка" id="87"/>
+						</InputField>
+						<InputField name="спSOAPУИДДоставщика" id="103">
+							<DataPath>НаборКонстант.спSOAPУИДДоставщика</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спSOAPУИДДоставщикаКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="спSOAPУИДДоставщикаРасширеннаяПодсказка" id="105"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаУстановкаПломб" id="109">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установка пломб</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа установка пломб</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаУстановкаПломбРасширеннаяПодсказка" id="110"/>
+					<ChildItems>
+						<CheckBoxField name="спКонтролироватьУникальностьПломб" id="111">
+							<DataPath>НаборКонстант.спКонтролироватьУникальностьПломб</DataPath>
+							<ContextMenu name="спКонтролироватьУникальностьПломбКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="спКонтролироватьУникальностьПломбРасширеннаяПодсказка" id="113"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаЗначенияПоУмолчанию" id="119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значения по умолчанию</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа значения по умолчанию</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаЗначенияПоУмолчаниюРасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<InputField name="спСкладОтправитель" id="121">
+							<DataPath>НаборКонстант.спСкладОтправитель</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спСкладОтправительКонтекстноеМеню" id="122"/>
+							<ExtendedTooltip name="спСкладОтправительРасширеннаяПодсказка" id="123"/>
+						</InputField>
+						<InputField name="спСкладПолучатель" id="124">
+							<DataPath>НаборКонстант.спСкладПолучатель</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спСкладПолучательКонтекстноеМеню" id="125"/>
+							<ExtendedTooltip name="спСкладПолучательРасширеннаяПодсказка" id="126"/>
+						</InputField>
+						<InputField name="спШаблонЦенникаПоУмолчанию" id="127">
+							<DataPath>НаборКонстант.спШаблонЦенникаПоУмолчанию</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спШаблонЦенникаПоУмолчаниюКонтекстноеМеню" id="128"/>
+							<ExtendedTooltip name="спШаблонЦенникаПоУмолчаниюРасширеннаяПодсказка" id="129"/>
+						</InputField>
+						<InputField name="спИнтервалАвтоподсорта" id="130">
+							<DataPath>НаборКонстант.спИнтервалАвтоподсорта</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Интервал автоподсорта (минут)</v8:content>
+								</v8:item>
+							</Title>
+							<SpinButton>true</SpinButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спИнтервалАвтоподсортаКонтекстноеМеню" id="131"/>
+							<ExtendedTooltip name="спИнтервалАвтоподсортаРасширеннаяПодсказка" id="132"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаИнтеграцияСИнтернетМагазном" id="133">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интеграция с интернет-магазном</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа интеграция с интернет магазном</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаИнтеграцияСИнтернетМагазномРасширеннаяПодсказка" id="134"/>
+					<ChildItems>
+						<CheckBoxField name="спВыгружатьНаСайтБезНДС" id="135">
+							<DataPath>НаборКонстант.спВыгружатьНаСайтБезНДС</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При включенном признаке, на сайт Интернет-магазина товары выгружаются со ставкой НДС = "Без НДС"</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="спВыгружатьНаСайтБезНДСКонтекстноеМеню" id="136"/>
+							<ExtendedTooltip name="спВыгружатьНаСайтБезНДСРасширеннаяПодсказка" id="137"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкиПодсчетаПосетителей" id="138">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки подсчета посетителей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки подсчета посетителей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаНастройкиПодсчетаПосетителейРасширеннаяПодсказка" id="139"/>
+					<ChildItems>
+						<InputField name="спНастройкаЗагрузкиПодсчетаПосетителей" id="143">
+							<DataPath>НаборКонстант.спНастройкаЗагрузкиПодсчетаПосетителей</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="спНастройкаЗагрузкиПодсчетаПосетителейКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="спНастройкаЗагрузкиПодсчетаПосетителейРасширеннаяПодсказка" id="145"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<DocumentJournal uuid="085fbc31-b848-4ffe-bd39-dfc826bcc89a">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ДокументыПоБанку" category="Selection">
+				<xr:TypeId>fea3ff04-d486-428e-b451-9e8cb5a463ad</xr:TypeId>
+				<xr:ValueId>703dbb72-7d4d-4c1e-af1f-955aa7b758ff</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ДокументыПоБанку" category="List">
+				<xr:TypeId>c8e0e9fd-af1a-4c86-bfd1-e2525264b9b1</xr:TypeId>
+				<xr:ValueId>ce5d61e8-4a9a-4074-a987-49718d45a35e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ДокументыПоБанку" category="Manager">
+				<xr:TypeId>cdd36610-1ea3-4c83-a930-d9e26f5cc4a1</xr:TypeId>
+				<xr:ValueId>1805ebe7-1a14-492b-b125-fd4aa121b0a5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДокументыПоБанку</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>1afb1991-3115-4f27-aab9-5bcaaabdbba4</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

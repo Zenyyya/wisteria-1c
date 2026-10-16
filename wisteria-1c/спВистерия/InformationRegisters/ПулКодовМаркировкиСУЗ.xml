@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<InformationRegister uuid="554e842c-3d18-4f44-af5c-78ab41ac1acf">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ПулКодовМаркировкиСУЗ" category="Record">
+				<xr:TypeId>6e2b8986-9cd2-4565-8ecd-d49893f164cd</xr:TypeId>
+				<xr:ValueId>2cf75bdf-2eaf-4ce3-b4db-38f13bc785a3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ПулКодовМаркировкиСУЗ" category="Manager">
+				<xr:TypeId>565ce2ea-8b76-4879-96ec-0a816e6c8ef7</xr:TypeId>
+				<xr:ValueId>f0475866-1209-4c8d-a690-850838c852bb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ПулКодовМаркировкиСУЗ" category="Selection">
+				<xr:TypeId>6f2ef9cf-d2e2-477a-b52b-a263f4bb4336</xr:TypeId>
+				<xr:ValueId>09078159-bc30-44f3-bec6-89c5d84d59f6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ПулКодовМаркировкиСУЗ" category="List">
+				<xr:TypeId>affc1cb6-63c5-4014-b84a-a82bd5e4a76a</xr:TypeId>
+				<xr:ValueId>b201f469-6095-4733-9e04-74c1782d58c7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ПулКодовМаркировкиСУЗ" category="RecordSet">
+				<xr:TypeId>b7fae2a4-9a27-42c0-a7f6-1f16435ab58b</xr:TypeId>
+				<xr:ValueId>9c6547ce-8038-4d24-a4a0-b155eec6b99f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ПулКодовМаркировкиСУЗ" category="RecordKey">
+				<xr:TypeId>b59f5348-67f4-4f15-a63e-b0336aeb47d1</xr:TypeId>
+				<xr:ValueId>2f21325e-6b90-4bc9-ac1e-1ac7f57b80d9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ПулКодовМаркировкиСУЗ" category="RecordManager">
+				<xr:TypeId>52575c19-4707-4bad-b3f9-9d6a00009e03</xr:TypeId>
+				<xr:ValueId>5718c56e-ce2e-4311-9842-88cb55ecb698</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПулКодовМаркировкиСУЗ</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>64081e4f-b72e-44e1-b5c2-b18ec45e3e89</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<DataProcessor uuid="22c9fce0-28e4-47f0-a81a-ed71ddc5f493">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ПечатьЭтикетокИЦенников" category="Object">
+				<xr:TypeId>9c2035fc-bcda-4813-846e-35be8eeec99f</xr:TypeId>
+				<xr:ValueId>95b699e2-b165-4fad-81cd-438f1f9a0083</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ПечатьЭтикетокИЦенников" category="Manager">
+				<xr:TypeId>bdd3ecd6-9e84-446c-ad05-b20da4e0de33</xr:TypeId>
+				<xr:ValueId>282f6bcb-f2c4-41b4-b3d6-0f0680b37b9d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПечатьЭтикетокИЦенников</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>484d88a9-bfe1-43e5-b5eb-2e32a8e341bd</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Template>ПоляШаблонаИСМП</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

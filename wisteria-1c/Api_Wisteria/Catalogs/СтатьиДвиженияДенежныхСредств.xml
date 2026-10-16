@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="8a70f323-a9bf-4c8e-b14f-c561bb8ebdae">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СтатьиДвиженияДенежныхСредств" category="Object">
+				<xr:TypeId>3910e601-f5d6-4147-804c-6fbb90c738a3</xr:TypeId>
+				<xr:ValueId>8a5b793e-b9c2-4500-9e26-ffe7e8f706b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СтатьиДвиженияДенежныхСредств" category="Ref">
+				<xr:TypeId>23292b30-a703-4993-8621-f4e1bef2b0b6</xr:TypeId>
+				<xr:ValueId>f6f19339-c6ca-45e4-9d71-013cf6ec44f6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СтатьиДвиженияДенежныхСредств" category="Selection">
+				<xr:TypeId>e013c79f-9311-44de-933c-e392fe1b54ef</xr:TypeId>
+				<xr:ValueId>7231bb37-1492-4e09-8ced-6dff82fdb523</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СтатьиДвиженияДенежныхСредств" category="List">
+				<xr:TypeId>12f8fff7-e18d-468d-8277-41c1e623d20d</xr:TypeId>
+				<xr:ValueId>41110c93-f293-47b3-b1fc-18992e7758ab</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СтатьиДвиженияДенежныхСредств" category="Manager">
+				<xr:TypeId>da9202ac-fef3-4237-99e0-b707efd96dd5</xr:TypeId>
+				<xr:ValueId>63f28c0e-8519-4745-bc37-1d72d8389ba2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатьиДвиженияДенежныхСредств</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>c18aed98-9a38-4a4f-bee4-1b6977344491</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

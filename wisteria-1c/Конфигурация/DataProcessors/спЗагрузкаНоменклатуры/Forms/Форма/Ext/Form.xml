@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКнопкаПрочитатьExcelУниверсальныйФормат" id="163">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПрочитатьExcelУниверсальныйФормат</CommandName>
+				<ExtendedTooltip name="ФормаКнопкаПрочитатьExcelУниверсальныйФорматРасширеннаяПодсказка" id="164"/>
+			</Button>
+			<Button name="ФормаСоздатьНоменклатуруХарактеристику" id="150">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьНоменклатуруХарактеристику</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать номенклатуру</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаСоздатьНоменклатуруХарактеристикуРасширеннаяПодсказка" id="151"/>
+			</Button>
+			<Button name="ФормаКнопкаСоздатьУстановкуЦен" id="184">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьУстановкуЦенНоменклатуры</CommandName>
+				<ExtendedTooltip name="ФормаКнопкаСоздатьУстановкуЦенРасширеннаяПодсказка" id="185"/>
+			</Button>
+			<Button name="ФормаПрочитатьExcel" id="131">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПрочитатьExcel</CommandName>
+				<TextColor>style:ButtonBorderColor</TextColor>
+				<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+				<ExtendedTooltip name="ФормаПрочитатьExcelРасширеннаяПодсказка" id="132"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройки" id="152">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="153"/>
+			<ChildItems>
+				<InputField name="ЧитатьСоСтроки" id="154">
+					<DataPath>ЧитатьСоСтроки</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЧитатьСоСтрокиКонтекстноеМеню" id="155"/>
+					<ExtendedTooltip name="ЧитатьСоСтрокиРасширеннаяПодсказка" id="156"/>
+				</InputField>
+				<CheckBoxField name="БезПроверки" id="207">
+					<DataPath>БезПроверкиШтрихкодов</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При включенном признаке, не выполняется проверка ключевых данных по штрихкоду</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+					<ContextMenu name="БезПроверкиКонтекстноеМеню" id="208"/>
+					<ExtendedTooltip name="БезПроверкиРасширеннаяПодсказка" id="209"/>
+					<Events>
+						<Event name="OnChange">БезПроверкиПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="Дозагрузка" id="204">
+					<DataPath>Дозагрузка</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При включенном признаке, перезаписываются уже имеющиеся товары (поиск по артикулу)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+					<ContextMenu name="ДозагрузкаКонтекстноеМеню" id="205"/>
+					<ExtendedTooltip name="ДозагрузкаРасширеннаяПодсказка" id="206"/>
+					<Events>
+						<Event name="OnChange">ДозагрузкаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="СоздатьНоменклатуруХарактеристикуПослеПрочтенияExcel" id="157">
+					<DataPath>СоздатьНоменклатуруХарактеристикуПослеПрочтенияExcel</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создать номенклатуру после прочтения excel</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="СоздатьНоменклатуруХарактеристикуПослеПрочтенияExcelКонтекстноеМеню" id="158"/>
+					<ExtendedTooltip name="СоздатьНоменклатуруХарактеристикуПослеПрочтенияExcelРасширеннаяПодсказка" id="159"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="165">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="166"/>
+			<ChildItems>
+				<Page name="ГруппаЗагрузки" id="139">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаЗагрузкиРасширеннаяПодсказка" id="140"/>
+					<ChildItems>
+						<PictureField name="ФотоИзображение" id="136">
+							<DataPath>ФотоИзображение</DataPath>
+							<PictureSize>Proportionally</PictureSize>
+							<ContextMenu name="ФотоИзображениеКонтекстноеМеню" id="137"/>
+							<ExtendedTooltip name="ФотоИзображениеРасширеннаяПодсказка" id="138"/>
+						</PictureField>
+						<Table name="ТабличнаяЗагрузки" id="1">
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТабличнаяЗагрузки</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТабличнаяЗагрузкиКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ТабличнаяЗагрузкиКоманднаяПанель" id="3"/>
+							<ExtendedTooltip name="ТабличнаяЗагрузкиРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ТабличнаяЗагрузкиСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ТабличнаяЗагрузки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЗагрузкиСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ТабличнаяЗагрузкиСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТабличнаяЗагрузкиСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ТабличнаяЗагрузки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЗагрузкиСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ТабличнаяЗагрузкиСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТабличнаяЗагрузкиУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ТабличнаяЗагрузки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЗагрузкиУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТабличнаяЗагрузкиУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">ТабличнаяЗагрузкиПриОкончанииРедактирования</Event>
+								<Event name="Selection">ТабличнаяЗагрузкиВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ТабличнаяЗагрузкиНомерСтроки" id="14">
+									<DataPath>Объект.ТабличнаяЗагрузки.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТабличнаяЗагрузкиНомерСтрокиКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиНомерСтрокиРасширеннаяПодсказка" id="16"/>
+								</LabelField>
+								<LabelField name="ТабличнаяЗагрузкиКартинкаДобавлена" id="133">
+									<DataPath>Объект.ТабличнаяЗагрузки.КартинкаДобавлена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТабличнаяЗагрузкиКартинкаДобавленаКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиКартинкаДобавленаРасширеннаяПодсказка" id="135"/>
+								</LabelField>
+								<InputField name="ТабличнаяЗагрузкиНоменклатура" id="144">
+									<DataPath>Объект.ТабличнаяЗагрузки.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиНоменклатураКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиНоменклатураРасширеннаяПодсказка" id="146"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиХарактеристикиНоменклатуры" id="147">
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиХарактеристикиНоменклатурыКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиХарактеристикиНоменклатурыРасширеннаяПодсказка" id="149"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиПокупатель" id="20">
+									<DataPath>Объект.ТабличнаяЗагрузки.Покупатель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиПокупательКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиПокупательРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиСезон" id="23">
+									<DataPath>Объект.ТабличнаяЗагрузки.Сезон</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиСезонКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиСезонРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиДатаОтгрузки" id="26">
+									<DataPath>Объект.ТабличнаяЗагрузки.ДатаОтгрузки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиДатаОтгрузкиКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиДатаОтгрузкиРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиДатаПрибытия" id="29">
+									<DataPath>Объект.ТабличнаяЗагрузки.ДатаПрибытия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиДатаПрибытияКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиДатаПрибытияРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиПроизводитель" id="32">
+									<DataPath>Объект.ТабличнаяЗагрузки.Производитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиПроизводительКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиПроизводительРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиАдресПроизводителя" id="35">
+									<DataPath>Объект.ТабличнаяЗагрузки.АдресПроизводителя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиАдресПроизводителяКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиАдресПроизводителяРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиСтранаПроисхождения" id="38">
+									<DataPath>Объект.ТабличнаяЗагрузки.СтранаПроисхождения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиСтранаПроисхожденияКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиСтранаПроисхожденияРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиБренд" id="41">
+									<DataPath>Объект.ТабличнаяЗагрузки.Бренд</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиБрендКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиБрендРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиАртикль" id="44">
+									<DataPath>Объект.ТабличнаяЗагрузки.Артикль</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиАртикльКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиАртикльРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиАртикул1С" id="175">
+									<DataPath>Объект.ТабличнаяЗагрузки.Артикул1С</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиАртикул1СКонтекстноеМеню" id="176"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиАртикул1СРасширеннаяПодсказка" id="177"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиЦвет1С" id="186">
+									<DataPath>Объект.ТабличнаяЗагрузки.Цвет1С</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиЦвет1СКонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиЦвет1СРасширеннаяПодсказка" id="188"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиРазмер1С" id="189">
+									<DataPath>Объект.ТабличнаяЗагрузки.Размер1С</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиРазмер1СКонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиРазмер1СРасширеннаяПодсказка" id="191"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиПол" id="47">
+									<DataPath>Объект.ТабличнаяЗагрузки.Пол</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиПолКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиПолРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиВозраст" id="50">
+									<DataPath>Объект.ТабличнаяЗагрузки.Возраст</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиВозрастКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиВозрастРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиКоллекция" id="53">
+									<DataPath>Объект.ТабличнаяЗагрузки.Коллекция</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиКоллекцияКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиКоллекцияРасширеннаяПодсказка" id="55"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиОписание" id="56">
+									<DataPath>Объект.ТабличнаяЗагрузки.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиОписаниеКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиОписаниеРасширеннаяПодсказка" id="58"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиТип" id="59">
+									<DataPath>Объект.ТабличнаяЗагрузки.Тип</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиТипКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиТипРасширеннаяПодсказка" id="61"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиСостав" id="62">
+									<DataPath>Объект.ТабличнаяЗагрузки.Состав</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиСоставКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиСоставРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиТипМатериала" id="160">
+									<DataPath>Объект.ТабличнаяЗагрузки.ТипМатериала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиТипМатериалаКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиТипМатериалаРасширеннаяПодсказка" id="162"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиМасса" id="65">
+									<DataPath>Объект.ТабличнаяЗагрузки.Масса</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиМассаКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиМассаРасширеннаяПодсказка" id="67"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиПрокладка" id="68">
+									<DataPath>Объект.ТабличнаяЗагрузки.Прокладка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиПрокладкаКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиПрокладкаРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиПодкладка" id="141">
+									<DataPath>Объект.ТабличнаяЗагрузки.Подкладка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиПодкладкаКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиПодкладкаРасширеннаяПодсказка" id="143"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиВидУпаковки" id="71">
+									<DataPath>Объект.ТабличнаяЗагрузки.ВидУпаковки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиВидУпаковкиКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиВидУпаковкиРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиЦена" id="74">
+									<DataPath>Объект.ТабличнаяЗагрузки.Цена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиЦенаКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиЦенаРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиДопКомментарии" id="77">
+									<DataPath>Объект.ТабличнаяЗагрузки.ДопКомментарии</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиДопКомментарииКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиДопКомментарииРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиХарактеристика" id="80">
+									<DataPath>Объект.ТабличнаяЗагрузки.Характеристика</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиХарактеристикаКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиХарактеристикаРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиЕдИзм" id="83">
+									<DataPath>Объект.ТабличнаяЗагрузки.ЕдИзм</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиЕдИзмКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиЕдИзмРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиГлавныйЦвет" id="86">
+									<DataPath>Объект.ТабличнаяЗагрузки.ГлавныйЦвет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиГлавныйЦветКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиГлавныйЦветРасширеннаяПодсказка" id="88"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиКОД" id="89">
+									<DataPath>Объект.ТабличнаяЗагрузки.КОД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиКОДКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиКОДРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиDDP" id="92">
+									<DataPath>Объект.ТабличнаяЗагрузки.DDP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиDDPКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиDDPРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиВсего" id="95">
+									<DataPath>Объект.ТабличнаяЗагрузки.Всего</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиВсегоКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиВсегоРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиНДС" id="98">
+									<DataPath>Объект.ТабличнаяЗагрузки.НДС</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиНДСКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиНДСРасширеннаяПодсказка" id="100"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиШтрихкод" id="101">
+									<DataPath>Объект.ТабличнаяЗагрузки.Штрихкод</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиШтрихкодКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиШтрихкодРасширеннаяПодсказка" id="103"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиGTIN" id="178">
+									<DataPath>Объект.ТабличнаяЗагрузки.GTIN</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиGTINКонтекстноеМеню" id="179"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиGTINРасширеннаяПодсказка" id="180"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиКодТНВЭД" id="104">
+									<DataPath>Объект.ТабличнаяЗагрузки.КодТНВЭД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиКодТНВЭДКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиКодТНВЭДРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиКодОКПД2" id="107">
+									<DataPath>Объект.ТабличнаяЗагрузки.КодОКПД2</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиКодОКПД2КонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиКодОКПД2РасширеннаяПодсказка" id="109"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиGPCБлок" id="110">
+									<DataPath>Объект.ТабличнаяЗагрузки.GPCБлок</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиGPCБлокКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиGPCБлокРасширеннаяПодсказка" id="112"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиВидНоменклатуры" id="113">
+									<DataPath>Объект.ТабличнаяЗагрузки.ВидНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиВидНоменклатурыКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиВидНоменклатурыРасширеннаяПодсказка" id="115"/>
+								</InputField>
+								<CheckBoxField name="ТабличнаяЗагрузкиСтирка" id="116">
+									<DataPath>Объект.ТабличнаяЗагрузки.Стирка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТабличнаяЗагрузкиСтиркаКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиСтиркаРасширеннаяПодсказка" id="118"/>
+								</CheckBoxField>
+								<CheckBoxField name="ТабличнаяЗагрузкиОтбеливание" id="119">
+									<DataPath>Объект.ТабличнаяЗагрузки.Отбеливание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТабличнаяЗагрузкиОтбеливаниеКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиОтбеливаниеРасширеннаяПодсказка" id="121"/>
+								</CheckBoxField>
+								<CheckBoxField name="ТабличнаяЗагрузкиГлажженье" id="122">
+									<DataPath>Объект.ТабличнаяЗагрузки.Глажженье</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТабличнаяЗагрузкиГлажженьеКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиГлажженьеРасширеннаяПодсказка" id="124"/>
+								</CheckBoxField>
+								<CheckBoxField name="ТабличнаяЗагрузкиСушка" id="125">
+									<DataPath>Объект.ТабличнаяЗагрузки.Сушка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТабличнаяЗагрузкиСушкаКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиСушкаРасширеннаяПодсказка" id="127"/>
+								</CheckBoxField>
+								<CheckBoxField name="ТабличнаяЗагрузкиУходЗаТекстилем" id="128">
+									<DataPath>Объект.ТабличнаяЗагрузки.УходЗаТекстилем</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТабличнаяЗагрузкиУходЗаТекстилемКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиУходЗаТекстилемРасширеннаяПодсказка" id="130"/>
+								</CheckBoxField>
+								<InputField name="ТабличнаяЗагрузкиТоварнаяГруппа" id="198">
+									<DataPath>Объект.ТабличнаяЗагрузки.ТоварнаяГруппа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиТоварнаяГруппаКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиТоварнаяГруппаРасширеннаяПодсказка" id="200"/>
+								</InputField>
+								<InputField name="ТабличнаяЗагрузкиПоставщик" id="195">
+									<DataPath>Объект.ТабличнаяЗагрузки.Поставщик</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТабличнаяЗагрузкиПоставщикКонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="ТабличнаяЗагрузкиПоставщикРасширеннаяПодсказка" id="197"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройка" id="167">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаНастройкаРасширеннаяПодсказка" id="168"/>
+					<ChildItems>
+						<InputField name="ВидЦены" id="181">
+							<DataPath>ВидЦены</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВидЦеныКонтекстноеМеню" id="182"/>
+							<ExtendedTooltip name="ВидЦеныРасширеннаяПодсказка" id="183"/>
+						</InputField>
+						<InputField name="РеквизитПодстановкиПокупатель" id="169">
+							<DataPath>РеквизитПодстановкиПокупатель</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РеквизитПодстановкиПокупательКонтекстноеМеню" id="170"/>
+							<ExtendedTooltip name="РеквизитПодстановкиПокупательРасширеннаяПодсказка" id="171"/>
+							<Events>
+								<Event name="StartChoice">РеквизитПодстановкиПокупательНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="РеквизитПодстановкиПоставщик" id="192">
+							<DataPath>РеквизитПодстановкиПоставщик</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РеквизитПодстановкиПоставщикКонтекстноеМеню" id="193"/>
+							<ExtendedTooltip name="РеквизитПодстановкиПоставщикРасширеннаяПодсказка" id="194"/>
+						</InputField>
+						<InputField name="РеквизитПодстановкиСезон" id="172">
+							<DataPath>РеквизитПодстановкиСезон</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РеквизитПодстановкиСезонКонтекстноеМеню" id="173"/>
+							<ExtendedTooltip name="РеквизитПодстановкиСезонРасширеннаяПодсказка" id="174"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.спЗагрузкаНоменклатуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Columns>
+				<AdditionalColumns table="Объект.ТабличнаяЗагрузки">
+					<Column name="ОшибкаЗаполненияНоменклатуры" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения номенклатуры</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаЗаполненияОписание" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения описание</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаЗаполненияПроизводитель" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения производитель</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаЗаполненияСтранаПроисхождения" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения страна происхождения</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаЗаполненияВидНоменклатуры" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения вид номенклатуры</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаЗаполненияАртикль" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения артикль</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаЗаполненияКодТНВЭД" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения код ТНВЭД</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаШтрихКода" id="9">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка штрихкода</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаЗаполненияЦвет1С" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения цвет 1С</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ОшибкаЗаполненияРазмер1С" id="10">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка заполнения размер 1С</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ФотоИзображение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фото/изображение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТабДок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТабДок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЧитатьСоСтроки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Читать со строки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СоздатьНоменклатуруХарактеристикуПослеПрочтенияExcel" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать номенклатуру / характеристику после прочтения excel</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РеквизитПодстановкиПокупатель" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Покупатель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЗначенияСвойствОбъектов</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РеквизитПодстановкиСезон" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сезон</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЗначенияСвойствОбъектов</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВидЦены" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид цены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РеквизитПодстановкиПоставщик" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставщик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="БезПроверкиШтрихкодов" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Без проверки штрихкодов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Дозагрузка" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дозагрузка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьExcel" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать Excel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьExcel</Action>
+		</Command>
+		<Command name="СоздатьНоменклатуруХарактеристику" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать номенклатуру / характеристику</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать номенклатуру характеристику</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНоменклатуруХарактеристику</Action>
+		</Command>
+		<Command name="ПрочитатьExcelУниверсальныйФормат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать Excel универсальный формат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать Excel универсальный формат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьExcelУниверсальныйФормат</Action>
+		</Command>
+		<Command name="СоздатьУстановкуЦенНоменклатуры" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать установку цен номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать установку цен номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьУстановкуЦенНоменклатуры</Action>
+		</Command>
+	</Commands>
+</Form>

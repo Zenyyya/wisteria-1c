@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="90f5aba2-0a81-42dd-bae1-be355ee17ee9">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыОперацийЗаказПокупателя" category="Ref">
+				<xr:TypeId>33dbf3de-3570-4f74-9132-e3fe4105e3e3</xr:TypeId>
+				<xr:ValueId>5e4dbde2-bf6f-4af8-8c6e-7293ad8f58a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыОперацийЗаказПокупателя" category="Manager">
+				<xr:TypeId>880a04e6-0530-4c4a-a370-8cc08d2ddef4</xr:TypeId>
+				<xr:ValueId>21278919-44a1-4ecd-9fba-c6dadd47ec12</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыОперацийЗаказПокупателя" category="List">
+				<xr:TypeId>f6de55ff-f68f-4370-8584-5198a487b86d</xr:TypeId>
+				<xr:ValueId>62be890e-b21f-4c36-b894-09ac53bc35ca</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыОперацийЗаказПокупателя</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>abca0eb3-f5c5-4fdc-9dfb-2984a5e79fb6</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

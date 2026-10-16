@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="2f923a97-2bc3-453d-bacf-b0ca0a7c22cf">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыНалогообложенияНДС" category="Ref">
+				<xr:TypeId>7457eedd-f63b-4251-8f19-f7a696cb1b23</xr:TypeId>
+				<xr:ValueId>4e891407-f242-4cf3-817a-649596c573f7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыНалогообложенияНДС" category="Manager">
+				<xr:TypeId>66674779-653f-4af6-8b45-da6260bc2887</xr:TypeId>
+				<xr:ValueId>d991276e-565b-4dd4-a46c-f8dfd069646e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыНалогообложенияНДС" category="List">
+				<xr:TypeId>a7ded840-72ac-4c2f-99e1-59dd72d65dd7</xr:TypeId>
+				<xr:ValueId>6b06b4ce-f506-4f5f-8c81-f0962fadc37f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТипыНалогообложенияНДС</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>ab643b99-1e57-47e6-a95b-e50a27d61fc2</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="4a45398f-a25b-43a2-834d-dbac1dd8f1c5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОблагаетсяНДС</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d40a9043-fdbd-43de-bd36-09ea3ebb0c4f</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

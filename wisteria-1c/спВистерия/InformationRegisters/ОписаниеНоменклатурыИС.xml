@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<InformationRegister uuid="20afbae0-6f05-4e5b-a537-b0c74b9e75da">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ОписаниеНоменклатурыИС" category="Record">
+				<xr:TypeId>41782458-8709-49ea-b422-e2db2e925ab4</xr:TypeId>
+				<xr:ValueId>86c91f91-b724-4c5d-bfd4-9e7b45b7313a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ОписаниеНоменклатурыИС" category="Manager">
+				<xr:TypeId>b99e86b2-2df8-46dd-a6a2-98446a8d67e9</xr:TypeId>
+				<xr:ValueId>760d3266-c850-4f63-8275-9ef3e183a09a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ОписаниеНоменклатурыИС" category="Selection">
+				<xr:TypeId>24ace107-b8d1-48fe-8b6c-42b12fb5426e</xr:TypeId>
+				<xr:ValueId>08df67bb-3236-450d-b557-469000e6dae9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ОписаниеНоменклатурыИС" category="List">
+				<xr:TypeId>7086b439-8388-49e2-a9ae-49a33dfc59ed</xr:TypeId>
+				<xr:ValueId>5502c14c-f7d3-41e4-b42c-daebf6f1c01b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ОписаниеНоменклатурыИС" category="RecordSet">
+				<xr:TypeId>bb08bea6-b276-47f2-8621-ac152635608b</xr:TypeId>
+				<xr:ValueId>5fcca7a2-6173-45dd-b444-98415f6e1bd7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ОписаниеНоменклатурыИС" category="RecordKey">
+				<xr:TypeId>6a78b7b2-8850-420e-9084-1bba88d2c242</xr:TypeId>
+				<xr:ValueId>625f6225-5db0-4c34-b565-8b25c3005764</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ОписаниеНоменклатурыИС" category="RecordManager">
+				<xr:TypeId>cb623b35-ddf9-4ba1-b5ea-49321f2a875b</xr:TypeId>
+				<xr:ValueId>f19f3b19-e9bf-4a87-b208-fb3d88dce75b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОписаниеНоменклатурыИС</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>6361efb2-8a0c-4953-bbde-7a58283235fb</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>

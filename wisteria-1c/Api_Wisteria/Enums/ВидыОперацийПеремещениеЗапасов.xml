@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="a11acf65-3d37-48ea-bf92-3a4df6fc1115">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыОперацийПеремещениеЗапасов" category="Ref">
+				<xr:TypeId>7172a5c1-09e9-40f7-8289-43ae97b172c8</xr:TypeId>
+				<xr:ValueId>13ad05f4-1c9e-47df-914b-bc4d46580e3b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыОперацийПеремещениеЗапасов" category="Manager">
+				<xr:TypeId>7e4c7de5-7a5c-4e71-82ee-4e948ee3ac25</xr:TypeId>
+				<xr:ValueId>3776ff7c-8128-4e84-9a75-72406e88e632</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыОперацийПеремещениеЗапасов" category="List">
+				<xr:TypeId>bff2698f-13b6-4a1e-b6e6-4ea0323490f0</xr:TypeId>
+				<xr:ValueId>5b6f7286-b8ff-4ba2-96f2-fd76f589e900</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыОперацийПеремещениеЗапасов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f711faaa-425b-4284-851b-dc7503ad0b62</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="29a735e3-9d4e-4ad5-ba24-feb3e3e8a257">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Перемещение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>45af93a9-f638-47fc-9003-cee106c2b682</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

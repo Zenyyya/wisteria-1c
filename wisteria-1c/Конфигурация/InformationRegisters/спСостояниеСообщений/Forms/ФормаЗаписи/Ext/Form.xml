@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<LabelField name="ИдентификаторСобытия" id="1">
+			<DataPath>Запись.ИдентификаторСобытия</DataPath>
+			<ContextMenu name="ИдентификаторСобытияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИдентификаторСобытияРасширеннаяПодсказка" id="3"/>
+		</LabelField>
+		<InputField name="СтатусСообщения" id="4">
+			<DataPath>Запись.СтатусСообщения</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтатусСообщенияКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СтатусСообщенияРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ДатаИзменения" id="7">
+			<DataPath>Запись.ДатаИзменения</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Задержка" id="10">
+			<DataPath>Запись.Задержка</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗадержкаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗадержкаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ЗадержкаЧисло" id="13">
+			<DataPath>Запись.ЗадержкаЧисло</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗадержкаЧислоКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ЗадержкаЧислоРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ИндексПотока" id="16">
+			<DataPath>Запись.ИндексПотока</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИндексПотокаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ИндексПотокаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="НачалоСеанса" id="19">
+			<DataPath>Запись.НачалоСеанса</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НачалоСеансаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="НачалоСеансаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="НомерСеанса" id="22">
+			<DataPath>Запись.НомерСеанса</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерСеансаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НомерСеансаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ОписаниеОшибки" id="25">
+			<DataPath>Запись.ОписаниеДанных</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОписаниеОшибкиКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ОписаниеОшибкиРасширеннаяПодсказка" id="27"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.спСостояниеСообщений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

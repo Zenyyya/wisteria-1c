@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="07b8d259-2ed3-484f-baae-3981abbda57c">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПеремещениеЗапасов" category="Object">
+				<xr:TypeId>650b27af-ce0f-4f96-88a9-afc43c7f9bf8</xr:TypeId>
+				<xr:ValueId>a88b90b3-81cb-41b8-8418-04ef1f5d4cfa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПеремещениеЗапасов" category="Ref">
+				<xr:TypeId>998cf59d-606a-40f7-93fb-629b8cdc5966</xr:TypeId>
+				<xr:ValueId>b866e6ba-432c-4142-aa89-6dc2c3f4b30f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПеремещениеЗапасов" category="Selection">
+				<xr:TypeId>002bd24c-d3e7-4278-af38-e2837576b2e7</xr:TypeId>
+				<xr:ValueId>6fa45e1c-3027-4a6c-bb8e-b85b44751cff</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПеремещениеЗапасов" category="List">
+				<xr:TypeId>eb7e190c-ed53-467e-be05-cea5057a79da</xr:TypeId>
+				<xr:ValueId>6ceaf7e5-9a12-466e-9fba-ba1b0823d87e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПеремещениеЗапасов" category="Manager">
+				<xr:TypeId>f0aadc7c-b7e0-4b41-8673-7cbdcc36a613</xr:TypeId>
+				<xr:ValueId>88ecfe99-f559-4fd2-8f41-c90cba7f21e0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПеремещениеЗапасов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>c63e7296-8bd5-4572-b1ca-d62e9d4681b3</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

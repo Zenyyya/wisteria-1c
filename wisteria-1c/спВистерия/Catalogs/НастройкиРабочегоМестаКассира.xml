@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="2c9b5d37-96ea-463c-a980-fcac05481ac8">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.НастройкиРабочегоМестаКассира" category="Object">
+				<xr:TypeId>57275028-77a1-4816-9bf7-da2e00e0d0dd</xr:TypeId>
+				<xr:ValueId>d9ab1765-e437-4609-a58a-126055e58b1a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.НастройкиРабочегоМестаКассира" category="Ref">
+				<xr:TypeId>f185c5b0-2fa3-4c3d-a09b-2e649fc79dab</xr:TypeId>
+				<xr:ValueId>87b36020-ea6c-4850-9115-b3bbc29e27e8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.НастройкиРабочегоМестаКассира" category="Selection">
+				<xr:TypeId>68b906cb-5268-4daf-9578-16c1e3011e21</xr:TypeId>
+				<xr:ValueId>9f694e94-58b6-4cb6-b30a-16d487a739b4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.НастройкиРабочегоМестаКассира" category="List">
+				<xr:TypeId>05ec6435-5b4f-4eff-9a9c-dec090d87914</xr:TypeId>
+				<xr:ValueId>311ddb3d-1e8b-4ffc-91d5-56850db2a478</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.НастройкиРабочегоМестаКассира" category="Manager">
+				<xr:TypeId>1aee81c6-10b6-40fc-8e15-473a6841738a</xr:TypeId>
+				<xr:ValueId>d3bdcad4-aaa4-4dee-8ad6-66049b557535</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НастройкиРабочегоМестаКассира</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>396721f3-58a1-4a59-98aa-fe4c5cc4195e</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

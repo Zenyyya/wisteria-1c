@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<ShowCommandBar>false</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновная" id="100">
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="126"/>
+			<ChildItems>
+				<LabelDecoration name="ЗаголовокФормы" id="101">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Font faceName="Segoe UI" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выберите режим работы</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<BorderColor>#A0A0A0</BorderColor>
+					<ContextMenu name="ЗаголовокФормыКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ЗаголовокФормыРасширеннаяПодсказка" id="103"/>
+				</LabelDecoration>
+				<Button name="КнопкаВыполнитьОтгрузку" id="121">
+					<Type>UsualButton</Type>
+					<Width>50</Width>
+					<Height>5</Height>
+					<CommandName>Form.Command.ВыполнитьОтгрузку</CommandName>
+					<ExtendedTooltip name="КнопкаВыполнитьОтгрузкуРасширеннаяПодсказка" id="122"/>
+				</Button>
+				<Button name="ОткрытьЗаказыПокупателей" id="127">
+					<Type>UsualButton</Type>
+					<Width>50</Width>
+					<Height>5</Height>
+					<CommandName>Form.Command.ОткрытьЗаказыПокупателей</CommandName>
+					<ExtendedTooltip name="ОткрытьЗаказыПокупателейРасширеннаяПодсказка" id="128"/>
+				</Button>
+				<Button name="ОткрытьИнформациюОТоваре" id="129">
+					<Type>UsualButton</Type>
+					<Width>50</Width>
+					<Height>5</Height>
+					<CommandName>Form.Command.ОткрытьИнформациюОТоваре</CommandName>
+					<ExtendedTooltip name="ОткрытьИнформациюОТовареРасширеннаяПодсказка" id="130"/>
+				</Button>
+				<Button name="КнопкаВыполнитьПриемку" id="123">
+					<Type>UsualButton</Type>
+					<Width>50</Width>
+					<Height>5</Height>
+					<CommandName>Form.Command.ВыполнитьПриемку</CommandName>
+					<ExtendedTooltip name="КнопкаВыполнитьПриемкуРасширеннаяПодсказка" id="124"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.спАРМРаботникаСклада</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьОтгрузку" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список заказов для отгрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОтгрузку</Action>
+		</Command>
+		<Command name="ВыполнитьПриемку" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список заказов для приемки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПриемку</Action>
+		</Command>
+		<Command name="ОткрытьЗаказыПокупателей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы покупателей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть заказы покупателей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьЗаказыПокупателей</Action>
+		</Command>
+		<Command name="ОткрытьИнформациюОТоваре" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о товаре</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть информацию о товаре</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьИнформациюОТоваре</Action>
+		</Command>
+	</Commands>
+</Form>

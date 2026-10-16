@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommonModule uuid="9f20a388-a322-44d9-9f10-5b32d50f0e23">
+		<InternalInfo>
+			<xr:PropertyState>
+				<xr:Property>Module</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОбщегоНазначенияСобытияФормИСПереопределяемый</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>7e7d7f6b-4084-4a16-b2e3-481f3da5f204</ExtendedConfigurationObject>
+			<Global>false</Global>
+			<ClientManagedApplication>false</ClientManagedApplication>
+			<Server>true</Server>
+			<ExternalConnection>true</ExternalConnection>
+			<ClientOrdinaryApplication>true</ClientOrdinaryApplication>
+			<ServerCall>false</ServerCall>
+		</Properties>
+	</CommonModule>
+</MetaDataObject>

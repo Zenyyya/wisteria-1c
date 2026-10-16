@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<HTTPService uuid="2b857c26-e63b-4267-8006-e415e167bb2f">
+		<Properties>
+			<Name>APIW_Post</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>APIW post</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>post</RootURL>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="20fbead2-3ec3-4b0b-8642-ec099dfe9b12">
+				<Properties>
+					<Name>ДобавитьЗаказССайта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить заказ с сайта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/order_from_website</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="5e5f7330-5e9b-43de-9841-7c391e2fd3a3">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ДобавитьЗаказССайтаPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="3529e614-1b6e-4db2-bb89-163c1b457901">
+				<Properties>
+					<Name>ОбновитьТрекНомерЗаказа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить трек номер заказа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/update_track</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="e52b3316-f9a6-482c-9c20-2e96b86bbd6d">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ОбновитьТрекНомерЗаказаPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="b7e32d7f-3334-406a-962b-d416eb257da4">
+				<Properties>
+					<Name>ОбновитьДанныеКлиента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить данные клиента</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/update_client_data</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="da6a3171-e5ca-4b7f-8275-1ef5a572ab61">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ОбновитьДанныеКлиентаPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="eb8f32f8-b7e3-4b74-8043-7726efca61c6">
+				<Properties>
+					<Name>ДобавитьДокументОплаты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить документ оплаты</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/add_payment_document</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="ad76c1aa-fea9-40d9-89c3-ebf4162e7443">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ДобавитьДокументОплатыPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

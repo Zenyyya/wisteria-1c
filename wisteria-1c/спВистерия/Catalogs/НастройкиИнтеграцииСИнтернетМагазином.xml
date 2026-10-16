@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="fd8893c7-c93d-4f75-9bde-3052af5cda39">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.НастройкиИнтеграцииСИнтернетМагазином" category="Object">
+				<xr:TypeId>20fe8dae-b0d7-42db-9c84-ebbe1d7d8d75</xr:TypeId>
+				<xr:ValueId>ebd1392b-a99f-433c-a667-68bff5978e8d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.НастройкиИнтеграцииСИнтернетМагазином" category="Ref">
+				<xr:TypeId>9c262f89-f359-4c86-822e-ff50ca8f87ec</xr:TypeId>
+				<xr:ValueId>a13aa696-03b5-4f5c-b772-16b9782e7620</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.НастройкиИнтеграцииСИнтернетМагазином" category="Selection">
+				<xr:TypeId>8f853b28-f7e2-4347-8927-919e7f690e6a</xr:TypeId>
+				<xr:ValueId>712e836d-d22b-44bc-afc9-6eb04f1cc187</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.НастройкиИнтеграцииСИнтернетМагазином" category="List">
+				<xr:TypeId>532dce5a-126e-400c-8045-a71a8ae597a1</xr:TypeId>
+				<xr:ValueId>cea719e4-36a2-4b37-b5af-c5318b328694</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.НастройкиИнтеграцииСИнтернетМагазином" category="Manager">
+				<xr:TypeId>e95dbf5f-ecf7-48ff-bef0-99e5598d5f6f</xr:TypeId>
+				<xr:ValueId>d57ebb08-5de1-444a-8fb9-5e4537141c49</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НастройкиИнтеграцииСИнтернетМагазином</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>bc771243-25b5-4414-9c2b-eb6607f429f0</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Template>СхемаВыгрузкиЗаказов</Template>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

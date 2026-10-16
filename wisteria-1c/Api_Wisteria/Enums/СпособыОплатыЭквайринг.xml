@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="97532069-99cb-4d7f-850f-709f6dd8eaf6">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыОплатыЭквайринг" category="Ref">
+				<xr:TypeId>465ae588-dcc8-4c21-b735-d92f525b6016</xr:TypeId>
+				<xr:ValueId>7eb7d797-2b78-4387-bc8b-be33bccafe25</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыОплатыЭквайринг" category="Manager">
+				<xr:TypeId>161b765c-a8e4-4372-90a1-4f47f2fff7f4</xr:TypeId>
+				<xr:ValueId>e83d11c9-fe64-4941-ab2b-fe2202ae2a58</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыОплатыЭквайринг" category="List">
+				<xr:TypeId>63dd7bf4-036f-4ca8-a634-4d832cc0506f</xr:TypeId>
+				<xr:ValueId>e505c8c4-2211-4900-b858-260f2a69465f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СпособыОплатыЭквайринг</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>bab76d6b-e759-4c94-bac8-b4f0558a38ed</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="2094387d-8bc6-4884-b27e-dc5988982e53">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОплатаОнлайн</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>48bc0ad3-5a26-49c9-b12a-ef8dc6521323</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

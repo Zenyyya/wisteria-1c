@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="b711992a-da8c-4565-9280-7cde0118ce10">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ХранилищеШаблонов" category="Object">
+				<xr:TypeId>606e8e6a-2457-413e-845c-0e240ef84f96</xr:TypeId>
+				<xr:ValueId>47d2df90-ac7e-4945-8ee1-4bdc89ab217f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ХранилищеШаблонов" category="Ref">
+				<xr:TypeId>85405caf-53f3-4e10-9ef7-34238492612a</xr:TypeId>
+				<xr:ValueId>e382b624-a2c9-49a9-b723-4ab2b899ee83</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ХранилищеШаблонов" category="Selection">
+				<xr:TypeId>6c203e49-2f79-4bd2-bb37-3e64a7a9c4d2</xr:TypeId>
+				<xr:ValueId>0bd712e5-e836-4556-a2d0-d1d98e9f86ac</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ХранилищеШаблонов" category="List">
+				<xr:TypeId>dcb0ee6b-bbd8-4a52-9d45-36b3bca80558</xr:TypeId>
+				<xr:ValueId>1ee03c4d-b36e-45e6-8dd2-5c0ff91a284e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ХранилищеШаблонов" category="Manager">
+				<xr:TypeId>9134a9ef-22f5-44a5-9e7d-e82aa224b68b</xr:TypeId>
+				<xr:ValueId>0e93df07-2aab-473a-95e4-f586fe3ec819</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ХранилищеШаблонов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>85a1ca82-bc4b-49a8-84e1-77c8158aaf47</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаРедактированияШаблона</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,1423 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<Group>Vertical</Group>
+	<Customizable>false</Customizable>
+	<ConversationsRepresentation>DontShow</ConversationsRepresentation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<ShowCloseButton>false</ShowCloseButton>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1" DisplayImportance="VeryLow">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаПользовательскиеНастройки" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательские настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательские настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПользовательскиеНастройкиРасширеннаяПодсказка" id="65"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаТаблицыЧеков" id="98">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа таблицы чеков</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТаблицыЧековРасширеннаяПодсказка" id="99"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияОтступСлева" id="108">
+					<Visible>false</Visible>
+					<Width>7</Width>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияОтступСлеваКонтекстноеМеню" id="109"/>
+					<ExtendedTooltip name="ДекорацияОтступСлеваРасширеннаяПодсказка" id="110"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаТаблицыЧековГоризонтальная" id="106">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТаблицыЧековГоризонтальнаяРасширеннаяПодсказка" id="107"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияОтступСверху" id="100">
+							<Visible>false</Visible>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОтступСверхуКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="ДекорацияОтступСверхуРасширеннаяПодсказка" id="102"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаЧеков" id="180">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа чеков</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЧековРасширеннаяПодсказка" id="181"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаШапкаЧеков" id="187">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа шапка чеков</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаШапкаЧековРасширеннаяПодсказка" id="188"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаПодсказкаПоискЧекаПоКоду" id="56">
+											<HorizontalStretch>true</HorizontalStretch>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПодсказкаПоискЧекаПоКодуРасширеннаяПодсказка" id="57"/>
+											<ChildItems>
+												<PictureDecoration name="КартинкаПодсказкаПоискЧекаПоКоду" id="58">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Картинка подсказка поиск чека по коду</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="КартинкаПодсказкаПоискЧекаПоКодуКонтекстноеМеню" id="59"/>
+													<ExtendedTooltip name="КартинкаПодсказкаПоискЧекаПоКодуРасширеннаяПодсказка" id="60"/>
+												</PictureDecoration>
+												<LabelDecoration name="НадписьПодсказкаПоискЧекаПоКоду" id="61">
+													<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отсканируйте код для поиска</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="НадписьПодсказкаПоискЧекаПоКодуКонтекстноеМеню" id="62"/>
+													<ExtendedTooltip name="НадписьПодсказкаПоискЧекаПоКодуРасширеннаяПодсказка" id="63"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<CheckBoxField name="ПоВсемМагазинам" id="184">
+											<Visible>false</Visible>
+											<TitleLocation>Right</TitleLocation>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<CheckBoxType>Switcher</CheckBoxType>
+											<ContextMenu name="ПоВсемМагазинамКонтекстноеМеню" id="185"/>
+											<ExtendedTooltip name="ПоВсемМагазинамРасширеннаяПодсказка" id="186"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОтборыСписка" id="120">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отборы списка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отборы списка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтборыСпискаРасширеннаяПодсказка" id="121"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаОтборыПериод" id="134">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отборы период</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отборы период</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОтборыПериодРасширеннаяПодсказка" id="135"/>
+											<ChildItems>
+												<InputField name="НачалоПериода" id="122">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>С</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ClearButton>true</ClearButton>
+													<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="123"/>
+													<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="124"/>
+												</InputField>
+												<InputField name="КонецПериода" id="125">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>По</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ClearButton>true</ClearButton>
+													<ContextMenu name="КонецПериодаКонтекстноеМеню" id="126"/>
+													<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="127"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="КассаККМ" id="128">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ClearButton>true</ClearButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="КассаККМКонтекстноеМеню" id="129"/>
+											<ExtendedTooltip name="КассаККМРасширеннаяПодсказка" id="130"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="ТаблицаЧековККМ" id="34">
+									<Representation>List</Representation>
+									<ReadOnly>true</ReadOnly>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HeightInTableRows>2</HeightInTableRows>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Row</RowSelectionMode>
+									<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<SearchStringLocation>Top</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>false</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<UserSettingsGroup>ГруппаПользовательскиеНастройки</UserSettingsGroup>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ТаблицаЧековККМКонтекстноеМеню" id="35"/>
+									<AutoCommandBar name="ТаблицаЧековККМКоманднаяПанель" id="36">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТаблицаЧековККМРасширеннаяПодсказка" id="37"/>
+									<SearchStringAddition name="ТаблицаЧековККМСтрокаПоиска" id="38">
+										<AdditionSource>
+											<Item>ТаблицаЧековККМ</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаЧековККМСтрокаПоискаКонтекстноеМеню" id="39"/>
+										<ExtendedTooltip name="ТаблицаЧековККМСтрокаПоискаРасширеннаяПодсказка" id="40"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаЧековККМСостояниеПросмотра" id="41">
+										<AdditionSource>
+											<Item>ТаблицаЧековККМ</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаЧековККМСостояниеПросмотраКонтекстноеМеню" id="42"/>
+										<ExtendedTooltip name="ТаблицаЧековККМСостояниеПросмотраРасширеннаяПодсказка" id="43"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаЧековККМУправлениеПоиском" id="44">
+										<AdditionSource>
+											<Item>ТаблицаЧековККМ</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаЧековККМУправлениеПоискомКонтекстноеМеню" id="45"/>
+										<ExtendedTooltip name="ТаблицаЧековККМУправлениеПоискомРасширеннаяПодсказка" id="46"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<ColumnGroup name="ТаблицаЧековККМГруппаШапка" id="71">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шапка</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ТаблицаЧековККМГруппаШапкаРасширеннаяПодсказка" id="72"/>
+											<ChildItems>
+												<ColumnGroup name="ТаблицаЧековККМГруппаОсновныеДанные" id="69">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Основные данные</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ТаблицаЧековККМГруппаОсновныеДанныеРасширеннаяПодсказка" id="70"/>
+													<ChildItems>
+														<ColumnGroup name="ТаблицаЧековККМГруппаНомерЧека" id="136">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица чеков ККМГруппа номер чека</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица чеков ККМГруппа номер чека</v8:content>
+																</v8:item>
+															</ToolTip>
+															<HorizontalStretch>false</HorizontalStretch>
+															<FixingInTable>Left</FixingInTable>
+															<ExtendedTooltip name="ТаблицаЧековККМГруппаНомерЧекаРасширеннаяПодсказка" id="137"/>
+															<ChildItems>
+																<LabelField name="ТаблицаЧековККМНомер" id="47">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>№</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+																	<HorizontalAlign>Left</HorizontalAlign>
+																	<Width>10</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ТаблицаЧековККМНомерКонтекстноеМеню" id="48"/>
+																	<ExtendedTooltip name="ТаблицаЧековККМНомерРасширеннаяПодсказка" id="49"/>
+																</LabelField>
+																<LabelField name="ТаблицаЧековККМНомерККМ" id="131">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>№ ККМ</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+																	<TitleLocation>None</TitleLocation>
+																	<HorizontalAlign>Left</HorizontalAlign>
+																	<ShowInHeader>false</ShowInHeader>
+																	<Width>10</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ТаблицаЧековККМНомерККМКонтекстноеМеню" id="132"/>
+																	<ExtendedTooltip name="ТаблицаЧековККМНомерККМРасширеннаяПодсказка" id="133"/>
+																</LabelField>
+															</ChildItems>
+														</ColumnGroup>
+														<LabelField name="ТаблицаЧековККМДата" id="50">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Дата и время</v8:content>
+																</v8:item>
+															</Title>
+															<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+															<Width>18</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ТаблицаЧековККМДатаКонтекстноеМеню" id="51"/>
+															<ExtendedTooltip name="ТаблицаЧековККМДатаРасширеннаяПодсказка" id="52"/>
+														</LabelField>
+														<LabelField name="ТаблицаЧековККМСуммаДокумента" id="53" DisplayImportance="VeryHigh">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сумма</v8:content>
+																</v8:item>
+															</Title>
+															<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+															<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+															<Width>14</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>false</HorizontalStretch>
+															<Format>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ЧДЦ=2</v8:content>
+																</v8:item>
+															</Format>
+															<ContextMenu name="ТаблицаЧековККМСуммаДокументаКонтекстноеМеню" id="54"/>
+															<ExtendedTooltip name="ТаблицаЧековККМСуммаДокументаРасширеннаяПодсказка" id="55"/>
+														</LabelField>
+													</ChildItems>
+												</ColumnGroup>
+												<ColumnGroup name="ТаблицаЧековККМГруппаВспомогательныеДанные" id="138">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вспомогательные данные</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ТаблицаЧековККМГруппаВспомогательныеДанныеРасширеннаяПодсказка" id="139"/>
+												</ColumnGroup>
+												<LabelField name="ТаблицаЧековККМКомментарий" id="66">
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Комментарий</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<Width>15</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Font ref="style:TextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+													<ContextMenu name="ТаблицаЧековККМКомментарийКонтекстноеМеню" id="67"/>
+													<ExtendedTooltip name="ТаблицаЧековККМКомментарийРасширеннаяПодсказка" id="68"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+								<Table name="ТаблицаЧековККМДляПроверки" id="73">
+									<Representation>List</Representation>
+									<Visible>false</Visible>
+									<ChangeRowSet>false</ChangeRowSet>
+									<HeightInTableRows>7</HeightInTableRows>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<VerticalScrollBar>DontUse</VerticalScrollBar>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<Font ref="style:LargeTextFont" kind="StyleItem"/>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТаблицаЧековККМДляПроверкиКонтекстноеМеню" id="74"/>
+									<AutoCommandBar name="ТаблицаЧековККМДляПроверкиКоманднаяПанель" id="75"/>
+									<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиРасширеннаяПодсказка" id="76"/>
+									<SearchStringAddition name="ТаблицаЧековККМДляПроверкиСтрокаПоиска" id="77">
+										<AdditionSource>
+											<Item>ТаблицаЧековККМДляПроверки</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаЧековККМДляПроверкиСтрокаПоискаКонтекстноеМеню" id="78"/>
+										<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиСтрокаПоискаРасширеннаяПодсказка" id="79"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаЧековККМДляПроверкиСостояниеПросмотра" id="80">
+										<AdditionSource>
+											<Item>ТаблицаЧековККМДляПроверки</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаЧековККМДляПроверкиСостояниеПросмотраКонтекстноеМеню" id="81"/>
+										<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиСостояниеПросмотраРасширеннаяПодсказка" id="82"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаЧековККМДляПроверкиУправлениеПоиском" id="83">
+										<AdditionSource>
+											<Item>ТаблицаЧековККМДляПроверки</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаЧековККМДляПроверкиУправлениеПоискомКонтекстноеМеню" id="84"/>
+										<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиУправлениеПоискомРасширеннаяПодсказка" id="85"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ТаблицаЧековККМДляПроверкиЧекККМ" id="86">
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ТаблицаЧековККМДляПроверкиЧекККМКонтекстноеМеню" id="87"/>
+											<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиЧекККМРасширеннаяПодсказка" id="88"/>
+										</InputField>
+										<InputField name="ТаблицаЧековККМДляПроверкиНомерЧека" id="89">
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>№ чека</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>20</Width>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ТаблицаЧековККМДляПроверкиНомерЧекаКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиНомерЧекаРасширеннаяПодсказка" id="91"/>
+										</InputField>
+										<InputField name="ТаблицаЧековККМДляПроверкиДата" id="92">
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата и время чека</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>18</Width>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ТаблицаЧековККМДляПроверкиДатаКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиДатаРасширеннаяПодсказка" id="94"/>
+										</InputField>
+										<InputField name="ТаблицаЧековККМДляПроверкиСуммаДокумента" id="95">
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сумма</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>14</Width>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ТаблицаЧековККМДляПроверкиСуммаДокументаКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиСуммаДокументаРасширеннаяПодсказка" id="97"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<LabelField name="ТекстОшибкиСканирования" id="117">
+									<Visible>false</Visible>
+									<TitleLocation>None</TitleLocation>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Font ref="style:LargeTextFont" kind="StyleItem"/>
+									<ContextMenu name="ТекстОшибкиСканированияКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ТекстОшибкиСканированияРасширеннаяПодсказка" id="119"/>
+								</LabelField>
+								<UsualGroup name="ГруппаОперации" id="27">
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>WeakSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОперацииРасширеннаяПодсказка" id="28"/>
+									<ChildItems>
+										<Button name="ВозвратБезЧека" id="29">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ВозвратБезЧекаРасширеннаяПодсказка" id="30"/>
+										</Button>
+										<Button name="КоррекцияБезОснования" id="182">
+											<Type>UsualButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="КоррекцияБезОснованияРасширеннаяПодсказка" id="183"/>
+										</Button>
+										<PictureDecoration name="ДекорацияРасширитель" id="31">
+											<Height>1</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДекорацияРасширительКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="ДекорацияРасширительРасширеннаяПодсказка" id="33"/>
+										</PictureDecoration>
+										<Button name="Закрыть" id="23">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<CommandName>0</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="24"/>
+										</Button>
+										<Button name="Выбрать" id="25">
+											<Type>UsualButton</Type>
+											<CommandName>0</CommandName>
+											<BackColor>style:ImportantColor</BackColor>
+											<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="26"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСоставЧека" id="140">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Состав чека</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Button</ControlRepresentation>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаСоставЧекаРасширеннаяПодсказка" id="141"/>
+							<ChildItems>
+								<Table name="ТоварыЧека" id="142">
+									<HeightInTableRows>1</HeightInTableRows>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<EnableStartDrag>true</EnableStartDrag>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ТоварыЧекаКонтекстноеМеню" id="143"/>
+									<AutoCommandBar name="ТоварыЧекаКоманднаяПанель" id="144"/>
+									<ExtendedTooltip name="ТоварыЧекаРасширеннаяПодсказка" id="145"/>
+									<SearchStringAddition name="ТоварыЧекаСтрокаПоиска" id="146">
+										<AdditionSource>
+											<Item>ТоварыЧека</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТоварыЧекаСтрокаПоискаКонтекстноеМеню" id="147"/>
+										<ExtendedTooltip name="ТоварыЧекаСтрокаПоискаРасширеннаяПодсказка" id="148"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТоварыЧекаСостояниеПросмотра" id="149">
+										<AdditionSource>
+											<Item>ТоварыЧека</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТоварыЧекаСостояниеПросмотраКонтекстноеМеню" id="150"/>
+										<ExtendedTooltip name="ТоварыЧекаСостояниеПросмотраРасширеннаяПодсказка" id="151"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТоварыЧекаУправлениеПоиском" id="152">
+										<AdditionSource>
+											<Item>ТоварыЧека</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТоварыЧекаУправлениеПоискомКонтекстноеМеню" id="153"/>
+										<ExtendedTooltip name="ТоварыЧекаУправлениеПоискомРасширеннаяПодсказка" id="154"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<ColumnGroup name="ТоварыЧекаГруппа1" id="176">
+											<ExtendedTooltip name="ТоварыЧекаГруппа1РасширеннаяПодсказка" id="177"/>
+											<ChildItems>
+												<LabelField name="ТоварыЧекаНоменклатура" id="161">
+													<ContextMenu name="ТоварыЧекаНоменклатураКонтекстноеМеню" id="162"/>
+													<ExtendedTooltip name="ТоварыЧекаНоменклатураРасширеннаяПодсказка" id="163"/>
+												</LabelField>
+												<LabelField name="ТоварыЧекаХарактеристика" id="170">
+													<ContextMenu name="ТоварыЧекаХарактеристикаКонтекстноеМеню" id="171"/>
+													<ExtendedTooltip name="ТоварыЧекаХарактеристикаРасширеннаяПодсказка" id="172"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+										<LabelField name="ТоварыЧекаЦена" id="173">
+											<Width>12</Width>
+											<ContextMenu name="ТоварыЧекаЦенаКонтекстноеМеню" id="174"/>
+											<ExtendedTooltip name="ТоварыЧекаЦенаРасширеннаяПодсказка" id="175"/>
+										</LabelField>
+										<ColumnGroup name="ТоварыЧекаГруппа2" id="178">
+											<ExtendedTooltip name="ТоварыЧекаГруппа2РасширеннаяПодсказка" id="179"/>
+											<ChildItems>
+												<LabelField name="ТоварыЧекаКоличество" id="158">
+													<Width>12</Width>
+													<ContextMenu name="ТоварыЧекаКоличествоКонтекстноеМеню" id="159"/>
+													<ExtendedTooltip name="ТоварыЧекаКоличествоРасширеннаяПодсказка" id="160"/>
+												</LabelField>
+												<LabelField name="ТоварыЧекаСумма" id="167">
+													<Width>12</Width>
+													<ContextMenu name="ТоварыЧекаСуммаКонтекстноеМеню" id="168"/>
+													<ExtendedTooltip name="ТоварыЧекаСуммаРасширеннаяПодсказка" id="169"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ДекорацияОтступСнизу" id="103">
+							<Visible>false</Visible>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОтступСнизуКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="ДекорацияОтступСнизуРасширеннаяПодсказка" id="105"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияОтступСправа" id="111">
+					<Visible>false</Visible>
+					<Width>7</Width>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияОтступСправаКонтекстноеМеню" id="112"/>
+					<ExtendedTooltip name="ДекорацияОтступСправаРасширеннаяПодсказка" id="113"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.21">
+		<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+		<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+		<AutoTitle>false</AutoTitle>
+		<AutoURL>false</AutoURL>
+		<Group>Vertical</Group>
+		<Customizable>false</Customizable>
+		<ConversationsRepresentation>DontShow</ConversationsRepresentation>
+		<CommandSet>
+			<ExcludedCommand>Abort</ExcludedCommand>
+			<ExcludedCommand>Ignore</ExcludedCommand>
+			<ExcludedCommand>No</ExcludedCommand>
+			<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+			<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+			<ExcludedCommand>RestoreValues</ExcludedCommand>
+			<ExcludedCommand>Retry</ExcludedCommand>
+			<ExcludedCommand>SaveValues</ExcludedCommand>
+			<ExcludedCommand>Yes</ExcludedCommand>
+		</CommandSet>
+		<ShowCloseButton>false</ShowCloseButton>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1" DisplayImportance="VeryLow">
+			<Autofill>false</Autofill>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаПользовательскиеНастройки" id="64">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа пользовательские настройки</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа пользовательские настройки</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>HorizontalIfPossible</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаПользовательскиеНастройкиРасширеннаяПодсказка" id="65"/>
+			</UsualGroup>
+			<UsualGroup name="ГруппаТаблицыЧеков" id="98">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа таблицы чеков</v8:content>
+					</v8:item>
+				</Title>
+				<Group>AlwaysHorizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаТаблицыЧековРасширеннаяПодсказка" id="99"/>
+				<ChildItems>
+					<LabelDecoration name="ДекорацияОтступСлева" id="108">
+						<Visible>false</Visible>
+						<Width>7</Width>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> </v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="ДекорацияОтступСлеваКонтекстноеМеню" id="109"/>
+						<ExtendedTooltip name="ДекорацияОтступСлеваРасширеннаяПодсказка" id="110"/>
+					</LabelDecoration>
+					<UsualGroup name="ГруппаТаблицыЧековГоризонтальная" id="106">
+						<Group>Vertical</Group>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаТаблицыЧековГоризонтальнаяРасширеннаяПодсказка" id="107"/>
+						<ChildItems>
+							<LabelDecoration name="ДекорацияОтступСверху" id="100">
+								<Visible>false</Visible>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content> </v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="ДекорацияОтступСверхуКонтекстноеМеню" id="101"/>
+								<ExtendedTooltip name="ДекорацияОтступСверхуРасширеннаяПодсказка" id="102"/>
+							</LabelDecoration>
+							<UsualGroup name="ГруппаЧеков" id="180">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа чеков</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаЧековРасширеннаяПодсказка" id="181"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаШапкаЧеков" id="187">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа шапка чеков</v8:content>
+											</v8:item>
+										</Title>
+										<HorizontalStretch>true</HorizontalStretch>
+										<Group>AlwaysHorizontal</Group>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаШапкаЧековРасширеннаяПодсказка" id="188"/>
+										<ChildItems>
+											<UsualGroup name="ГруппаПодсказкаПоискЧекаПоКоду" id="56">
+												<HorizontalStretch>true</HorizontalStretch>
+												<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+												<Group>AlwaysHorizontal</Group>
+												<Behavior>Usual</Behavior>
+												<Representation>WeakSeparation</Representation>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="ГруппаПодсказкаПоискЧекаПоКодуРасширеннаяПодсказка" id="57"/>
+												<ChildItems>
+													<PictureDecoration name="КартинкаПодсказкаПоискЧекаПоКоду" id="58">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Картинка подсказка поиск чека по коду</v8:content>
+															</v8:item>
+														</Title>
+														<ContextMenu name="КартинкаПодсказкаПоискЧекаПоКодуКонтекстноеМеню" id="59"/>
+														<ExtendedTooltip name="КартинкаПодсказкаПоискЧекаПоКодуРасширеннаяПодсказка" id="60"/>
+													</PictureDecoration>
+													<LabelDecoration name="НадписьПодсказкаПоискЧекаПоКоду" id="61">
+														<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Отсканируйте код для поиска</v8:content>
+															</v8:item>
+														</Title>
+														<ContextMenu name="НадписьПодсказкаПоискЧекаПоКодуКонтекстноеМеню" id="62"/>
+														<ExtendedTooltip name="НадписьПодсказкаПоискЧекаПоКодуРасширеннаяПодсказка" id="63"/>
+													</LabelDecoration>
+												</ChildItems>
+											</UsualGroup>
+											<CheckBoxField name="ПоВсемМагазинам" id="184">
+												<Visible>false</Visible>
+												<TitleLocation>Right</TitleLocation>
+												<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+												<CheckBoxType>Switcher</CheckBoxType>
+												<ContextMenu name="ПоВсемМагазинамКонтекстноеМеню" id="185"/>
+												<ExtendedTooltip name="ПоВсемМагазинамРасширеннаяПодсказка" id="186"/>
+											</CheckBoxField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ГруппаОтборыСписка" id="120">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа отборы списка</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа отборы списка</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>HorizontalIfPossible</Group>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаОтборыСпискаРасширеннаяПодсказка" id="121"/>
+										<ChildItems>
+											<UsualGroup name="ГруппаОтборыПериод" id="134">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группа отборы период</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группа отборы период</v8:content>
+													</v8:item>
+												</ToolTip>
+												<HorizontalStretch>false</HorizontalStretch>
+												<Group>HorizontalIfPossible</Group>
+												<Representation>None</Representation>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="ГруппаОтборыПериодРасширеннаяПодсказка" id="135"/>
+												<ChildItems>
+													<InputField name="НачалоПериода" id="122">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>С</v8:content>
+															</v8:item>
+														</Title>
+														<HorizontalStretch>false</HorizontalStretch>
+														<ClearButton>true</ClearButton>
+														<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="123"/>
+														<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="124"/>
+													</InputField>
+													<InputField name="КонецПериода" id="125">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По</v8:content>
+															</v8:item>
+														</Title>
+														<HorizontalStretch>false</HorizontalStretch>
+														<ClearButton>true</ClearButton>
+														<ContextMenu name="КонецПериодаКонтекстноеМеню" id="126"/>
+														<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="127"/>
+													</InputField>
+												</ChildItems>
+											</UsualGroup>
+											<InputField name="КассаККМ" id="128">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<ClearButton>true</ClearButton>
+												<OpenButton>false</OpenButton>
+												<ContextMenu name="КассаККМКонтекстноеМеню" id="129"/>
+												<ExtendedTooltip name="КассаККМРасширеннаяПодсказка" id="130"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+									<Table name="ТаблицаЧековККМ" id="34">
+										<Representation>List</Representation>
+										<ReadOnly>true</ReadOnly>
+										<ChangeRowSet>false</ChangeRowSet>
+										<ChangeRowOrder>false</ChangeRowOrder>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<HeightInTableRows>2</HeightInTableRows>
+										<SelectionMode>SingleRow</SelectionMode>
+										<RowSelectionMode>Row</RowSelectionMode>
+										<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+										<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+										<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+										<SearchStringLocation>Top</SearchStringLocation>
+										<ViewStatusLocation>None</ViewStatusLocation>
+										<SearchControlLocation>None</SearchControlLocation>
+										<AutoRefresh>false</AutoRefresh>
+										<AutoRefreshPeriod>60</AutoRefreshPeriod>
+										<Period>
+											<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+											<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+											<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+										</Period>
+										<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+										<RestoreCurrentRow>false</RestoreCurrentRow>
+										<TopLevelParent xsi:nil="true"/>
+										<ShowRoot>false</ShowRoot>
+										<AllowRootChoice>false</AllowRootChoice>
+										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<UserSettingsGroup>ГруппаПользовательскиеНастройки</UserSettingsGroup>
+										<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+										<ContextMenu name="ТаблицаЧековККМКонтекстноеМеню" id="35"/>
+										<AutoCommandBar name="ТаблицаЧековККМКоманднаяПанель" id="36">
+											<Autofill>false</Autofill>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ТаблицаЧековККМРасширеннаяПодсказка" id="37"/>
+										<SearchStringAddition name="ТаблицаЧековККМСтрокаПоиска" id="38">
+											<AdditionSource>
+												<Item>ТаблицаЧековККМ</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ТаблицаЧековККМСтрокаПоискаКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="ТаблицаЧековККМСтрокаПоискаРасширеннаяПодсказка" id="40"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ТаблицаЧековККМСостояниеПросмотра" id="41">
+											<AdditionSource>
+												<Item>ТаблицаЧековККМ</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ТаблицаЧековККМСостояниеПросмотраКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="ТаблицаЧековККМСостояниеПросмотраРасширеннаяПодсказка" id="43"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ТаблицаЧековККМУправлениеПоиском" id="44">
+											<AdditionSource>
+												<Item>ТаблицаЧековККМ</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ТаблицаЧековККМУправлениеПоискомКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ТаблицаЧековККМУправлениеПоискомРасширеннаяПодсказка" id="46"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<ColumnGroup name="ТаблицаЧековККМГруппаШапка" id="71">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Шапка</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ТаблицаЧековККМГруппаШапкаРасширеннаяПодсказка" id="72"/>
+												<ChildItems>
+													<ColumnGroup name="ТаблицаЧековККМГруппаОсновныеДанные" id="69">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Основные данные</v8:content>
+															</v8:item>
+														</Title>
+														<HorizontalStretch>false</HorizontalStretch>
+														<Group>Horizontal</Group>
+														<ExtendedTooltip name="ТаблицаЧековККМГруппаОсновныеДанныеРасширеннаяПодсказка" id="70"/>
+														<ChildItems>
+															<ColumnGroup name="ТаблицаЧековККМГруппаНомерЧека" id="136">
+																<Title>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Таблица чеков ККМГруппа номер чека</v8:content>
+																	</v8:item>
+																</Title>
+																<ToolTip>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Таблица чеков ККМГруппа номер чека</v8:content>
+																	</v8:item>
+																</ToolTip>
+																<HorizontalStretch>false</HorizontalStretch>
+																<FixingInTable>Left</FixingInTable>
+																<ExtendedTooltip name="ТаблицаЧековККМГруппаНомерЧекаРасширеннаяПодсказка" id="137"/>
+																<ChildItems>
+																	<LabelField name="ТаблицаЧековККМНомер" id="47">
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>№</v8:content>
+																			</v8:item>
+																		</Title>
+																		<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+																		<HorizontalAlign>Left</HorizontalAlign>
+																		<Width>10</Width>
+																		<AutoMaxWidth>false</AutoMaxWidth>
+																		<HorizontalStretch>false</HorizontalStretch>
+																		<ContextMenu name="ТаблицаЧековККМНомерКонтекстноеМеню" id="48"/>
+																		<ExtendedTooltip name="ТаблицаЧековККМНомерРасширеннаяПодсказка" id="49"/>
+																	</LabelField>
+																	<LabelField name="ТаблицаЧековККМНомерККМ" id="131">
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>№ ККМ</v8:content>
+																			</v8:item>
+																		</Title>
+																		<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+																		<TitleLocation>None</TitleLocation>
+																		<HorizontalAlign>Left</HorizontalAlign>
+																		<ShowInHeader>false</ShowInHeader>
+																		<Width>10</Width>
+																		<AutoMaxWidth>false</AutoMaxWidth>
+																		<HorizontalStretch>false</HorizontalStretch>
+																		<ContextMenu name="ТаблицаЧековККМНомерККМКонтекстноеМеню" id="132"/>
+																		<ExtendedTooltip name="ТаблицаЧековККМНомерККМРасширеннаяПодсказка" id="133"/>
+																	</LabelField>
+																</ChildItems>
+															</ColumnGroup>
+															<LabelField name="ТаблицаЧековККМДата" id="50">
+																<Title>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Дата и время</v8:content>
+																	</v8:item>
+																</Title>
+																<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+																<Width>18</Width>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<HorizontalStretch>true</HorizontalStretch>
+																<ContextMenu name="ТаблицаЧековККМДатаКонтекстноеМеню" id="51"/>
+																<ExtendedTooltip name="ТаблицаЧековККМДатаРасширеннаяПодсказка" id="52"/>
+															</LabelField>
+															<LabelField name="ТаблицаЧековККМСуммаДокумента" id="53" DisplayImportance="VeryHigh">
+																<Title>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Сумма</v8:content>
+																	</v8:item>
+																</Title>
+																<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+																<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+																<Width>14</Width>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<HorizontalStretch>false</HorizontalStretch>
+																<Format>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>ЧДЦ=2</v8:content>
+																	</v8:item>
+																</Format>
+																<ContextMenu name="ТаблицаЧековККМСуммаДокументаКонтекстноеМеню" id="54"/>
+																<ExtendedTooltip name="ТаблицаЧековККМСуммаДокументаРасширеннаяПодсказка" id="55"/>
+															</LabelField>
+														</ChildItems>
+													</ColumnGroup>
+													<ColumnGroup name="ТаблицаЧековККМГруппаВспомогательныеДанные" id="138">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Вспомогательные данные</v8:content>
+															</v8:item>
+														</Title>
+														<Group>Horizontal</Group>
+														<ExtendedTooltip name="ТаблицаЧековККМГруппаВспомогательныеДанныеРасширеннаяПодсказка" id="139"/>
+													</ColumnGroup>
+													<LabelField name="ТаблицаЧековККМКомментарий" id="66">
+														<Visible>false</Visible>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Комментарий</v8:content>
+															</v8:item>
+														</Title>
+														<TitleLocation>None</TitleLocation>
+														<ShowInHeader>false</ShowInHeader>
+														<ShowInFooter>false</ShowInFooter>
+														<Width>15</Width>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<Font ref="style:TextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+														<ContextMenu name="ТаблицаЧековККМКомментарийКонтекстноеМеню" id="67"/>
+														<ExtendedTooltip name="ТаблицаЧековККМКомментарийРасширеннаяПодсказка" id="68"/>
+													</LabelField>
+												</ChildItems>
+											</ColumnGroup>
+										</ChildItems>
+									</Table>
+									<Table name="ТаблицаЧековККМДляПроверки" id="73">
+										<Representation>List</Representation>
+										<Visible>false</Visible>
+										<ChangeRowSet>false</ChangeRowSet>
+										<HeightInTableRows>7</HeightInTableRows>
+										<RowSelectionMode>Cell</RowSelectionMode>
+										<VerticalScrollBar>DontUse</VerticalScrollBar>
+										<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<Font ref="style:LargeTextFont" kind="StyleItem"/>
+										<SearchStringLocation>None</SearchStringLocation>
+										<ViewStatusLocation>None</ViewStatusLocation>
+										<SearchControlLocation>None</SearchControlLocation>
+										<RowFilter xsi:nil="true"/>
+										<ContextMenu name="ТаблицаЧековККМДляПроверкиКонтекстноеМеню" id="74"/>
+										<AutoCommandBar name="ТаблицаЧековККМДляПроверкиКоманднаяПанель" id="75"/>
+										<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиРасширеннаяПодсказка" id="76"/>
+										<SearchStringAddition name="ТаблицаЧековККМДляПроверкиСтрокаПоиска" id="77">
+											<AdditionSource>
+												<Item>ТаблицаЧековККМДляПроверки</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ТаблицаЧековККМДляПроверкиСтрокаПоискаКонтекстноеМеню" id="78"/>
+											<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиСтрокаПоискаРасширеннаяПодсказка" id="79"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ТаблицаЧековККМДляПроверкиСостояниеПросмотра" id="80">
+											<AdditionSource>
+												<Item>ТаблицаЧековККМДляПроверки</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ТаблицаЧековККМДляПроверкиСостояниеПросмотраКонтекстноеМеню" id="81"/>
+											<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиСостояниеПросмотраРасширеннаяПодсказка" id="82"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ТаблицаЧековККМДляПроверкиУправлениеПоиском" id="83">
+											<AdditionSource>
+												<Item>ТаблицаЧековККМДляПроверки</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ТаблицаЧековККМДляПроверкиУправлениеПоискомКонтекстноеМеню" id="84"/>
+											<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиУправлениеПоискомРасширеннаяПодсказка" id="85"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="ТаблицаЧековККМДляПроверкиЧекККМ" id="86">
+												<Visible>false</Visible>
+												<EditMode>EnterOnInput</EditMode>
+												<AutoEditMode>true</AutoEditMode>
+												<ContextMenu name="ТаблицаЧековККМДляПроверкиЧекККМКонтекстноеМеню" id="87"/>
+												<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиЧекККМРасширеннаяПодсказка" id="88"/>
+											</InputField>
+											<InputField name="ТаблицаЧековККМДляПроверкиНомерЧека" id="89">
+												<ReadOnly>true</ReadOnly>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>№ чека</v8:content>
+													</v8:item>
+												</Title>
+												<TitleFont ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+												<EditMode>EnterOnInput</EditMode>
+												<AutoEditMode>true</AutoEditMode>
+												<Width>20</Width>
+												<ChooseType>false</ChooseType>
+												<TextEdit>false</TextEdit>
+												<ContextMenu name="ТаблицаЧековККМДляПроверкиНомерЧекаКонтекстноеМеню" id="90"/>
+												<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиНомерЧекаРасширеннаяПодсказка" id="91"/>
+											</InputField>
+											<InputField name="ТаблицаЧековККМДляПроверкиДата" id="92">
+												<ReadOnly>true</ReadOnly>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Дата и время чека</v8:content>
+													</v8:item>
+												</Title>
+												<TitleFont ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+												<EditMode>EnterOnInput</EditMode>
+												<AutoEditMode>true</AutoEditMode>
+												<Width>18</Width>
+												<ChooseType>false</ChooseType>
+												<TextEdit>false</TextEdit>
+												<ContextMenu name="ТаблицаЧековККМДляПроверкиДатаКонтекстноеМеню" id="93"/>
+												<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиДатаРасширеннаяПодсказка" id="94"/>
+											</InputField>
+											<InputField name="ТаблицаЧековККМДляПроверкиСуммаДокумента" id="95">
+												<ReadOnly>true</ReadOnly>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Сумма</v8:content>
+													</v8:item>
+												</Title>
+												<TitleFont ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+												<EditMode>EnterOnInput</EditMode>
+												<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+												<AutoEditMode>true</AutoEditMode>
+												<Width>14</Width>
+												<ChooseType>false</ChooseType>
+												<TextEdit>false</TextEdit>
+												<ContextMenu name="ТаблицаЧековККМДляПроверкиСуммаДокументаКонтекстноеМеню" id="96"/>
+												<ExtendedTooltip name="ТаблицаЧековККМДляПроверкиСуммаДокументаРасширеннаяПодсказка" id="97"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+									<LabelField name="ТекстОшибкиСканирования" id="117">
+										<Visible>false</Visible>
+										<TitleLocation>None</TitleLocation>
+										<HorizontalAlign>Center</HorizontalAlign>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<TextColor>style:SpecialTextColor</TextColor>
+										<Font ref="style:LargeTextFont" kind="StyleItem"/>
+										<ContextMenu name="ТекстОшибкиСканированияКонтекстноеМеню" id="118"/>
+										<ExtendedTooltip name="ТекстОшибкиСканированияРасширеннаяПодсказка" id="119"/>
+									</LabelField>
+									<UsualGroup name="ГруппаОперации" id="27">
+										<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+										<Group>AlwaysHorizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>WeakSeparation</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаОперацииРасширеннаяПодсказка" id="28"/>
+										<ChildItems>
+											<Button name="ВозвратБезЧека" id="29">
+												<Type>UsualButton</Type>
+												<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ВозвратБезЧекаРасширеннаяПодсказка" id="30"/>
+											</Button>
+											<Button name="КоррекцияБезОснования" id="182">
+												<Type>UsualButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="КоррекцияБезОснованияРасширеннаяПодсказка" id="183"/>
+											</Button>
+											<PictureDecoration name="ДекорацияРасширитель" id="31">
+												<Height>1</Height>
+												<HorizontalStretch>true</HorizontalStretch>
+												<ContextMenu name="ДекорацияРасширительКонтекстноеМеню" id="32"/>
+												<ExtendedTooltip name="ДекорацияРасширительРасширеннаяПодсказка" id="33"/>
+											</PictureDecoration>
+											<Button name="Закрыть" id="23">
+												<Type>UsualButton</Type>
+												<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+												<CommandName>0</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Отмена</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="24"/>
+											</Button>
+											<Button name="Выбрать" id="25">
+												<Type>UsualButton</Type>
+												<CommandName>0</CommandName>
+												<BackColor>style:ImportantColor</BackColor>
+												<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="26"/>
+											</Button>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаСоставЧека" id="140">
+								<Visible>false</Visible>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Состав чека</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Collapsible</Behavior>
+								<Collapsed>true</Collapsed>
+								<ControlRepresentation>Button</ControlRepresentation>
+								<Representation>WeakSeparation</Representation>
+								<ExtendedTooltip name="ГруппаСоставЧекаРасширеннаяПодсказка" id="141"/>
+								<ChildItems>
+									<Table name="ТоварыЧека" id="142">
+										<HeightInTableRows>1</HeightInTableRows>
+										<RowSelectionMode>Cell</RowSelectionMode>
+										<EnableStartDrag>true</EnableStartDrag>
+										<AutoRefresh>false</AutoRefresh>
+										<AutoRefreshPeriod>60</AutoRefreshPeriod>
+										<Period>
+											<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+											<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+											<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+										</Period>
+										<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+										<RestoreCurrentRow>false</RestoreCurrentRow>
+										<TopLevelParent xsi:nil="true"/>
+										<ShowRoot>true</ShowRoot>
+										<AllowRootChoice>false</AllowRootChoice>
+										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+										<ContextMenu name="ТоварыЧекаКонтекстноеМеню" id="143"/>
+										<AutoCommandBar name="ТоварыЧекаКоманднаяПанель" id="144"/>
+										<ExtendedTooltip name="ТоварыЧекаРасширеннаяПодсказка" id="145"/>
+										<SearchStringAddition name="ТоварыЧекаСтрокаПоиска" id="146">
+											<AdditionSource>
+												<Item>ТоварыЧека</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ТоварыЧекаСтрокаПоискаКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ТоварыЧекаСтрокаПоискаРасширеннаяПодсказка" id="148"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ТоварыЧекаСостояниеПросмотра" id="149">
+											<AdditionSource>
+												<Item>ТоварыЧека</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ТоварыЧекаСостояниеПросмотраКонтекстноеМеню" id="150"/>
+											<ExtendedTooltip name="ТоварыЧекаСостояниеПросмотраРасширеннаяПодсказка" id="151"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ТоварыЧекаУправлениеПоиском" id="152">
+											<AdditionSource>
+												<Item>ТоварыЧека</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ТоварыЧекаУправлениеПоискомКонтекстноеМеню" id="153"/>
+											<ExtendedTooltip name="ТоварыЧекаУправлениеПоискомРасширеннаяПодсказка" id="154"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<ColumnGroup name="ТоварыЧекаГруппа1" id="176">
+												<ExtendedTooltip name="ТоварыЧекаГруппа1РасширеннаяПодсказка" id="177"/>
+												<ChildItems>
+													<LabelField name="ТоварыЧекаНоменклатура" id="161">
+														<ContextMenu name="ТоварыЧекаНоменклатураКонтекстноеМеню" id="162"/>
+														<ExtendedTooltip name="ТоварыЧекаНоменклатураРасширеннаяПодсказка" id="163"/>
+													</LabelField>
+													<LabelField name="ТоварыЧекаХарактеристика" id="170">
+														<ContextMenu name="ТоварыЧекаХарактеристикаКонтекстноеМеню" id="171"/>
+														<ExtendedTooltip name="ТоварыЧекаХарактеристикаРасширеннаяПодсказка" id="172"/>
+													</LabelField>
+												</ChildItems>
+											</ColumnGroup>
+											<LabelField name="ТоварыЧекаЦена" id="173">
+												<Width>12</Width>
+												<ContextMenu name="ТоварыЧекаЦенаКонтекстноеМеню" id="174"/>
+												<ExtendedTooltip name="ТоварыЧекаЦенаРасширеннаяПодсказка" id="175"/>
+											</LabelField>
+											<ColumnGroup name="ТоварыЧекаГруппа2" id="178">
+												<ExtendedTooltip name="ТоварыЧекаГруппа2РасширеннаяПодсказка" id="179"/>
+												<ChildItems>
+													<LabelField name="ТоварыЧекаКоличество" id="158">
+														<Width>12</Width>
+														<ContextMenu name="ТоварыЧекаКоличествоКонтекстноеМеню" id="159"/>
+														<ExtendedTooltip name="ТоварыЧекаКоличествоРасширеннаяПодсказка" id="160"/>
+													</LabelField>
+													<LabelField name="ТоварыЧекаСумма" id="167">
+														<Width>12</Width>
+														<ContextMenu name="ТоварыЧекаСуммаКонтекстноеМеню" id="168"/>
+														<ExtendedTooltip name="ТоварыЧекаСуммаРасширеннаяПодсказка" id="169"/>
+													</LabelField>
+												</ChildItems>
+											</ColumnGroup>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</UsualGroup>
+							<LabelDecoration name="ДекорацияОтступСнизу" id="103">
+								<Visible>false</Visible>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content> </v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="ДекорацияОтступСнизуКонтекстноеМеню" id="104"/>
+								<ExtendedTooltip name="ДекорацияОтступСнизуРасширеннаяПодсказка" id="105"/>
+							</LabelDecoration>
+						</ChildItems>
+					</UsualGroup>
+					<LabelDecoration name="ДекорацияОтступСправа" id="111">
+						<Visible>false</Visible>
+						<Width>7</Width>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> </v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="ДекорацияОтступСправаКонтекстноеМеню" id="112"/>
+						<ExtendedTooltip name="ДекорацияОтступСправаРасширеннаяПодсказка" id="113"/>
+					</LabelDecoration>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

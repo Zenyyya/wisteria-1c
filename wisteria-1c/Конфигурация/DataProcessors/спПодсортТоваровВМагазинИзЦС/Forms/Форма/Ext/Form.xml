@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подсорт с ЦС</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПеренестиВЗаказ" id="4">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПеренестиВЗаказ</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаПеренестиВЗаказРасширеннаяПодсказка" id="5"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="НаименьшееКоличество" id="1">
+			<DataPath>НаименьшееКоличество</DataPath>
+			<Width>4</Width>
+			<Format>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЧЦ=15; ЧН=0</v8:content>
+				</v8:item>
+			</Format>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="НаименьшееКоличествоКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименьшееКоличествоРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="Click">НаименьшееКоличествоНажатие</Event>
+			</Events>
+		</LabelField>
+		<Table name="Запасы" id="6">
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Запасы</DataPath>
+			<RowPictureDataPath>~Запасы.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="ЗапасыКонтекстноеМеню" id="7"/>
+			<AutoCommandBar name="ЗапасыКоманднаяПанель" id="8">
+				<ChildItems>
+					<Button name="ЗапасыПометитьВсе" id="39">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.ПометитьВсе</CommandName>
+						<ExtendedTooltip name="ЗапасыПометитьВсеРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ЗапасыСнятьПометки" id="37">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.СнятьПометки</CommandName>
+						<ExtendedTooltip name="ЗапасыСнятьПометкиРасширеннаяПодсказка" id="38"/>
+					</Button>
+					<Button name="ЗапасыЗаполнитьКоличествоКЗаказу" id="41">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьКоличествоКЗаказу</CommandName>
+						<ExtendedTooltip name="ЗапасыЗаполнитьКоличествоКЗаказуРасширеннаяПодсказка" id="42"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЗапасыРасширеннаяПодсказка" id="9"/>
+			<SearchStringAddition name="ЗапасыСтрокаПоиска" id="10">
+				<AdditionSource>
+					<Item>Запасы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗапасыСтрокаПоискаКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ЗапасыСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗапасыСостояниеПросмотра" id="13">
+				<AdditionSource>
+					<Item>Запасы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗапасыСостояниеПросмотраКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ЗапасыСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗапасыУправлениеПоиском" id="16">
+				<AdditionSource>
+					<Item>Запасы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗапасыУправлениеПоискомКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="ЗапасыУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ЗапасыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="ЗапасыПометка" id="34">
+					<DataPath>Запасы.Пометка</DataPath>
+					<CellHyperlink>true</CellHyperlink>
+					<CellHyperlinkRepresentation>Show</CellHyperlinkRepresentation>
+					<CellHyperlinkDisplayVariant>Always</CellHyperlinkDisplayVariant>
+					<Hyperlink>true</Hyperlink>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ФлажокБЭД</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ЗапасыПометкаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ЗапасыПометкаРасширеннаяПодсказка" id="36"/>
+				</PictureField>
+				<LabelField name="ЗапасыНоменклатура" id="25">
+					<DataPath>Запасы.Номенклатура</DataPath>
+					<ContextMenu name="ЗапасыНоменклатураКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ЗапасыНоменклатураРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="ЗапасыНоменклатураАртикул" id="28">
+					<DataPath>Запасы.НоменклатураАртикул</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗапасыНоменклатураАртикулКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ЗапасыНоменклатураАртикулРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="ЗапасыНоменклатураспБренд" id="31">
+					<DataPath>Запасы.НоменклатураспБренд</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бренд</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗапасыНоменклатураспБрендКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ЗапасыНоменклатураспБрендРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="ЗапасыДоступноеКоличество" id="19">
+					<DataPath>Запасы.ДоступноеКоличество</DataPath>
+					<ContextMenu name="ЗапасыДоступноеКоличествоКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ЗапасыДоступноеКоличествоРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="ЗапасыКоличествоПоЗаказу" id="22">
+					<DataPath>Запасы.Количество</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество по заказу</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗапасыКоличествоПоЗаказуКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ЗапасыКоличествоПоЗаказуРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="ЕдиницаИзмерения" id="43">
+					<DataPath>Запасы.ЕдиницаИзмерения</DataPath>
+					<ContextMenu name="ЕдиницаИзмеренияКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ЕдиницаИзмеренияРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаименьшееКоличество" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименьшее количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>НаименьшееКоличество</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Запасы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запасы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Запасы.ЕдиницаИзмерения</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СкладыМагазинов.Ссылка КАК СкладМагазина
+ПОМЕСТИТЬ ВТ_СкладыМагазина
+ИЗ
+	Справочник.СтруктурныеЕдиницы КАК СкладыМагазинов
+ГДЕ
+	НЕ(СкладыМагазинов.ТипСтруктурнойЕдиницы &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ТипыСтруктурныхЕдиниц.Склад)
+				И СкладыМагазинов.ТипСтруктурнойЕдиницы &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ТипыСтруктурныхЕдиниц.Розница))
+	И СкладыМагазинов.Родитель = &amp;ГруппаСкладов
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СтруктурныеЕдиницы.Ссылка
+ИЗ
+	Справочник.СтруктурныеЕдиницы КАК СтруктурныеЕдиницы
+ГДЕ
+	СтруктурныеЕдиницы.Ссылка = &amp;Отправитель
+
+ИНДЕКСИРОВАТЬ ПО
+	СкладМагазина
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница,
+	ЗапасыНаСкладахОстатки.Номенклатура КАК Номенклатура,
+	СУММА(ЗапасыНаСкладахОстатки.КоличествоОстаток) КАК КоличествоОстаток,
+	ЗапасыНаСкладахОстатки.Номенклатура.Артикул КАК НоменклатураАртикул,
+	ЗапасыНаСкладахОстатки.Номенклатура.Штрихкод КАК НоменклатураШтрихкод
+ПОМЕСТИТЬ ВТ_Остатки
+ИЗ
+	РегистрНакопления.ЗапасыНаСкладах.Остатки(
+			&amp;Период,
+			Организация = &amp;Организация
+				И СтруктурнаяЕдиница В
+					(ВЫБРАТЬ
+						ВТ_СкладыМагазина.СкладМагазина КАК СкладМагазина
+					ИЗ
+						ВТ_СкладыМагазина КАК ВТ_СкладыМагазина)) КАК ЗапасыНаСкладахОстатки
+
+СГРУППИРОВАТЬ ПО
+	ЗапасыНаСкладахОстатки.Номенклатура,
+	ЗапасыНаСкладахОстатки.Номенклатура.Артикул,
+	ЗапасыНаСкладахОстатки.Номенклатура.Штрихкод,
+	ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	НоменклатураАртикул,
+	НоменклатураШтрихкод
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Остатки.Номенклатура КАК Номенклатура,
+	СУММА(ВТ_Остатки.КоличествоОстаток) КАК КоличествоОстаток,
+	ВТ_Остатки.НоменклатураАртикул КАК НоменклатураАртикул,
+	ВТ_Остатки.НоменклатураШтрихкод КАК НоменклатураШтрихкод
+ПОМЕСТИТЬ ВТ_ОстаткиОтправителя
+ИЗ
+	ВТ_Остатки КАК ВТ_Остатки
+ГДЕ
+	ВТ_Остатки.СтруктурнаяЕдиница = &amp;Отправитель
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Остатки.Номенклатура,
+	ВТ_Остатки.НоменклатураАртикул,
+	ВТ_Остатки.НоменклатураШтрихкод
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Остатки.Номенклатура КАК Номенклатура,
+	СУММА(ВТ_Остатки.КоличествоОстаток) КАК КоличествоОстаток,
+	ВТ_Остатки.НоменклатураАртикул КАК НоменклатураАртикул,
+	ВТ_Остатки.НоменклатураШтрихкод КАК НоменклатураШтрихкод
+ПОМЕСТИТЬ ВТ_ОстаткиПолучателя
+ИЗ
+	ВТ_Остатки КАК ВТ_Остатки
+ГДЕ
+	ВТ_Остатки.СтруктурнаяЕдиница &lt;&gt; &amp;Отправитель
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Остатки.Номенклатура,
+	ВТ_Остатки.НоменклатураАртикул,
+	ВТ_Остатки.НоменклатураШтрихкод
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ОстаткиОтправителя.Номенклатура КАК Номенклатура,
+	ВТ_ОстаткиОтправителя.Номенклатура.Артикул КАК НоменклатураАртикул,
+	ВТ_ОстаткиОтправителя.Номенклатура.спБренд КАК НоменклатураспБренд,
+	СУММА(ВТ_ОстаткиОтправителя.КоличествоОстаток) КАК ДоступноеКоличество,
+	СУММА(ВЫБОР
+			КОГДА ВТ_ОстаткиОтправителя.КоличествоОстаток &lt;= &amp;КоличествоКЗаказу
+				ТОГДА ВТ_ОстаткиОтправителя.КоличествоОстаток
+			ИНАЧЕ &amp;КоличествоКЗаказу
+		КОНЕЦ) КАК Количество,
+	ВТ_ОстаткиОтправителя.Номенклатура В (&amp;ВыделенныеСтроки) КАК Пометка,
+	ВТ_ОстаткиОтправителя.Номенклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения
+ИЗ
+	ВТ_ОстаткиОтправителя КАК ВТ_ОстаткиОтправителя
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_ОстаткиПолучателя КАК ВТ_ОстаткиПолучателя
+		ПО (НЕ(ВТ_ОстаткиОтправителя.НоменклатураАртикул &lt;&gt; ВТ_ОстаткиПолучателя.НоменклатураАртикул
+					И ВТ_ОстаткиОтправителя.НоменклатураШтрихкод &lt;&gt; ВТ_ОстаткиПолучателя.НоменклатураШтрихкод
+					И НЕ ВТ_ОстаткиПолучателя.Номенклатура ЕСТЬ NULL))
+ГДЕ
+	ВТ_ОстаткиПолучателя.КоличествоОстаток &lt; &amp;НаименьшееКоличество
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ОстаткиОтправителя.Номенклатура,
+	ВТ_ОстаткиОтправителя.Номенклатура.Артикул,
+	ВТ_ОстаткиОтправителя.Номенклатура.спБренд,
+	ВТ_ОстаткиОтправителя.Номенклатура.ЕдиницаИзмерения,
+	ВТ_ОстаткиОтправителя.Номенклатура В (&amp;ВыделенныеСтроки)</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номенклатура</dcssch:dataPath>
+					<dcssch:field>Номенклатура</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Организация</dcssch:dataPath>
+					<dcssch:field>Организация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Характеристика</dcssch:dataPath>
+					<dcssch:field>Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Партия</dcssch:dataPath>
+					<dcssch:field>Партия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтруктурнаяЕдиница</dcssch:dataPath>
+					<dcssch:field>СтруктурнаяЕдиница</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ячейка</dcssch:dataPath>
+					<dcssch:field>Ячейка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НоменклатураспБренд</dcssch:dataPath>
+					<dcssch:field>НоменклатураспБренд</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоступноеКоличество</dcssch:dataPath>
+					<dcssch:field>ДоступноеКоличество</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступное количество</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НоменклатураАртикул</dcssch:dataPath>
+					<dcssch:field>НоменклатураАртикул</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Пометка</dcssch:dataPath>
+					<dcssch:field>Пометка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Количество</dcssch:dataPath>
+					<dcssch:field>Количество</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>ЕдиницаИзмерения</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица измерения</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ГруппаСкладов</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа складов</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.СтруктурныеЕдиницы</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>КоличествоКЗаказу</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество к заказу</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>НаименьшееКоличество</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименьшее количество</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:decimal">0</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Организация</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Отправитель</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправитель</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.СтруктурныеЕдиницы</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ВыделенныеСтроки</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделенные строки</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+				</Parameter>
+				<KeyType>FieldValue</KeyType>
+				<KeyField>Номенклатура</KeyField>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Период</dcscor:parameter>
+							<dcscor:value xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
+							</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>КоличествоКЗаказу</dcscor:parameter>
+							<dcscor:value xsi:nil="true"/>
+						</dcscor:item>
+					</dcsset:dataParameters>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Номенклатура.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Отправитель" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктурныеЕдиницы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппаПолучателя" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа получателя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктурныеЕдиницы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоКЗаказу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество к заказу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеренестиВЗаказ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в заказ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в заказ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиВЗаказ</Action>
+		</Command>
+		<Command name="ПометитьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ФлагВключен</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПометитьВсе</Action>
+		</Command>
+		<Command name="СнятьПометки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ФлагОтключен</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьПометки</Action>
+		</Command>
+		<Command name="ЗаполнитьКоличествоКЗаказу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить количество к заказу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить количество к заказу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКоличествоКЗаказу</Action>
+		</Command>
+	</Commands>
+</Form>

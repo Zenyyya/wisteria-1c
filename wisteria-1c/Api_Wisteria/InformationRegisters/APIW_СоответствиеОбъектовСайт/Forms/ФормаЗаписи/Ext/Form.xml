@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Дата" id="4">
+			<DataPath>Запись.Дата</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Номер" id="22">
+			<DataPath>Запись.Номер</DataPath>
+			<Width>15</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>15</MaxWidth>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ИД" id="19">
+			<DataPath>Запись.ИД</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Width>15</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>50</MaxWidth>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИДКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ИДРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ИдЗаказа" id="1">
+			<DataPath>1/0:b4258c96-8ba2-4a70-8572-2ee84afeccef</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИдЗаказаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИдЗаказаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ТипДанных" id="16">
+			<DataPath>Запись.ТипДанных</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТипДанныхКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТипДанныхРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="НаправлениеОбмена" id="25">
+			<DataPath>Запись.НаправлениеОбмена</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаправлениеОбменаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="НаправлениеОбменаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="Статус" id="7">
+			<DataPath>Запись.Статус</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтатусКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ЗаказСсылка" id="10">
+			<DataPath>Запись.ОбъектСсылка</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗаказСсылкаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗаказСсылкаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДанныеJSON" id="13">
+			<DataPath>Запись.ДанныеJSON</DataPath>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДанныеJSONКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДанныеJSONРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.APIW_СоответствиеОбъектовСайт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="24c7928b-6cce-48ce-b290-6e2cb7f27697">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ОперацияПоПлатежнымКартам" category="Object">
+				<xr:TypeId>c0ea8bfc-3f91-4473-958c-687e75937082</xr:TypeId>
+				<xr:ValueId>f4610624-5002-4916-8986-de4a703b5eaa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ОперацияПоПлатежнымКартам" category="Ref">
+				<xr:TypeId>270bfd07-cc26-4766-a63e-178eb21cc6bb</xr:TypeId>
+				<xr:ValueId>78a0e170-da5f-4789-a445-5ef4c8dbdba9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ОперацияПоПлатежнымКартам" category="Selection">
+				<xr:TypeId>c938f04d-a6c3-432f-88c6-8bc1a3e7eb1d</xr:TypeId>
+				<xr:ValueId>aee28732-2e8c-41e2-9d15-6f3dcbe626d5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ОперацияПоПлатежнымКартам" category="List">
+				<xr:TypeId>4b64cd92-d979-4d98-9528-9397688fc0d9</xr:TypeId>
+				<xr:ValueId>12787a15-c291-4569-8515-53e2e792920b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ОперацияПоПлатежнымКартам" category="Manager">
+				<xr:TypeId>d8c87a41-b685-4a93-a17c-844c3e6a629e</xr:TypeId>
+				<xr:ValueId>196bfc59-3858-4cdc-8518-f32773e7bc32</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОперацияПоПлатежнымКартам</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>b57d8ff4-fd9e-4f2f-b0cf-762d593b7c40</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="6f0197dc-caaf-48b3-a0a6-1b6dadc21e08">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументОснование</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>278f0d2f-cca2-4342-9c85-861e4b2e6aac</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2828efb4-d8b8-4e12-bc83-41a490b9dd65">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Статья</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>62a4e840-a716-45fe-a578-fcea876f3013</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатьиДвиженияДенежныхСредств</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="cf09a7ec-6300-42a9-9b72-f312c7d003fd">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЭквайринговыйТерминал</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>12d9b888-af2a-496c-ae5f-6d4222513adf</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СпособыОплаты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b51d1dda-bafe-43b8-991a-994affc013c8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидПлатежнойКарты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b96e5d85-408d-4b2a-84a4-bdb981890e95</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="829b6bbd-3b99-444a-a198-69c7405f77ad">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НалогообложениеНДС</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>64554c89-4883-4189-b5b1-e7491ac60f09</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипыНалогообложенияНДС</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="8264d30e-a97a-4e30-8393-8e8eaa91f371">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ОперацияПоПлатежнымКартам.РасшифровкаПлатежа" category="TabularSection">
+						<xr:TypeId>8bd654df-734f-4b72-96c3-b16383060fae</xr:TypeId>
+						<xr:ValueId>d94324cb-aadf-46d8-9d10-d0d617749caa</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ОперацияПоПлатежнымКартам.РасшифровкаПлатежа" category="TabularSectionRow">
+						<xr:TypeId>3047ac2a-2f49-4026-98b2-e517a94433a3</xr:TypeId>
+						<xr:ValueId>fdf7cff0-61e8-4e76-8ae1-d31dd417b5cc</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РасшифровкаПлатежа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>23e2a2b0-6992-47ce-bfe0-3fed3e461473</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="6412d3a0-da4f-43fe-97cb-0d8e30927801">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заказ</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>aa0d2238-b923-479f-b334-2b3d97b5962f</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="7e0638ce-473d-470a-a177-e5a6e37e446f">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>СтавкаНДС</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>1df8abd4-a9ea-4545-84c5-67eaf551703c</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.СтавкиНДС</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="236828a4-1bfa-4ff5-a3f2-d0f5fcd3153f">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>СуммаНДС</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>e7078c61-589a-4dbe-85df-f61544ad81bf</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="fd6da776-47b5-4ee8-bf09-365e4af3088e">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>СуммаПлатежа</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>64e45ca3-75f1-45ca-92a1-c9004781d4f9</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="8b689569-ed0c-405b-8b15-f20076d678fc">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>СуммаРасчетов</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>07e5dcd9-61a6-45e5-a2ef-8f0652ba51ef</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="4163b93d-f92c-4522-b03e-4e5914d19c50">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Курс</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>f43e3b89-5568-4eeb-9a72-70f4f5e592e8</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>4</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="d5d033f8-952b-4e15-8653-e6298a1f67d8">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Кратность</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>81d01dcc-d74d-4523-872b-cf321cfefca1</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="3b99a549-2bd4-48a2-85e2-48a28b55a4a5">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ПризнакАванса</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>fc402038-7286-4f33-943c-c9fd0e895c29</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

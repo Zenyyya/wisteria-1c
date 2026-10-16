@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<InformationRegister uuid="b27208f5-89a4-491e-8219-8eeb784539f0">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.спСоответствиеОбъектовИнтернетМагазиновИ1С" category="Record">
+				<xr:TypeId>873250c9-38c2-4471-a0b3-ec0ed9eaa6fc</xr:TypeId>
+				<xr:ValueId>834da74b-f3d2-4023-8624-de55f34042e5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.спСоответствиеОбъектовИнтернетМагазиновИ1С" category="Manager">
+				<xr:TypeId>7d46800a-9f6d-460c-8802-8689c1d652c9</xr:TypeId>
+				<xr:ValueId>020025d5-fb8d-4c28-abfa-76cfe1930b0c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.спСоответствиеОбъектовИнтернетМагазиновИ1С" category="Selection">
+				<xr:TypeId>adfc095d-8feb-4026-80a5-7ca2556ba732</xr:TypeId>
+				<xr:ValueId>5168d9c5-b36f-4691-be80-a60b35e9c9c2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.спСоответствиеОбъектовИнтернетМагазиновИ1С" category="List">
+				<xr:TypeId>798eab02-29c7-4eef-96a8-692132275a3f</xr:TypeId>
+				<xr:ValueId>87a2f702-b1c5-4a25-88c4-644b252f751b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.спСоответствиеОбъектовИнтернетМагазиновИ1С" category="RecordSet">
+				<xr:TypeId>c5c4fcc8-d994-480b-8b0b-f184fe5cfb06</xr:TypeId>
+				<xr:ValueId>b5e67078-7a2a-4a23-92cb-95e50e2246c1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.спСоответствиеОбъектовИнтернетМагазиновИ1С" category="RecordKey">
+				<xr:TypeId>11b6d2de-1ba4-4472-83d1-e2427c43a03e</xr:TypeId>
+				<xr:ValueId>2f628b68-02bc-434b-99a7-a8ddd59eb3e4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.спСоответствиеОбъектовИнтернетМагазиновИ1С" category="RecordManager">
+				<xr:TypeId>68b47b36-58de-405c-9256-fbcfb8891655</xr:TypeId>
+				<xr:ValueId>e10bd502-a8f9-4908-90c3-4eb912a00cb6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>спСоответствиеОбъектовИнтернетМагазиновИ1С</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>069da420-f422-48d2-8dcb-cb235648aa3d</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="76345796-5ff1-47f2-90e9-fd2ff0276adc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ссылка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a84a93da-0c56-4523-91dc-b40d727d6ff8</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="9823e9c2-fa30-42b4-ab66-bbf3a92cd748">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИдентификаторСсылки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9835d7fe-62c5-453a-8cc1-3c8cdf3e56eb</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="0ff27bea-6131-4b6e-a3c1-9d74968e7974">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НастройкаИнтеграции</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f176650b-0900-4616-84da-60518d91b641</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НастройкиИнтеграцииСИнтернетМагазином</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="65e0808c-da0f-4dee-b3f0-927fdf048eca">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИмяОбъекта</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ccc8b0d3-58c1-4209-bd7f-d3a12ebbbf61</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>128</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="a9d711fc-7146-4ace-9cf8-bf914fcadae6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИдентификаторМагазина</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>12ac2569-b032-4a0e-ad8a-7cebd7d92549</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
