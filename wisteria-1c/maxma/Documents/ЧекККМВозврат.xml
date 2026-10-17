@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="bd6a5f04-bead-48c1-8214-97e2355a708a">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЧекККМВозврат" category="Object">
+				<xr:TypeId>5b18982d-ac48-486b-945a-c8b927f01758</xr:TypeId>
+				<xr:ValueId>439dcff4-aaeb-4102-bb98-f17ea7831cc9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЧекККМВозврат" category="Ref">
+				<xr:TypeId>fb34dc80-f387-45c7-8708-faeb5d6a7e63</xr:TypeId>
+				<xr:ValueId>79b4ca99-c013-4b03-bf15-7b60212b2727</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЧекККМВозврат" category="Selection">
+				<xr:TypeId>2d4d45c5-31bd-4042-b6b5-bcc4042e4286</xr:TypeId>
+				<xr:ValueId>82f606fa-e00e-4d12-b113-86f13bfc7a39</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЧекККМВозврат" category="List">
+				<xr:TypeId>e18bc8cf-9a08-4536-b1e9-fdd3a03ed46b</xr:TypeId>
+				<xr:ValueId>8c1347c7-7885-44c3-8f92-cf5d1e00746c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЧекККМВозврат" category="Manager">
+				<xr:TypeId>620abed6-9203-4cbd-8b43-d4c6b62e7cda</xr:TypeId>
+				<xr:ValueId>588d09d6-c0ac-4272-acf4-e93dd969bac2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЧекККМВозврат</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>5c87dde9-1727-48e8-aef5-67317291c046</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>
