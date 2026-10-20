@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПКВ_ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраниц" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницРасширеннаяПодсказка" id="80"/>
+			<ChildItems>
+				<Page name="НастройкиСоединения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки соединения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки соединения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="НастройкиСоединенияРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<CheckBoxField name="ПКВ_КонстантыПКВ_ИспользоватьОбмен" id="57">
+							<DataPath>ПКВ_Константы.ПКВ_ИспользоватьОбмен</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать обмен</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПКВ_КонстантыПКВ_ИспользоватьОбменКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ПКВ_КонстантыПКВ_ИспользоватьОбменРасширеннаяПодсказка" id="59"/>
+						</CheckBoxField>
+						<InputField name="ПКВ_КонстантыПКВ_АдресAPI" id="53">
+							<DataPath>ПКВ_Константы.ПКВ_АдресAPI</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>АдресAPI</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_КонстантыПКВ_АдресAPIКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ПКВ_КонстантыПКВ_АдресAPIРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="ПКВ_КонстантыПКВ_КлючQR" id="96">
+							<DataPath>ПКВ_Константы.ПКВ_КлючQR</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ключ QR (X-GC-Key)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_КонстантыПКВ_КлючQRКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ПКВ_КонстантыПКВ_КлючQRРасширеннаяПодсказка" id="98"/>
+						</InputField>
+						<InputField name="ПКВ_КонстантыПКВ_НоменклатураЭлектроннаяКарта" id="45">
+							<DataPath>ПКВ_Константы.ПКВ_НоменклатураЭлектроннаяКарта</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура электронная карта</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_КонстантыПКВ_НоменклатураЭлектроннаяКартаКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ПКВ_КонстантыПКВ_НоменклатураЭлектроннаяКартаРасширеннаяПодсказка" id="47"/>
+						</InputField>
+						<InputField name="ПКВ_КонстантыПКВ_НоменклатураПластиковаяКарта" id="49">
+							<DataPath>ПКВ_Константы.ПКВ_НоменклатураПластиковаяКарта</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура пластиковая карта</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_КонстантыПКВ_НоменклатураПластиковаяКартаКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ПКВ_КонстантыПКВ_НоменклатураПластиковаяКартаРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<InputField name="ПКВ_КонстантыПКВ_СпособОплатыСписания" id="81">
+							<DataPath>7/0:c6cea2af-65af-4e52-85c7-7314881f2940</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_КонстантыПКВ_СпособОплатыСписанияКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ПКВ_КонстантыПКВ_СпособОплатыСписанияРасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<InputField name="ПКВ_КонстантыПКВ_НоминалМинимум" id="71">
+							<DataPath>ПКВ_Константы.ПКВ_НоминалМинимум</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_КонстантыПКВ_НоминалМинимумКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ПКВ_КонстантыПКВ_НоминалМинимумРасширеннаяПодсказка" id="73"/>
+						</InputField>
+						<InputField name="ПКВ_КонстантыПКВ_НоминалМаксимум" id="75">
+							<DataPath>ПКВ_Константы.ПКВ_НоминалМаксимум</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_КонстантыПКВ_НоминалМаксимумКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ПКВ_КонстантыПКВ_НоминалМаксимумРасширеннаяПодсказка" id="77"/>
+						</InputField>
+						<Button name="ПКВ_СохранитьНастройки" id="61">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПКВ_СохранитьНастройки</CommandName>
+							<ExtendedTooltip name="ПКВ_СохранитьНастройкиРасширеннаяПодсказка" id="62"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ТестоваяКонсольЗапросов" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестовая консоль запросов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестовая консоль запросов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ТестоваяКонсольЗапросовРасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<InputField name="HTTPМетод" id="1">
+							<DataPath>HTTPМетод</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>GET</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">GET</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>POST</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">POST</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="HTTPМетодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="HTTPМетодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="ПутьЗапроса" id="23">
+							<DataPath>ПутьЗапроса</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПутьЗапросаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ПутьЗапросаРасширеннаяПодсказка" id="25"/>
+							<Events>
+								<Event name="OnChange">ПутьЗапросаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТелоЗапроса" id="27">
+							<DataPath>ТелоЗапроса</DataPath>
+							<Width>60</Width>
+							<Height>1</Height>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТелоЗапросаКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ТелоЗапросаРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<Button name="ПКВ_ОтправитьЗапрос" id="31">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПКВ_ОтправитьЗапрос</CommandName>
+							<ExtendedTooltip name="ПКВ_ОтправитьЗапросРасширеннаяПодсказка" id="32"/>
+						</Button>
+						<InputField name="ТекстОтвета" id="33">
+							<DataPath>ТекстОтвета</DataPath>
+							<Width>60</Width>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекстОтветаКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ТекстОтветаРасширеннаяПодсказка" id="35"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСканирование" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тест Хэша</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сканирование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСканированиеРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<InputField name="ПКВ_ТестСтрокаСканирования" id="102">
+							<DataPath>ПКВ_ТестСтрокаСканирования</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_ТестСтрокаСканированияКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ПКВ_ТестСтрокаСканированияРасширеннаяПодсказка" id="104"/>
+						</InputField>
+						<Button name="ПКВ_ПроверитьСканированиеКарты" id="110">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПКВ_ПроверитьСканированиеКарты</CommandName>
+							<ExtendedTooltip name="ПКВ_ПроверитьСканированиеКартыРасширеннаяПодсказка" id="111"/>
+						</Button>
+						<InputField name="ПКВ_ТекстРезультатаСканирования" id="106">
+							<DataPath>ПКВ_ТекстРезультатаСканирования</DataPath>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПКВ_ТекстРезультатаСканированияКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="ПКВ_ТекстРезультатаСканированияРасширеннаяПодсказка" id="108"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="HTTPМетод" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTTPМетод</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьЗапроса" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТелоЗапроса" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тело запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстОтвета" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ответа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПКВ_Константы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ константы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПКВ_ТестСтрокаСканирования" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хэш</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>300</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПКВ_ТекстРезультатаСканирования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПКВ_СписокМетодовAPI" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ список методов API</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Метод" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метод</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Путь" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПримерТела" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пример тела</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПКВ_ОтправитьЗапрос" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ отправить запрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПКВ_ОтправитьЗапрос</Action>
+		</Command>
+		<Command name="ПКВ_СохранитьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПКВ_СохранитьНастройки</Action>
+		</Command>
+		<Command name="ПКВ_ПроверитьСканированиеКарты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ проверить сканирование карты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПКВ_ПроверитьСканированиеКарты</Action>
+		</Command>
+	</Commands>
+</Form>

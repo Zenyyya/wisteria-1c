@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Button name="ПКВ_ЗарегистрироватьКарту" id="3">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.ПКВ_ЗарегистрироватьКарту</CommandName>
+			<ExtendedTooltip name="ПКВ_ЗарегистрироватьКартуРасширеннаяПодсказка" id="4"/>
+		</Button>
+		<Button name="ОбщаяКомандаПКВ_Администрирование" id="7">
+			<Type>UsualButton</Type>
+			<CommandName>CommonCommand.ПКВ_Администрирование</CommandName>
+			<ExtendedTooltip name="ОбщаяКомандаПКВ_АдминистрированиеРасширеннаяПодсказка" id="8"/>
+		</Button>
+		<Button name="ПКВ_ФормаКассираАдмин" id="9">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.ПКВ_ФормаКассираАдмин</CommandName>
+			<ExtendedTooltip name="ПКВ_ФормаКассираАдминРасширеннаяПодсказка" id="10"/>
+		</Button>
+		<Button name="ПКВ_ФормаКассираРМК" id="11">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.ПКВ_ФормаКассираРМК</CommandName>
+			<ExtendedTooltip name="ПКВ_ФормаКассираРМКРасширеннаяПодсказка" id="12"/>
+		</Button>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ПКВ_ЗарегистрироватьКарту" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать карту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ зарегистрировать карту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПКВ_ЗарегистрироватьКарту</Action>
+		</Command>
+		<Command name="ПКВ_ФормаКассираАдмин" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель кассира (админ)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ форма кассира админ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПКВ_ОткрытьПанельКассира</Action>
+		</Command>
+		<Command name="ПКВ_Администрирование" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ администрирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ администрирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПКВ_Администрирование</Action>
+		</Command>
+		<Command name="ПКВ_ФормаКассираРМК" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форма кассира РМК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКВ форма кассира РМК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПКВ_ФормаКассираРМК</Action>
+		</Command>
+	</Commands>
+</Form>
