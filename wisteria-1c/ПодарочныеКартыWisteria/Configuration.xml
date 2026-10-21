@@ -152,9 +152,11 @@
 			<CommonForm>ПКВ_ФормаСписание</CommonForm>
 			<CommonForm>ПКВ_ФормаПривязкаВладельца</CommonForm>
 			<CommonForm>ПКВ_НезавершённыеОперации</CommonForm>
+			<CommonForm>ПКВ_ФормаВозвратНаКарты</CommonForm>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>СпособыОплаты</Catalog>
 			<Document>ЧекККМ</Document>
+			<Document>ЧекККМВозврат</Document>
 			<Enum>ТипыДенежныхСредств</Enum>
 			<DataProcessor>РабочееМестоКассира</DataProcessor>
 			<DataProcessor>ПКВ_ПодарочныеКарты</DataProcessor>
