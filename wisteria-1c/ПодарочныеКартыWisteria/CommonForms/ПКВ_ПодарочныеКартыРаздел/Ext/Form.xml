@@ -4,11 +4,10 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<ChildItems>
-		<Button name="ПКВ_ЗарегистрироватьКарту" id="3">
+		<Button name="ПКВ_НезавершённыеОперации" id="11">
 			<Type>UsualButton</Type>
-			<Visible>false</Visible>
-			<CommandName>Form.Command.ПКВ_ЗарегистрироватьКарту</CommandName>
-			<ExtendedTooltip name="ПКВ_ЗарегистрироватьКартуРасширеннаяПодсказка" id="4"/>
+			<CommandName>Form.Command.ПКВ_НезавершённыеОперации</CommandName>
+			<ExtendedTooltip name="ПКВ_НезавершённыеОперацииРасширеннаяПодсказка" id="12"/>
 		</Button>
 		<Button name="ОбщаяКомандаПКВ_Администрирование" id="7">
 			<Type>UsualButton</Type>
@@ -24,20 +23,20 @@
 	</ChildItems>
 	<Attributes/>
 	<Commands>
-		<Command name="ПКВ_ЗарегистрироватьКарту" id="1">
+		<Command name="ПКВ_НезавершённыеОперации" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Зарегистрировать карту</v8:content>
+					<v8:content>Незавершённые операции</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>ПКВ зарегистрировать карту</v8:content>
+					<v8:content>Операции, которые после пробития чека не прошли в Directus</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПКВ_ЗарегистрироватьКарту</Action>
+			<Action>ПКВ_НезавершённыеОперации</Action>
 		</Command>
 		<Command name="ПКВ_ФормаКассираАдмин" id="2">
 			<Title>

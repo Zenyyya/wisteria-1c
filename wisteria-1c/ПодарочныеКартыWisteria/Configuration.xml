@@ -134,6 +134,7 @@
 			<CommonModule>ПКВ_КоннекторHTTP</CommonModule>
 			<CommonModule>ОбщегоНазначенияРМКПереопределяемый</CommonModule>
 			<CommonModule>ПКВ_СканированиеКлиент</CommonModule>
+			<CommonModule>ПКВ_НезавершённыеОперацииСервер</CommonModule>
 			<CommonCommand>ПКВ_Администрирование</CommonCommand>
 			<CommonCommand>ПКВ_КартыWisteria</CommonCommand>
 			<Constant>ПКВ_НоминалМинимум</Constant>
@@ -150,12 +151,14 @@
 			<CommonForm>ПКВ_ФормаПросмотрКарты</CommonForm>
 			<CommonForm>ПКВ_ФормаСписание</CommonForm>
 			<CommonForm>ПКВ_ФормаПривязкаВладельца</CommonForm>
+			<CommonForm>ПКВ_НезавершённыеОперации</CommonForm>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>СпособыОплаты</Catalog>
 			<Document>ЧекККМ</Document>
 			<Enum>ТипыДенежныхСредств</Enum>
 			<DataProcessor>РабочееМестоКассира</DataProcessor>
 			<DataProcessor>ПКВ_ПодарочныеКарты</DataProcessor>
+			<InformationRegister>ПКВ_НезавершённыеОперации</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
