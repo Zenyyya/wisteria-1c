@@ -16,7 +16,7 @@
 		<Metadata name="CommonForm.ПКВ_ФормаВводаКодаSMS" id="b18b6cbf-e140-4929-96ef-6b01fbfde1c6" configVersion="1424fce974b4dbea05b7f60e0474ace5f92d820e"/>
 		<Metadata name="CommonForm.ПКВ_ФормаВводаКодаSMS.Form" id="b18b6cbf-e140-4929-96ef-6b01fbfde1c6.0" configVersion="b2f8feb4ee3aa094d7ead0a9bb7e747f5e853a7a"/>
 		<Metadata name="CommonForm.ПКВ_ФормаВозвратНаКарты" id="23aeef8c-6555-4bd1-ad1a-cb421ae18c33" configVersion="5b636b0876f5aa53e857c34de99f0f1d410e402c"/>
-		<Metadata name="CommonForm.ПКВ_ФормаВозвратНаКарты.Form" id="23aeef8c-6555-4bd1-ad1a-cb421ae18c33.0" configVersion="b4c8ec52e928ab3d66d8a2d5d0c1acfc26bf784c"/>
+		<Metadata name="CommonForm.ПКВ_ФормаВозвратНаКарты.Form" id="23aeef8c-6555-4bd1-ad1a-cb421ae18c33.0" configVersion="671968d76dc6b91c420cd682c595679edbe1147f"/>
 		<Metadata name="CommonForm.ПКВ_ФормаКассираАдмин" id="45946641-7854-4a16-9659-57d36bec0519" configVersion="14b254735157ace04bbdf383697d8f3ed8622fd3"/>
 		<Metadata name="CommonForm.ПКВ_ФормаКассираАдмин.Form" id="45946641-7854-4a16-9659-57d36bec0519.0" configVersion="78494f4e1d4577d755a31eee8844d94cc9c09d58"/>
 		<Metadata name="CommonForm.ПКВ_ФормаПривязкаВладельца" id="b8aa9de2-9eea-41b4-963f-d6bb5c86c03f" configVersion="cf1e18cae40ac4d5f5f755cd0f0ddd321ad93852"/>
@@ -32,7 +32,7 @@
 		<Metadata name="CommonModule.ПКВ_НезавершённыеОперацииСервер" id="14ccf61d-2b5a-44ad-9b10-a36b436a8fdf" configVersion="18e53729e883b5821cd0464fe2cb3d6ca6e3dbbe"/>
 		<Metadata name="CommonModule.ПКВ_НезавершённыеОперацииСервер.Module" id="14ccf61d-2b5a-44ad-9b10-a36b436a8fdf.0" configVersion="231c0cf2f690479e1ee1cb25f1ce4fade9572d17"/>
 		<Metadata name="CommonModule.ПКВ_ПодарочныеКартыAPI" id="8e43d847-0371-412d-ae60-d545969bb084" configVersion="3ec4d8a22da07526d7ba0ec492d2426fc97ba6b7"/>
-		<Metadata name="CommonModule.ПКВ_ПодарочныеКартыAPI.Module" id="8e43d847-0371-412d-ae60-d545969bb084.0" configVersion="c795b3035ff190aaff83904b35f5b24637c1f276"/>
+		<Metadata name="CommonModule.ПКВ_ПодарочныеКартыAPI.Module" id="8e43d847-0371-412d-ae60-d545969bb084.0" configVersion="6a027de3b6a9530783d4150920313aafe66afe4f"/>
 		<Metadata name="CommonModule.ПКВ_СканированиеКлиент" id="925ace0a-1df9-4cf5-8500-cfe73bea5ca9" configVersion="c46091a16b1b856ca996de5826289db20d85eeee"/>
 		<Metadata name="CommonModule.ПКВ_СканированиеКлиент.Module" id="925ace0a-1df9-4cf5-8500-cfe73bea5ca9.0" configVersion="4438e997a71748e5e4d0181697552f2d6446d035"/>
 		<Metadata name="CommonPicture.Cancel" id="f4996141-5bc3-47ef-9afe-cc69c58efd55" configVersion="1d1645ac55143c5032d3fd4bb3f2ac35f9bedd6b"/>
@@ -102,7 +102,7 @@
 		<Metadata name="DataProcessor.ПКВ_ПодарочныеКарты.Form.ФормаРегистрацииКарты.Form" id="2e3cdf83-d1d9-493c-9f98-51603c3827b7.0" configVersion="442c5a35b5ffc885baa5b9639c642584f63ec90a"/>
 		<Metadata name="DataProcessor.РабочееМестоКассира" id="caf4404a-3777-4252-b9db-b211fde3621b" configVersion="d1be33a4dbdb5c5a40445ebe30ee1b1912b445bf"/>
 		<Metadata name="DataProcessor.РабочееМестоКассира.Form.ФормаРМК" id="b4920609-121e-4c2f-b729-9612b1daf644" configVersion="0688f3bc0ecde86e4371fa0120d47c309d08d6ad"/>
-		<Metadata name="DataProcessor.РабочееМестоКассира.Form.ФормаРМК.Form" id="b4920609-121e-4c2f-b729-9612b1daf644.0" configVersion="9b93f6647aebc47042d4e69fdf8447f42f16cb82"/>
+		<Metadata name="DataProcessor.РабочееМестоКассира.Form.ФормаРМК.Form" id="b4920609-121e-4c2f-b729-9612b1daf644.0" configVersion="9c381f93408415900cbe71426ef7803bdcc55959"/>
 		<Metadata name="Document.ЧекККМ" id="495b8e28-6133-40cc-a39b-47e42b5ac33f" configVersion="9d913d1115dde61801000e13728be0226c42655f"/>
 		<Metadata name="Document.ЧекККМ.Form.ФормаДокумента" id="c2987610-c715-4684-aafd-0bbb440ec8e7" configVersion="cf4bdc4a661c99b25148e597a1f6d8d8b0008646"/>
 		<Metadata name="Document.ЧекККМ.Form.ФормаДокумента.Form" id="c2987610-c715-4684-aafd-0bbb440ec8e7.0" configVersion="616e83736d006f98c77ad20d6941af00c53dbca3"/>
