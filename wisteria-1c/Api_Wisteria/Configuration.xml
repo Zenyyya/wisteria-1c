@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.APIW_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>Евгений</Vendor>
-			<Version>1.0.4</Version>
+			<Version>1.0.6</Version>
 			<Caption/>
 			<ShortCaption/>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
@@ -77,6 +77,7 @@
 			<StyleItem>СветлыйСерый</StyleItem>
 			<StyleItem>ЦветГиперссылки</StyleItem>
 			<StyleItem>ПоясняющийТекст</StyleItem>
+			<StyleItem>ПоясняющийОшибкуТекст</StyleItem>
 			<CommonPicture>APIW_ОбщаяКартинка1</CommonPicture>
 			<CommonPicture>КоллекцияФлаги</CommonPicture>
 			<CommonPicture>Органайзер</CommonPicture>
@@ -90,9 +91,19 @@
 			<Role>ПолныеПрава</Role>
 			<CommonModule>APIW_ОбщийМодульСервер</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
+			<CommonModule>APIW_АРМСервер</CommonModule>
+			<CommonModule>APIW_КурьерСервер</CommonModule>
+			<CommonModule>APIW_УровниКарт</CommonModule>
 			<HTTPService>APIW_Tovar</HTTPService>
 			<HTTPService>APIW_Post</HTTPService>
+			<HTTPService>APIW_Arm</HTTPService>
+			<HTTPService>APIW_Courier</HTTPService>
+			<EventSubscription>APIW_ОтметитьКартуКПересчетуУровня</EventSubscription>
+			<ScheduledJob>APIW_ПересчетУровнейКарт</ScheduledJob>
+			<ScheduledJob>APIW_ПересчетУровнейКартЕжедневно</ScheduledJob>
 			<DefinedType>Вес</DefinedType>
+			<CommonCommand>APIW_ПодключениеАРМ</CommonCommand>
+			<CommonCommand>APIW_ПодключениеАРМКурьера</CommonCommand>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>КлассификаторЕдиницИзмерения</Catalog>
 			<Catalog>СтраныМира</Catalog>
@@ -114,9 +125,23 @@
 			<Catalog>ХарактеристикиНоменклатуры</Catalog>
 			<Catalog>СпособыОплаты</Catalog>
 			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
+			<Catalog>СостоянияЗаказовНаПеремещение</Catalog>
+			<Catalog>APIW_НастройкиАРМ</Catalog>
+			<Catalog>APIW_НастройкиАРМКурьера</Catalog>
+			<Catalog>APIW_ТелефоныКурьеров</Catalog>
+			<Catalog>APIW_Курьеры</Catalog>
+			<Catalog>КассыККМ</Catalog>
+			<Catalog>Кассы</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
+			<Catalog>APIW_ДетиКлиентов</Catalog>
+			<Catalog>APIW_УровниКарт</Catalog>
+			<Catalog>УсловияПредоставленияСкидокНаценок</Catalog>
+			<Catalog>ДисконтныеКарты</Catalog>
+			<Catalog>ВидыДисконтныхКарт</Catalog>
 			<Document>ЗаказПокупателя</Document>
 			<Document>ОперацияПоПлатежнымКартам</Document>
 			<Document>ПеремещениеЗапасов</Document>
+			<Document>РасходнаяНакладная</Document>
 			<Enum>ВидыОперацийЗаказПокупателя</Enum>
 			<Enum>СпособыДоставки</Enum>
 			<Enum>ВидыКонтрагентов</Enum>
@@ -136,10 +161,22 @@
 			<Enum>ТипыНалогообложенияНДС</Enum>
 			<Enum>СпособыОплатыЭквайринг</Enum>
 			<Enum>ТипыНоменклатуры</Enum>
+			<Enum>APIW_ЧейДеньРождения</Enum>
+			<Enum>Периодичность</Enum>
+			<Enum>ЕдиницыИзмеренияВремени</Enum>
+			<Enum>ВидыОплатСерверЛояльности</Enum>
+			<Enum>ВариантПредоставленияСкидкиПоНоменклатуре</Enum>
+			<Enum>ПолФизическогоЛица</Enum>
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<InformationRegister>ОстаткиТоваров</InformationRegister>
 			<InformationRegister>APIW_СоответствиеОбъектовСайт</InformationRegister>
+			<InformationRegister>APIW_ЗапросыАРМ</InformationRegister>
+			<InformationRegister>APIW_РезультатыКурьеров</InformationRegister>
+			<InformationRegister>APIW_НакладныеКурьеров</InformationRegister>
+			<InformationRegister>APIW_УровниДисконтныхКарт</InformationRegister>
+			<InformationRegister>APIW_КартыКПересчетуУровня</InformationRegister>
 			<AccumulationRegister>ЗапасыНаСкладах</AccumulationRegister>
+			<AccumulationRegister>ПродажиПоДисконтнымКартам</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>

@@ -22,8 +22,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.APIW_СоответствиеОбъектовСайт</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.APIW_ОбщаяКартинка1</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.APIW_НастройкиОбменаAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.APIW_ПодключениеАРМ</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>APIW_АРМКурьера</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

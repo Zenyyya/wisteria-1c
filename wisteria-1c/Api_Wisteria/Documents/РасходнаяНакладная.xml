@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="28ab17c1-4c28-47c2-899e-f1f624a6d9f4">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.РасходнаяНакладная" category="Object">
+				<xr:TypeId>f3eebf80-613f-44a0-8f2a-54e0dc01d93a</xr:TypeId>
+				<xr:ValueId>1e547f90-43dd-4f0f-9be3-c4bceaaaff1b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.РасходнаяНакладная" category="Ref">
+				<xr:TypeId>4cd125de-0787-45be-8220-86627b7f892d</xr:TypeId>
+				<xr:ValueId>381a208b-0083-455d-ae4e-a2548296ff04</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.РасходнаяНакладная" category="Selection">
+				<xr:TypeId>3a80c8f5-512b-4278-92f4-f84e2836e475</xr:TypeId>
+				<xr:ValueId>7ec4dcf4-3aec-43c0-8a6e-4993713b8cfe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.РасходнаяНакладная" category="List">
+				<xr:TypeId>dc95ad2d-efb3-458c-939f-39aeed86a905</xr:TypeId>
+				<xr:ValueId>f6727613-ff97-4604-a788-6a7e88427bfd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.РасходнаяНакладная" category="Manager">
+				<xr:TypeId>44e7026b-c736-4bc7-96b6-cf33790424f1</xr:TypeId>
+				<xr:ValueId>9551e859-a15f-481e-8004-8961154c523a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РасходнаяНакладная</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>e557f2c9-6893-4523-9b13-07e678b2778a</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

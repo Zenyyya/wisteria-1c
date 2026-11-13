@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="e2bb2935-45ea-41e2-ab30-ba2995d86048">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.APIW_ЧейДеньРождения" category="Ref">
+				<xr:TypeId>73a16c22-1adc-4952-8a63-e8f4de56d7a7</xr:TypeId>
+				<xr:ValueId>0107e7cb-dc3f-4425-9c70-86a747d02615</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.APIW_ЧейДеньРождения" category="Manager">
+				<xr:TypeId>4c260d12-9143-4743-a6c0-f62699e84bbc</xr:TypeId>
+				<xr:ValueId>35fb112f-145d-4f18-8da5-fbb5fda4ad3f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.APIW_ЧейДеньРождения" category="List">
+				<xr:TypeId>fda92232-63b0-47d7-95d4-83267025a586</xr:TypeId>
+				<xr:ValueId>21088ad6-15d7-4867-a016-2de6457571b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>APIW_ЧейДеньРождения</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чей день рождения</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

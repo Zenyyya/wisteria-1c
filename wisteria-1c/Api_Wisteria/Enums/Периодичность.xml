@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="81d950a2-1710-46b3-bef6-09c5f1a7bae2">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.Периодичность" category="Ref">
+				<xr:TypeId>6c64e627-037b-4cf4-9083-8baf6d1a0632</xr:TypeId>
+				<xr:ValueId>3dee2fe6-23b4-4e58-bfec-65518780e9a0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.Периодичность" category="Manager">
+				<xr:TypeId>f184ccbe-04d8-489d-a84f-81f5d81be04a</xr:TypeId>
+				<xr:ValueId>fa068b5d-d684-49ef-b008-1072d06fe562</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.Периодичность" category="List">
+				<xr:TypeId>931f0543-d5ab-4b65-b8ef-fcb553816ae7</xr:TypeId>
+				<xr:ValueId>f90d72b9-52e3-40fb-8f6c-18778128f826</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Периодичность</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>70b1e79e-6d89-4577-b3d3-2578d976c69e</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="27ff265e-7782-4c3f-ae26-7656513e4ebb">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Месяц</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>fe152b63-f6d3-4c8b-8135-5312e16ca95f</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a38fd23b-c7d2-4108-a028-68fff74a0bc8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Квартал</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>cd782aff-ea9b-4103-8f12-603ef7fd978c</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="50032b60-204b-4f08-ac15-d4234c2dcd6d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Год</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>10b30131-35ac-469e-aa8c-f87f5d09059b</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

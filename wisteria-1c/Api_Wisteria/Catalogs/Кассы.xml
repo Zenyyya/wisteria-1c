@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="45ee5524-358b-4847-b730-6719452a3f73">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Кассы" category="Object">
+				<xr:TypeId>a6b53be6-5907-4214-9efa-b94380249a40</xr:TypeId>
+				<xr:ValueId>d67f03c5-692c-466a-bbb6-fb809dc49deb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Кассы" category="Ref">
+				<xr:TypeId>8b1cbb50-6433-49c7-b2db-26faa74df293</xr:TypeId>
+				<xr:ValueId>4655c13c-3532-4829-bf2d-30009208e9fb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Кассы" category="Selection">
+				<xr:TypeId>9f2f19d1-f2c0-4c1d-a377-b56d42489e66</xr:TypeId>
+				<xr:ValueId>d1f2224d-a499-4137-92d2-093a8df25ee5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Кассы" category="List">
+				<xr:TypeId>7cef64cc-fe52-42dc-a044-75e6f0329da6</xr:TypeId>
+				<xr:ValueId>80932576-46cd-485e-b159-0bafb4b8470a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Кассы" category="Manager">
+				<xr:TypeId>ca90428d-7b03-4cc2-a36e-63b44a3fd8d3</xr:TypeId>
+				<xr:ValueId>cc64dc49-ee36-4a8a-a261-1f7ef9c66815</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Кассы</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>33005270-b568-464a-8dd5-c2713d55fc0f</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

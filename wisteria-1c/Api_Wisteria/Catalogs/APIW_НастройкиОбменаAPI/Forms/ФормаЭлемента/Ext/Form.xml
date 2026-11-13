@@ -167,6 +167,12 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаОстаткиРасширеннаяПодсказка" id="150"/>
 					<ChildItems>
+						<InputField name="РазмерПакета" id="236">
+							<DataPath>Объект.РазмерПакета</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РазмерПакетаКонтекстноеМеню" id="237"/>
+							<ExtendedTooltip name="РазмерПакетаРасширеннаяПодсказка" id="238"/>
+						</InputField>
 						<Table name="СкладыДляВыгрузкиОстатков" id="151">
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -357,6 +363,11 @@
 							<ContextMenu name="ЭквайринговыйТерминалКонтекстноеМеню" id="99"/>
 							<ExtendedTooltip name="ЭквайринговыйТерминалРасширеннаяПодсказка" id="100"/>
 						</InputField>
+						<CheckBoxField name="ПолучатьОплатуПодарочнымиКартами" id="240">
+							<DataPath>Объект.ПолучатьОплатуПодарочнымиКартами</DataPath>
+							<ContextMenu name="ПолучатьОплатуПодарочнымиКартамиКонтекстноеМеню" id="241"/>
+							<ExtendedTooltip name="ПолучатьОплатуПодарочнымиКартамиРасширеннаяПодсказка" id="242"/>
+						</CheckBoxField>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаТовары" id="102">

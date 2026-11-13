@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="1e206b39-ee63-495d-9200-83d30f378ccb">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.УсловияПредоставленияСкидокНаценок" category="Object">
+				<xr:TypeId>23d03078-08a6-4cfb-a74e-f1fc90f9f118</xr:TypeId>
+				<xr:ValueId>7e1c3dd0-0153-41e0-b68e-db04712f195a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.УсловияПредоставленияСкидокНаценок" category="Ref">
+				<xr:TypeId>435b9fee-9382-4756-922c-d9ee5bb10b18</xr:TypeId>
+				<xr:ValueId>ae302475-82cc-4d2c-a109-023611668f03</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.УсловияПредоставленияСкидокНаценок" category="Selection">
+				<xr:TypeId>e32dc394-8290-4d00-8c43-bd6c171a55c5</xr:TypeId>
+				<xr:ValueId>9d1760e1-1a2b-4711-bcd4-bb8e2013af8b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.УсловияПредоставленияСкидокНаценок" category="List">
+				<xr:TypeId>4f09deb9-71c1-4d20-ab9e-a486ad75277e</xr:TypeId>
+				<xr:ValueId>5181e2d8-f393-43c7-a7ad-3d217076a350</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.УсловияПредоставленияСкидокНаценок" category="Manager">
+				<xr:TypeId>02a0a663-5bb6-467d-b752-61cf2bcb7bb5</xr:TypeId>
+				<xr:ValueId>05d2d125-1fbf-4a9a-ba07-8b2a9e8d38c0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УсловияПредоставленияСкидокНаценок</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>50d7c5f6-dac4-432a-8126-edc031f87c34</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

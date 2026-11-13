@@ -305,6 +305,35 @@
 					</Method>
 				</ChildObjects>
 			</URLTemplate>
+			<URLTemplate uuid="b464573e-f2bc-4cd0-96fb-48c7de53009e">
+				<Properties>
+					<Name>ПолучитьОстаткиТоваровЧастями</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить остатки товаров частями</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/get_product_balances_v2</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="85a3ea4a-31ab-44f8-b107-6a12f8bf38d0">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ПолучитьОстаткиТоваровЧастямиGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
 		</ChildObjects>
 	</HTTPService>
 </MetaDataObject>

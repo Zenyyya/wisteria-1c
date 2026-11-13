@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AccumulationRegister uuid="f49a78be-62f3-4c06-8791-30b07378fffb">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.ПродажиПоДисконтнымКартам" category="Record">
+				<xr:TypeId>445299e4-3d0c-4963-a03b-cba95423d77e</xr:TypeId>
+				<xr:ValueId>117c6c53-cac3-44cd-9d5a-852decbbda43</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.ПродажиПоДисконтнымКартам" category="Manager">
+				<xr:TypeId>0151f707-ef28-42b7-aab5-193f2ce6116c</xr:TypeId>
+				<xr:ValueId>c681d323-0c48-43c0-a4b5-817b23b376b1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.ПродажиПоДисконтнымКартам" category="Selection">
+				<xr:TypeId>8de8eedc-fd14-44f5-bd9a-145cb2758cdd</xr:TypeId>
+				<xr:ValueId>c7304d16-477e-42c7-b73d-494424373b6e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.ПродажиПоДисконтнымКартам" category="List">
+				<xr:TypeId>66652061-32df-46b9-87ff-b040ca0d9c6b</xr:TypeId>
+				<xr:ValueId>eeb6a65e-0e50-4d9e-9ac5-02dbf793b467</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.ПродажиПоДисконтнымКартам" category="RecordSet">
+				<xr:TypeId>c48cea47-46d0-4e98-8025-51fe34c4a937</xr:TypeId>
+				<xr:ValueId>6bd5a515-fb06-4cba-9d0c-46d28a17798d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.ПродажиПоДисконтнымКартам" category="RecordKey">
+				<xr:TypeId>7e92247f-09d2-4dec-8bb7-645aea9d255e</xr:TypeId>
+				<xr:ValueId>4213afe7-bea1-4eba-bded-d2263dcfcde2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПродажиПоДисконтнымКартам</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>5075594d-c2aa-47d2-9f56-d6191666f56e</ExtendedConfigurationObject>
+			<RegisterType>Turnovers</RegisterType>
+		</Properties>
+		<ChildObjects/>
+	</AccumulationRegister>
+</MetaDataObject>
