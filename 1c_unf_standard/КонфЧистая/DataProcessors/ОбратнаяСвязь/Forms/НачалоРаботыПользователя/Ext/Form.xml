@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Добро пожаловать!</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<VerticalSpacing>Double</VerticalSpacing>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<ShowCommandBar>true</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<Pages name="Страницы" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</Title>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Page name="СтраницаОпрос" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница опрос</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="СтраницаОпросРасширеннаяПодсказка" id="33"/>
+							<ChildItems>
+								<LabelDecoration name="ЗаголовокШага" id="36">
+									<Font ref="style:TitleLevel2" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расскажите о своем опыте работы</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокШагаКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ЗаголовокШагаРасширеннаяПодсказка" id="38"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияПояснение" id="3">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>55</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед началом работы ответьте, пожалуйста, на несколько вопросов. Это поможет нам сделать приложение удобнее.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияПояснениеКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="ДекорацияПояснениеРасширеннаяПодсказка" id="5"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаОпросОбОпыте" id="6">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа опрос об опыте</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<VerticalSpacing>Single</VerticalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОпросОбОпытеРасширеннаяПодсказка" id="7"/>
+									<ChildItems>
+										<InputField name="ОпытПриложения1С" id="16">
+											<DataPath>ОпытПриложения1С</DataPath>
+											<AutoMarkIncomplete>false</AutoMarkIncomplete>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите ответ</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ОпытПриложения1СКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ОпытПриложения1СРасширеннаяПодсказка" id="18"/>
+										</InputField>
+										<UsualGroup name="ГруппаОпытДругиеСистемыУчета" id="8">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа опыт другие системы учета</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AutoScreenTypeSensitive</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОпытДругиеСистемыУчетаРасширеннаяПодсказка" id="9"/>
+											<ChildItems>
+												<InputField name="ОпытДругиеСистемыУчета" id="10">
+													<DataPath>ОпытДругиеСистемыУчета</DataPath>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>14</MaxWidth>
+													<ContextMenu name="ОпытДругиеСистемыУчетаКонтекстноеМеню" id="11"/>
+													<ExtendedTooltip name="ОпытДругиеСистемыУчетаРасширеннаяПодсказка" id="12"/>
+													<Events>
+														<Event name="OnChange">ОпытДругиеСистемыУчетаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ОпытПеречислениеСистемУчета" id="13">
+													<DataPath>ОпытПеречислениеСистемУчета</DataPath>
+													<Visible>false</Visible>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ОпытПеречислениеСистемУчетаКонтекстноеМеню" id="14"/>
+													<ExtendedTooltip name="ОпытПеречислениеСистемУчетаРасширеннаяПодсказка" id="15"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаВыборИнтерфейса" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница выбор интерфейса</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницаВыборИнтерфейсаРасширеннаяПодсказка" id="35"/>
+							<ChildItems>
+								<LabelDecoration name="ЗаголовокШагаИнтерфейс" id="39">
+									<Font ref="style:TitleLevel2" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выберите интерфейс для работы</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокШагаИнтерфейсКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ЗаголовокШагаИнтерфейсРасширеннаяПодсказка" id="41"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаВариантИнтерфейса" id="19">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа вариант интерфейса</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВариантИнтерфейсаРасширеннаяПодсказка" id="20"/>
+									<ChildItems>
+										<RadioButtonField name="ВыбранныйИнтерфейс" id="21">
+											<DataPath>ВыбранныйИнтерфейс</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите интерфейс</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>RadioButtons</RadioButtonType>
+											<ColumnsCount>2</ColumnsCount>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Интерфейс 8.5</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Интерфейс Такси</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ВыбранныйИнтерфейсКонтекстноеМеню" id="22"/>
+											<ExtendedTooltip name="ВыбранныйИнтерфейсРасширеннаяПодсказка" id="23"/>
+											<Events>
+												<Event name="OnChange">ВыбранныйИнтерфейсПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+										<PictureDecoration name="КартинкаИнтерфейса" id="24">
+											<Visible>false</Visible>
+											<Width>80</Width>
+											<Height>16</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка интерфейса</v8:content>
+												</v8:item>
+											</Title>
+											<PictureSize>Proportionally</PictureSize>
+											<Picture>
+												<xr:Ref>CommonPicture.Интерфейс85</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="КартинкаИнтерфейсаКонтекстноеМеню" id="25"/>
+											<ExtendedTooltip name="КартинкаИнтерфейсаРасширеннаяПодсказка" id="26"/>
+										</PictureDecoration>
+										<LabelDecoration name="Пояснение" id="27">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>56</MaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>После нажатия кнопки "Записать и закрыть" приложение будет перезапущено для включения выбранного интерфейса. Выбрать другой интерфейс будет возможно в меню Настройки - Вариант интерфейса.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="29"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<LabelDecoration name="Декорация1" id="44">
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="46"/>
+				</LabelDecoration>
+				<Button name="ФормаЗаписатьИЗакрыть" id="1">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Далее</v8:content>
+						</v8:item>
+					</Title>
+					<ButtonImportance>Main</ButtonImportance>
+					<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="2"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ОпытПриложения1С" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа в приложениях 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ОпытПользователяС1С</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОпытДругиеСистемыУчета" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Другие системы учета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ОпытПользователяСДругимиСистемамиУчета</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОпытПеречислениеСистемУчета" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Опыт перечисление систем учета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоТакси" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это такси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяПользователя" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыбранныйИнтерфейс" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранный интерфейс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидимостьВыбораИнтерфейса" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Видимость выбора интерфейса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаписатьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.GoForward</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаписатьИЗакрыть</Action>
+			<Representation>TextPicture</Representation>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+	</Commands>
+</Form>
